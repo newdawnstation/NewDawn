@@ -97,8 +97,8 @@ datum/preferences
 
 	if(!user)	return
 	if(isliving(user)) return
-	if ( usr != src )              //inf rights
-		return                     //inf rights
+	if ( usr != src )              //NewDawn
+		return                     //NewDawn
 	if(href_list["preference"] == "open_whitelist_forum")
 		if(config.forumurl)
 			user << link(config.forumurl)
