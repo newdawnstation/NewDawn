@@ -1,24 +1,24 @@
 #if !defined(using_map_DATUM)
 
-	#include "exodus_announcements.dm"
-	#include "exodus_antagonism.dm"
-	#include "exodus_areas.dm"
-	#include "exodus_elevator.dm"
-	#include "exodus_holodecks.dm"
-	#include "exodus_lobby.dm"
-	#include "exodus_machinery.dm"
-	#include "exodus_map_templates.dm"
-	#include "exodus_npcs.dm"
-	#include "exodus_overmap.dm"
-	#include "exodus_presets.dm"
-	#include "exodus_procs.dm"
-	#include "exodus_ranks.dm"
-	#include "exodus_security_state.dm"
-	#include "exodus_setup.dm"
-	#include "exodus_shuttles.dm"
-	#include "exodus_submaps.dm"
-	#include "exodus_turfs.dm"
-	#include "exodus_unit_testing.dm"
+	#include "new_dawn_announcements.dm"
+	#include "new_dawn_antagonism.dm"
+	#include "new_dawn_areas.dm"
+	#include "new_dawn_elevator.dm"
+	#include "new_dawn_holodecks.dm"
+	#include "new_dawn_lobby.dm"
+	#include "new_dawn_machinery.dm"
+	#include "new_dawn_map_templates.dm"
+	#include "new_dawn_npcs.dm"
+	#include "new_dawn_overmap.dm"
+	#include "new_dawn_presets.dm"
+	#include "new_dawn_procs.dm"
+	#include "new_dawn_ranks.dm"
+	#include "new_dawn_security_state.dm"
+	#include "new_dawn_setup.dm"
+	#include "new_dawn_shuttles.dm"
+	#include "new_dawn_submaps.dm"
+	#include "new_dawn_turfs.dm"
+	#include "new_dawn_unit_testing.dm"
 
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
@@ -73,8 +73,8 @@
 
 	#include "items/weapon/storage/wallets.dm"
 
-	#include "job/exodus_access.dm"
-	#include "job/exodus_jobs.dm"
+	#include "job/new_dawn_access.dm"
+	#include "job/new_dawn_jobs.dm"
 	#include "job/command_jobs.dm"
 	#include "job/corporate_jobs.dm"
 	#include "job/engineering_jobs.dm"
@@ -86,7 +86,7 @@
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
 
-	#include "job/outfits/exodus_outfits.dm"
+	#include "job/outfits/new_dawn_outfits.dm"
 	#include "job/outfits/command_outfits.dm"
 	#include "job/outfits/corporate_outfits.dm"
 	#include "job/outfits/engineering_outfits.dm"
@@ -133,12 +133,10 @@
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/~defines.dm"
 
-	#include "exodus1_deck5.dmm"
-	#include "exodus2_deck4.dmm"
-	#include "exodus3_deck3.dmm"
-	#include "exodus4_deck2.dmm"
-	#include "exodus5_deck1.dmm"
-	#include "exodus6_bridge.dmm"
+	#include "new_dawn-1.dmm"
+	#include "new_dawn-2.dmm"
+	#include "new_dawn-3.dmm"
+	#include "new_dawn-4.dmm"
 	#include "z1_admin.dmm"
 	#include "z2_transit.dmm"
 
@@ -164,11 +162,11 @@
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 
-	#define using_map_DATUM /datum/map/exodus
+	#define using_map_DATUM /datum/map/new_dawn
 
 #elif !defined(MAP_OVERRIDE)
 
-	#warn A map has already been included, ignoring exodus
+	#warn A map has already been included, ignoring new_dawn
 
 #endif
 
