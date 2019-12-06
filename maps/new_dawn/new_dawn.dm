@@ -135,10 +135,8 @@
 
 	#include "new_dawn-1.dmm"
 	#include "new_dawn-2.dmm"
-	#include "new_dawn-3.dmm"
-	#include "new_dawn-4.dmm"
-	#include "z1_admin.dmm"
-	#include "z2_transit.dmm"
+	#include "new_dawn-3-admin.dmm"
+	#include "new_dawn-4-transit.dmm"
 
 	#include "../away/empty.dmm"
 	#include "../away/ascent/ascent.dm"
