@@ -893,7 +893,10 @@ About the new airlock wires panel:
 /obj/machinery/door/airlock/Topic(href, href_list)
 	if(..())
 		return 1
-
+	if( !isAI(usr) && !isrobot(usr) )  //NewDawn
+		if ( !check_rights(R_ADMIN) )  //NewDawn
+			to_chat(usr, " nowindow ") //NewDawn
+			return                     //NewDawn
 	var/activate = text2num(href_list["activate"])
 	switch (href_list["command"])
 		if("idscan")

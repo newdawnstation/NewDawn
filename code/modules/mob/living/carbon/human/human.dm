@@ -535,6 +535,9 @@
 			M.see_relationship_info_with(src)
 
 	if (href_list["flavor_change"])
+		if ( usr != src )                                           //NewDawn
+			return                                                  //NewDawn
+
 		switch(href_list["flavor_change"])
 			if("done")
 				src << browse(null, "window=flavor_changes")
