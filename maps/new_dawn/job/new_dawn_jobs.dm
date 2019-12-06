@@ -1,4 +1,4 @@
-/datum/map/new_dawn
+/datum/map/torch
 	species_to_job_whitelist = list(
 		/datum/species/adherent = list(/datum/job/ai, /datum/job/cyborg, /datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/cargo_tech,
 										/datum/job/engineer, /datum/job/roboticist, /datum/job/chemist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/nt_pilot,
@@ -45,7 +45,7 @@
 		ACCESS_REGION_NT = list(access_change_ids)
 	)
 
-/datum/map/new_dawn/setup_job_lists()
+/datum/map/torch/setup_job_lists()
 	for(var/job_type in allowed_jobs)
 		var/datum/job/job = SSjobs.get_by_path(job_type)
 		// Most species are restricted from SCG security and command roles
@@ -84,5 +84,5 @@
 	)
 	required_language = LANGUAGE_HUMAN_EURO
 
-/datum/map/new_dawn
+/datum/map/torch
 	default_assistant_title = "Passenger"
