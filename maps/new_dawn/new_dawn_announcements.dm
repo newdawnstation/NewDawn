@@ -1,4 +1,4 @@
-/datum/map/torch
+/datum/map/new_dawn
 	emergency_shuttle_docked_message = "Attention all hands: the escape pods are now unlocked. You have %ETD% to board the escape pods."
 	emergency_shuttle_leaving_dock = "Attention all hands: the escape pods have been launched, arriving at rendezvous point in %ETA%."
 
@@ -32,7 +32,7 @@
 	electrical_storm_moderate_sound = sound('sound/AI/torch/electricalstormmoderate.ogg', volume = 45)
 	electrical_storm_major_sound = sound('sound/AI/torch/electricalstormmajor.ogg', volume = 45)
 
-/datum/map/torch/level_x_biohazard_sound(var/bio_level)
+/datum/map/new_dawn/level_x_biohazard_sound(var/bio_level)
 	switch(bio_level)
 		if(7)
 			return sound('sound/AI/torch/outbreak7.ogg', volume = 45)

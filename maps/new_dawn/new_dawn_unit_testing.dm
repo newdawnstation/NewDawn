@@ -1,7 +1,7 @@
 /datum/unit_test/station_wires_shall_be_connected
 	exceptions = list(list(80, 107, 1, WEST))
 
-/datum/map/torch
+/datum/map/new_dawn
 	// Unit test exemptions
 	apc_test_exempt_areas = list(
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,

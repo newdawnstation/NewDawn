@@ -5,7 +5,7 @@
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	required_language = null
 
-/datum/map/torch
+/datum/map/new_dawn
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,

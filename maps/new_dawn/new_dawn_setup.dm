@@ -1,16 +1,16 @@
-/datum/map/torch/setup_map()
+/datum/map/new_dawn/setup_map()
 	..()
 	system_name = generate_system_name()
 	minor_announcement = new(new_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45))
 
-/datum/map/torch/get_map_info()
+/datum/map/new_dawn/get_map_info()
 	. = list()
 	. +=  "You're aboard the <b>[station_name]</b>, an Expeditionary Corps starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
 	. +=  "The vessel is staffed with a mix of SCG government personnel and hired contractors."
 	. +=  "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
 	return jointext(., "<br>")
 
-/datum/map/torch/send_welcome()
+/datum/map/new_dawn/send_welcome()
 	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"

@@ -14,7 +14,7 @@
 #define PSI_IMPLANT_DISABLED  "Disabled"
 #endif
 
-/datum/map/torch // setting the map to use this list
+/datum/map/new_dawn // setting the map to use this list
 	security_state = /decl/security_state/default/torchdept
 
 //Torch map alert levels. Refer to security_state.dm.

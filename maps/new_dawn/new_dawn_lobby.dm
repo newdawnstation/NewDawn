@@ -1,4 +1,4 @@
-/datum/map/torch
+/datum/map/new_dawn
 	lobby_screens = list('maps/torch/lobby/ship.gif','maps/torch/lobby/hullside.gif','maps/torch/lobby/torchlogo.gif')
 	lobby_tracks = list(
 		/music_track/chasing_time,

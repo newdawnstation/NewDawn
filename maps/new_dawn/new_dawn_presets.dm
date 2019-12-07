@@ -13,7 +13,7 @@ var/const/NETWORK_THIRD_DECK  = "Third Deck"
 var/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
 var/const/NETWORK_NANOTRASEN  = "Petrov"
 
-/datum/map/torch/get_network_access(var/network)
+/datum/map/new_dawn/get_network_access(var/network)
 	switch(network)
 		if(NETWORK_AQUILA)
 			return access_aquila
@@ -33,7 +33,7 @@ var/const/NETWORK_NANOTRASEN  = "Petrov"
 			return access_petrov_security
 	return get_shared_network_access(network) || ..()
 
-/datum/map/torch
+/datum/map/new_dawn
 	// Networks that will show up as options in the camera monitor program
 	station_networks = list(
 		NETWORK_ROBOTS,
@@ -195,7 +195,7 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
 			return access_engine
 
-/datum/map/torch/default_internal_channels()
+/datum/map/new_dawn/default_internal_channels()
 	return list(
 		num2text(PUB_FREQ)   = list(),
 		num2text(AI_FREQ)    = list(access_synth),
