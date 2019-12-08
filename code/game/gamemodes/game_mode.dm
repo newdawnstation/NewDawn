@@ -60,6 +60,7 @@ var/global/list/additional_antag_types = list()
 /datum/game_mode/Topic(href, href_list[])
 	if(..())
 		return
+	if(!check_rights(R_ADMIN)) return    //NewDawn
 	if(href_list["toggle"])
 		switch(href_list["toggle"])
 			if("respawn")
