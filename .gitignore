@@ -16,9 +16,9 @@ reboot_called
 atupdate
 
 # ignore config, but not subdirs
-!config/*/
-config/*
-sql/test_db
+# !config/*/
+# config/*
+# sql/test_db
 
 # vscode
 .vscode/*
