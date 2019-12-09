@@ -16,7 +16,9 @@
 		var/obj/structure/bed/chair/e_chair/location = src.loc
 		qdel(src)
 		var/obj/structure/bed/chair/C = new (location, material.name)
-		var/obj/item/assembly/shock_kit/SK = new (location, material.name)
+		var/obj/item/assembly/shock_kit/SK // = new (location, material.name)
+		SK = new (location, material.name)
+		SK.set_dir(dir)
 		C.set_dir(dir)
 
 /obj/structure/bed/chair/e_chair/verb/toggle()
