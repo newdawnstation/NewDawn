@@ -21,6 +21,8 @@ Hsiwe - HeadAdmin
 Strange_Boi - HeadAdmin
 Rebel_228 - HeadAdmin
 Keller251 - HeadAdmin
+WERSAYD - HeadAdmin
+PaikFest - HeadAdmin
 
 # Rv666 - Host
 # jediofgood - GameAdmin
