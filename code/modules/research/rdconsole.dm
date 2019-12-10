@@ -737,8 +737,6 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 				if(!(D.category_items in category_items_list_lathe))
 					category_items_list_lathe += D.category_items
 					var/category_items_name = D.category_items
-					if(!(user.skill_check(SKILL_DEVICES, SKILL_BASIC)))
-						category_items_name = corrupt_text(category_items_name)
 
 					if(category_lathe != D.category_items)
 						cat_dat += " <A href='?src=\ref[src];menu=3.1;category_lathe=[D.category_items]'>\[[category_items_name]\]</A> "
@@ -754,9 +752,6 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 						temp_dat += ", [round(D.chemicals[T]*linked_lathe.mat_efficiency * protolathe_bonus)] [CallReagentName(T)]"
 					if(temp_dat)
 						temp_dat = " \[[copytext(temp_dat, 3)]\]"
-					if(!(user.skill_check(SKILL_DEVICES, SKILL_BASIC)))
-						temp_dat = corrupt_text(temp_dat)
-						name_dat = corrupt_text(name_dat)
 					if(linked_lathe.canBuild(D, protolathe_bonus))
 						final_dat += "<LI><B><A href='?src=\ref[src];build=[D.id]'>[name_dat]</A></B>[temp_dat]"
 					else
@@ -766,7 +761,6 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 			if(!user.skill_check(SKILL_DEVICES, SKILL_ADEPT))
 				cat_dat = shuffle(cat_dat)
 				final_dat = shuffle(final_dat)
-				category_lathe_temp = corrupt_text(category_lathe)
 			dat += cat_dat
 			dat += "<HR>"
 			if(category_lathe != null)
@@ -855,8 +849,6 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 				if(!(D.category_items in category_items_list_imprinter))
 					category_items_list_imprinter += D.category_items
 					var/category_items_name = D.category_items
-					if(!(user.skill_check(SKILL_DEVICES, SKILL_BASIC)))
-						category_items_name = corrupt_text(category_items_name)
 
 					if(category_imprinter != D.category_items)
 						cat_dat += " <A href='?src=\ref[src];menu=4.1;category_imprinter=[D.category_items]'>\[[category_items_name]\]</A> "
@@ -872,9 +864,6 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 						temp_dat += ", [round(D.chemicals[T]*linked_imprinter.mat_efficiency * circuit_imprinter_bonus)] [CallReagentName(T)]"
 					if(temp_dat)
 						temp_dat = " \[[copytext(temp_dat,3)]\]"
-					if(!(user.skill_check(SKILL_DEVICES, SKILL_BASIC)))
-						temp_dat = corrupt_text(temp_dat)
-						name_dat = corrupt_text(name_dat)
 					if(linked_imprinter.canBuild(D, circuit_imprinter_bonus))
 						final_dat += "<LI><B><A href='?src=\ref[src];imprint=[D.id]'>[name_dat]</A></B>[temp_dat]"
 					else
@@ -884,7 +873,6 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 			if(!user.skill_check(SKILL_DEVICES, SKILL_BASIC))
 				cat_dat = shuffle(cat_dat)
 				final_dat = shuffle(final_dat)
-				category_imprinter_temp = corrupt_text(category_imprinter)
 			dat += cat_dat
 			dat += "<HR>"
 			if(category_imprinter != null)
