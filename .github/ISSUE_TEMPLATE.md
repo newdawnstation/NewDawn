@@ -1,53 +1,51 @@
 <!--
-	Anything inside tags like these is a comment and will not be displayed in the final issue.
-	Be careful not to write inside them!
+	Все, что указано в тегах <>, является комментарием. Ничего не пишите в них!
 
-	Every field other than 'specific information for locating' is required.
-	If you do not fill out the 'specific information' field, please delete the header.
-	/!\ Omitting or not answering a required field will result in your issue being closed. /!\
-	Repeated violation of this rule, or joke or spam issues, will result in punishment.
+	Все поля, кроме 'Точная информация для поиска' необходимо заполнить.
+	Если вы не заполнили поле 'Точная информация для поиска', то удалите заголовок (поле).
+	/!\ Если ваша заявка будет заполнена не по правилам репозитория, она будет закрыта. /!\
+	Нарушение данного правила, спам или глупые шуточки повлекут за собой наказание вплоть до мута.
 	
-	PUT YOUR ANSWERS ON THE BLANK LINES BELOW THE HEADERS 
-	(The lines with four #'s) 
-	Don't edit them or delete them - it's part of the formatting
+	ПИШИТЕ СВОИ ОТВЕТЫ ПОД ЗАГОЛОВКАМИ 
+	(Заголовки - строки с символом решетки # в начале) 
+	Не изменяйте и не удаляйте заголовки - это часть формы.
 -->
 
-#### Description of issue
+#### Описание проблемы
 
 
 
-#### Difference between expected and actual behavior
+#### Различие между предполагаемым и реальным результатом
 
 
 
-#### Steps to reproduce
+#### Шаги для повторения проблемы
 
 
 
-#### Specific information for locating
-<!-- e.g. an object name, paste specific message outputs... -->
+#### Точная информация для поиска
+<!-- Наименование объекта, сообщение с ошибкой и прочая точная информация, которая может помочь разработчику для поиска по коду. -->
 
 
 
-#### Length of time in which bug has been known to occur
+#### Время раунда, в которое баг проявился 
 <!--
-	Be specific if you approximately know the time it's been occurring
-	for—this can speed up finding the source. If you're not sure
-	about it, tell us too!
+	Назовите точное событие или приблизительное время, когда вы обнаружили баг.
+	Если вы не уверены, то также можете высказать свои предположения.
 -->
 
 
 
-#### Client version, Server revision & Game ID
-<!-- Found with the "Show server revision" verb in the OOC tab in game. -->
+#### Версия клиента, ревизия сервера & идентификатор игры
+<!-- Нажмите по кнопке в вкладке OOC внутри игры "Show server revision", чтобы получить необходимую информацию. -->
 
 
 
-#### Issue bingo
-<!-- Check these by writing an x inside the [ ] (like this: [x])-->
-<!-- Don't forget to remove the space between the brackets, or it won't work! -->
-- [ ] Issue could be reproduced at least once
-- [ ] Issue could be reproduced by different players
-- [ ] Issue could be reproduced in multiple rounds
-- [ ] Issue happened in a recent (less than 7 days ago) round
-- [ ] [Couldn't find an existing issue about this](https://github.com/Baystation12/Baystation12/issues)
+#### Чек-лист проблемы
+<!-- Проверьте чек-лист и поставьте икс x в скобки [ ] (Пример: [x])-->
+<!-- Не забудьте удалить пробелы между скобками, иначе магия чек-листа не сработает! -->
+- [ ] Проблема может быть воспроизведена больше одного раза
+- [ ] Проблема может быть воспроизведена разными игроками 
+- [ ] Проблема может быть вопроизведена в разных раунда
+- [ ] Проблема проявлялась на протяжении последних семи дней
+- [ ] [Другой жалобы на данную проблему не поступало](https://github.com/newdawnstation/NewDawn/issues)

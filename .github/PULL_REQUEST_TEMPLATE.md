@@ -1,16 +1,16 @@
 <!-- 
-Do not forget to add a changelog when you have made admin/player facing changes that can alter gameplay.
-Examples which require a changelog entry include:
-* Adding/removing objects that players may interact with, or the way they function.
-* Adding/removing/altering admin tools.
-* Changing the map.
+НЕ ЗАБУДЬТЕ ДОБАВИТЬ ИГРОВОЙ ЧЕЙНДЖЛОГ! Игроки и администрация должны понимать, что происходит с билдом.
+Примеры, что должен содержать игровой чейнджлог:
+* Добавлены/удалены объекты с которыми мог взаимодействовать игрок или изменен способ их работы.
+* Добавлены/удалены/изменены кнопки педалей.
+* Изменения на карте.
 
-Examples were changelog entries are optional/not typically required:
-* Cosmetic changes such as descriptions, sound effects, etc.
-* Optimizations and other changes to underlying systems which do not affect gameplay.
-* Minor bug fixes.
+Примеры, что не обязательно писать в игровой чейнджлог (если это не является осоновным изменением):
+* Косметические изменения звуков, текстур, и т.п.
+* Оптимизация и прочие изменения подсистем, которые не влияют на изменения геймплея.
+* Мелкие баг-фиксы.
 
-You'll find a README and example file in .\html\changelogs\ for further instructions.
+Вы найдете README и прочие полезные инструменты в папке .\html\changelogs\
 
-You can also find a template for adding your changelog directly to the PR description here: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation
+Вы также можете найти пример чейнджлога на вики оригинального билда: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation
 -->

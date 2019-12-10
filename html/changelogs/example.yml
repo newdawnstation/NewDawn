@@ -1,38 +1,38 @@
 ################################
-# Example Changelog File
+# Пример игрового чейнджлога
 #
-# Note: This file, and files beginning with ".", and files that don't end in ".yml" will not be read. If you change this file, you will look really dumb.
+# Note: Этот файл, файлы начинающиеся ".", И файлы без расширения ".yml" НЕ будут прочитаны скриптом генерации. Если вы измените этот файл и вы не мейнтейнер гита, то Shield вас сожрёт.
 #
-# Your changelog will be merged with a master changelog. (New stuff added only, and only on the date entry for the day it was merged.)
-# When it is, any changes listed below will disappear.
+# Ваш чейнджлог будет совмещен с мастер-файлом. (Новые строки добавляются, ТОЛЬКО в дату мерджа с главным репозиторием.)
+# Когда это случиться, ваш файл чейнджлога будет удален.
 #
-# Valid Prefixes: 
+# Префиксы (иконки): 
 #   bugfix
-#   wip (For works in progress)
+#   wip (Для фич, которые еще в работе)
 #   tweak
 #   soundadd
 #   sounddel
-#   rscadd (general adding of nice things)
-#   rscdel (general deleting of nice things)
+#   rscadd (Для новых фич)
+#   rscdel (Удаление фич)
 #   imageadd
 #   imagedel
 #   maptweak
-#   spellcheck (typo fixes)
+#   spellcheck (Исправления храматики)
 #   experiment
 #   admin
 #################################
 
-# Your name.  
+# Ваш сикей/ник.  
 author: Unknown
 
-# Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
+# Optional: Удалить файл чейнджлога. Оставлять TRUE если делаете ПУЛЛ-РЕКВЕСТ. ПОСТАВИТЬ FALSE если делаете коммит в СОБСТВЕННЫЙ БРЭНЧ И ПЛАНИРУЕТЕ МЕРДЖ С ОСНОВОЙ!
 delete-after: True
 
-# Any changes you've made.  See valid prefix list above.
-# INDENT WITH TWO SPACES.  NOT TABS.  SPACES.
-# SCREW THIS UP AND IT WON'T WORK.
-# Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
-# Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
+# Укажите ваши изменения после инструкции.  Шпаргалка по префиксам выше.
+# СДЕЛАЙТЕ ДВА ПРОБЕЛА ПОСЛЕ ПРЕФИКСА: .  НЕ ТАБЫ (TAB).  ПРОБЕЛЫ.
+# ЕСЛИ НЕ ПОСТАВИТЬ ПРОБЕЛЫ, ТО ВСЕ ПОЛЕТИТ В ПИЗДУ И ВАШ БИЛД НЕ ПРОЙДЕТ CI.
+# Важно заметить, что все изменения уйдут в скобки [] после обновления мастер-файла. Просто удалите скобки, если вы планируете добавить новые пункты в текущий чейнджлог.
+# ПОЖАЛУЙСТА, все записи должны быть в двойных скобках "", т.к. иначе билд не пройдет CI! Скобки не появяться в мастер-файле при компиляции.
 changes: 
-  - rscadd: "Added a changelog editing system that should cause fewer conflicts and more accurate timestamps."
-  - rscdel: "Killed innocent kittens."
+  - rscadd: "Добавлена новая бочка с токсичным шилдом."
+  - rscdel: "Вырезаны все корги."

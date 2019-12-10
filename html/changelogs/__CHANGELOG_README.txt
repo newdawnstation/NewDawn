@@ -1,19 +1,19 @@
-Changelogs are included with commits as text .yml files created individually by the committer. If you want to create a changelog entry you create a .yml file in the /changelogs directory; nothing else needs to be touched unless you are a maintainer.
+Игровые чейнджлоги включаются как .yml файл в коммит и создаются самим реквестером. Если вы хотите добавить чейнджлог, то создайте файл с расширением .yml в html/changelogs directory; Другие файлы нельзя трогать если вы не Shield (мейнтейнер гита).
 
 #######################################################
 
-TO MAKE A CHANGELOG .YML ENTRRY
+КАК СОЗДАТЬ .YML ФАЙЛ С ЧЕЙНДЖЛОГОМ 
 
-1. Make a copy of the file example.yml in html/changelogs and rename it to [YOUR USERNAME]-PR-[YOUR PR NUMBER].yml or [YOUR USERNAME]-[YOUR BRANCH NAME]. Only the username is strictly required, anything else is organizational and can be ignored if you so wish.
+1. Скопируйте файл example.yml в html/changelogs и переиминуйте его в [ВАШ НИКНЕЙМ НА ГИТЕ]-PR-[НОМЕР ВАШЕГО ПУЛЛ-РЕКВЕСТА].yml или [ВАШ НИКНЕЙМ НА ГИТЕ]-[НАИМЕНОВАНИЕ ВАШЕГО БРЭНЧА]. Все поля должны быть обязательно заполнены, если вы штатный разработчик и не хотите посраться со мной.
 
-2. Change the author to yourself
+2. Измените имя автора на свое. 
 
-3. Replace the changes text with a description of the changes in your PR, keep the double quotes to avoid errors (your changelog can be written ICly or OOCly, it doesn't matter)
+3. Измените текст изменений чейнджолга, чтобы он соответствовал вашим изменениям. Оставьте двойные скобки, чтобы избежать ошибок с пробелами и прочим говном. (Описание изменений - свободное)
 
-4. (Optional) set the change prefix (rscadd) to a different one listed above in example.yml (this affects what icon is used for your changelog entry)
+4. (Опционально) измените префикс (rscadd) на один из тех, что указан в  example.yml (Префикс влияет на то, какая именно иконка у строк вашего чейнджолга)
 
-5. When commiting make sure your .yml file is included in the commit (it will usually be unticked as an unversioned file)
+5. Перед созданием пулл-реквеста/коммита убедитесь, что ваш .yml файл включен в состав коммита (Обычно этот файл не отмечается как файл для коммита)
 
 #######################################################
 
-If you have trouble ask for help in #codershuttle on irc.sorcery.net or read https://tgstation13.org/wiki/Guide_to_Changelogs
+Если вам требуется доп.информация по чейнджлогам, то ознакомьтесь с статьей на вики ТГ: https://tgstation13.org/wiki/Guide_to_Changelogs
