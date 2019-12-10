@@ -20,15 +20,16 @@
 	closet_appearance = /decl/closet_appearance/oxygen
 
 /obj/structure/closet/emcloset/WillContain()
-	//Guaranteed kit - two tanks and masks
+	//Guaranteed kit - two tanks and masks, emergency softsuit and toolbox. We don't like lootboxes, ya know?
 	. = list(/obj/item/weapon/tank/emergency/oxygen = 2,
-			/obj/item/clothing/mask/breath = 2)
+			/obj/item/clothing/mask/breath = 2,
+			/obj/item/clothing/suit/space/emergency = 1,
+			/obj/item/clothing/head/helmet/space/emergency = 1,
+			/obj/item/weapon/storage/toolbox/emergency = 1)
 
-	. += new/datum/atom_creator/simple(list(/obj/item/weapon/storage/toolbox/emergency, /obj/item/inflatable/wall = 2), 75)
 	. += new/datum/atom_creator/simple(list(/obj/item/weapon/tank/emergency/oxygen/engi, /obj/item/clothing/mask/gas/half), 10)
 	. += new/datum/atom_creator/simple(/obj/item/device/oxycandle, 15)
 	. += new/datum/atom_creator/simple(/obj/item/weapon/storage/firstaid/o2, 25)
-	. += new/datum/atom_creator/simple(list(/obj/item/clothing/suit/space/emergency,/obj/item/clothing/head/helmet/space/emergency), 25)
 
 /*
  * Fire Closet
