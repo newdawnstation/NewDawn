@@ -20308,6 +20308,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/ce)
 "Oc" = (
@@ -50924,7 +50925,7 @@ Ir
 PM
 PM
 PM
-Nd
+RO
 Nd
 Nd
 Nd
@@ -52044,7 +52045,7 @@ RO
 RO
 RO
 RO
-RO
+hx
 hx
 hx
 dm
@@ -52281,14 +52282,14 @@ AV
 rQ
 rQ
 rQ
-Nd
-Nd
+hx
+hx
 ql
 ye
 Oc
 Qy
 Ro
-Nd
+ql
 RO
 yn
 yn
@@ -52508,14 +52509,14 @@ AZ
 DD
 HA
 Fp
-Nd
-Nd
+hx
+hx
 kO
 Md
 ox
 QL
 vo
-Nd
+ql
 ae
 yn
 yn
@@ -52735,14 +52736,14 @@ xB
 HA
 UV
 Fp
-Nd
-Nd
+hx
+hx
 ql
 Mm
 GM
 QQ
 UA
-Nd
+ql
 RO
 yn
 yn
@@ -52962,14 +52963,14 @@ By
 DF
 HA
 Fp
-Nd
-Nd
 ql
 ql
 ql
 ql
 ql
-Nd
+ql
+ql
+ql
 ae
 yn
 yn
@@ -53878,7 +53879,7 @@ Bo
 bS
 vK
 Bo
-Ey
+Hx
 RL
 rk
 Rb
@@ -54105,7 +54106,7 @@ dL
 Yp
 Vf
 BL
-Ey
+Hx
 Iw
 Ll
 RR
@@ -54332,7 +54333,7 @@ gr
 Ox
 dk
 tr
-Ey
+Hx
 aN
 WG
 RR
@@ -54559,7 +54560,7 @@ je
 Ox
 dk
 je
-Ey
+Hx
 Py
 Vj
 Hx
