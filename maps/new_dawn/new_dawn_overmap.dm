@@ -1,10 +1,12 @@
 /obj/effect/overmap/visitable/ship/torch
-	name = "SEV Torch"
+	name = "NSS New Dawn"
 	desc = "A bluespace-capable corvette bearing markings of the SCG Expeditionary Corps."
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
 	base = TRUE
+	start_x = 10
+	start_y = 10
 
 	initial_restricted_waypoints = list(
 		"Charon" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship

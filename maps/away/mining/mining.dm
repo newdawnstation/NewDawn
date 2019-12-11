@@ -5,6 +5,9 @@
 	name = "asteroid cluster"
 	desc = "Large group of asteroids. Mineral content detected."
 	icon_state = "sector"
+	initial_restricted_waypoints = list(
+		"Guppy" = list("nav_mining_8")
+	)
 	initial_generic_waypoints = list(
 		"nav_cluster_1",
 		"nav_cluster_2",
@@ -14,7 +17,9 @@
 		"nav_cluster_6",
 		"nav_cluster_7"
 	)
-	known = 0
+	known = 1
+	start_x = 10
+	start_y = 10
 
 /obj/effect/overmap/visitable/sector/cluster/generate_skybox()
 	return overlay_image('icons/skybox/rockbox.dmi', "rockbox", COLOR_ASTEROID_ROCK, RESET_COLOR)
@@ -32,6 +37,7 @@
 	cost = 1
 	accessibility_weight = 10
 	generate_mining_by_z = 1
+	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 	apc_test_exempt_areas = list(
 		/area/outpost/abandoned = NO_SCRUBBER,
 		/area/mine/explored = NO_SCRUBBER|NO_VENT|NO_APC,
