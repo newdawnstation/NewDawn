@@ -411,7 +411,7 @@
 /obj/structure/bed/chair/sofa
 	name = "leather sofa"
 	desc = "A wide and comfy sofa - no one assistant was ate by it due production! It's made of steel and covered with synthetic leather."
-	icon = 'new_dawn/icons/obj/furniture.dmi'
+	icon = 'icons/obj/furniturenew.dmi'
 	icon_state = "sofa_right"
 	buckle_dir = 0
 	buckle_lying = 0
