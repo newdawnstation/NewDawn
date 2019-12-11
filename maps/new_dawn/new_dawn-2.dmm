@@ -21973,6 +21973,12 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
+"UW" = (
+/obj/effect/landmark/map_data{
+	height = 2
+	},
+/turf/space,
+/area/space)
 "UX" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
@@ -24562,7 +24568,7 @@ Nd
 Nd
 Nd
 Nd
-Nd
+UW
 "}
 (2,1,1) = {"
 Nd

@@ -4,9 +4,10 @@
 	path = "New Dawn"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
+	station_levels = list(1,2) // I'm not sure if it's necessary.
 	admin_levels = list(3,4)
 	empty_levels = list(9)
-	accessible_z_levels = list("1"=1,"2"=2,"9"=30)
+	accessible_z_levels = list("1"=1,"2"=1,"9"=30)
 	overmap_size = 35
 	overmap_event_areas = 34
 	usable_email_tlds = list("New Dawn.ec.scg", "New Dawn.fleet.mil", "freemail.net", "New Dawn.scg")
