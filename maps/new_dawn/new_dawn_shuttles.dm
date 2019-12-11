@@ -1,55 +1,3 @@
-//Some helpers because so much copypasta for pods
-/datum/shuttle/autodock/ferry/escape_pod/torchpod
-	category = /datum/shuttle/autodock/ferry/escape_pod/torchpod
-	sound_takeoff = 'sound/effects/rocket.ogg'
-	sound_landing = 'sound/effects/rocket_backwards.ogg'
-	warmup_time = 10
-
-/obj/effect/shuttle_landmark/escape_pod/start
-	name = "Docked"
-	base_turf = /turf/simulated/floor/reinforced/airless
-
-/obj/effect/shuttle_landmark/escape_pod/transit
-	name = "In transit"
-
-/obj/effect/shuttle_landmark/escape_pod/out
-	name = "Escaped"
-
-//Pods
-#define TORCH_ESCAPE_POD(NUMBER) \
-/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod##NUMBER { \
-	shuttle_area = /area/shuttle/escape_pod##NUMBER/station; \
-	name = "Escape Pod " + #NUMBER; \
-	dock_target = "escape_pod_" + #NUMBER; \
-	arming_controller = "escape_pod_"+ #NUMBER +"_berth"; \
-	waypoint_station = "escape_pod_"+ #NUMBER +"_start"; \
-	landmark_transition = "escape_pod_"+ #NUMBER +"_internim"; \
-	waypoint_offsite = "escape_pod_"+ #NUMBER +"_out"; \
-} \
-/obj/effect/shuttle_landmark/escape_pod/start/pod##NUMBER { \
-	landmark_tag = "escape_pod_"+ #NUMBER +"_start"; \
-	docking_controller = "escape_pod_"+ #NUMBER +"_berth"; \
-} \
-/obj/effect/shuttle_landmark/escape_pod/out/pod##NUMBER { \
-	landmark_tag = "escape_pod_"+ #NUMBER +"_internim"; \
-} \
-/obj/effect/shuttle_landmark/escape_pod/transit/pod##NUMBER { \
-	landmark_tag = "escape_pod_"+ #NUMBER +"_out"; \
-}
-
-TORCH_ESCAPE_POD(6)
-TORCH_ESCAPE_POD(7)
-TORCH_ESCAPE_POD(8)
-TORCH_ESCAPE_POD(9)
-TORCH_ESCAPE_POD(10)
-TORCH_ESCAPE_POD(11)
-TORCH_ESCAPE_POD(12)
-TORCH_ESCAPE_POD(13)
-TORCH_ESCAPE_POD(14)
-TORCH_ESCAPE_POD(15)
-TORCH_ESCAPE_POD(16)
-TORCH_ESCAPE_POD(17)
-
 //Petrov
 
 /datum/shuttle/autodock/ferry/petrov
@@ -500,3 +448,284 @@ TORCH_ESCAPE_POD(17)
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management
 	default_access = list(access_hangar, access_cargo, access_heads)
+
+//Some helpers because so much copypasta for pods
+/datum/shuttle/autodock/ferry/escape_pod/torchpod
+	category = /datum/shuttle/autodock/ferry/escape_pod/torchpod
+	sound_takeoff = 'sound/effects/rocket.ogg'
+	sound_landing = 'sound/effects/rocket_backwards.ogg'
+	warmup_time = 10
+
+/obj/effect/shuttle_landmark/escape_pod/start
+	name = "Docked"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/obj/effect/shuttle_landmark/escape_pod/transit
+	name = "In transit"
+
+/obj/effect/shuttle_landmark/escape_pod/out
+	name = "Escaped"
+
+//Pods NewDawn. Yes, I have rewritten this part making copypasta for each pod because of StrongDMM - RedHawk
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod6
+	shuttle_area = /area/shuttle/escape_pod6/station
+	name = "Escape Pod 6"
+	dock_target = "escape_pod_6"
+	arming_controller = "escape_pod_6_berth"
+	waypoint_station = "escape_pod_6_start"
+	landmark_transition = "escape_pod_6_internim"
+	waypoint_offsite = "escape_pod_6_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod6
+	landmark_tag = "escape_pod_6_start"
+	docking_controller = "escape_pod_6_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod6
+	landmark_tag = "escape_pod_6_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod6
+	landmark_tag = "escape_pod_6_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod7
+	shuttle_area = /area/shuttle/escape_pod7/station
+	name = "Escape Pod 7"
+	dock_target = "escape_pod_7"
+	arming_controller = "escape_pod_7_berth"
+	waypoint_station = "escape_pod_7_start"
+	landmark_transition = "escape_pod_7_internim"
+	waypoint_offsite = "escape_pod_7_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod7
+	landmark_tag = "escape_pod_7_start"
+	docking_controller = "escape_pod_7_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod7
+	landmark_tag = "escape_pod_7_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod7
+	landmark_tag = "escape_pod_7_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod8
+	shuttle_area = /area/shuttle/escape_pod8/station
+	name = "Escape Pod 8"
+	dock_target = "escape_pod_8"
+	arming_controller = "escape_pod_8_berth"
+	waypoint_station = "escape_pod_8_start"
+	landmark_transition = "escape_pod_8_internim"
+	waypoint_offsite = "escape_pod_8_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod8
+	landmark_tag = "escape_pod_8_start"
+	docking_controller = "escape_pod_8_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod8
+	landmark_tag = "escape_pod_8_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod8
+	landmark_tag = "escape_pod_8_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod9
+	shuttle_area = /area/shuttle/escape_pod9/station
+	name = "Escape Pod 9"
+	dock_target = "escape_pod_9"
+	arming_controller = "escape_pod_9_berth"
+	waypoint_station = "escape_pod_9_start"
+	landmark_transition = "escape_pod_9_internim"
+	waypoint_offsite = "escape_pod_9_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod9
+	landmark_tag = "escape_pod_9_start"
+	docking_controller = "escape_pod_9_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod9
+	landmark_tag = "escape_pod_9_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod9
+	landmark_tag = "escape_pod_9_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod10
+	shuttle_area = /area/shuttle/escape_pod10/station
+	name = "Escape Pod 10"
+	dock_target = "escape_pod_10"
+	arming_controller = "escape_pod_10_berth"
+	waypoint_station = "escape_pod_10_start"
+	landmark_transition = "escape_pod_10_internim"
+	waypoint_offsite = "escape_pod_10_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod10
+	landmark_tag = "escape_pod_10_start"
+	docking_controller = "escape_pod_10_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod10
+	landmark_tag = "escape_pod_10_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod10
+	landmark_tag = "escape_pod_10_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod11
+	shuttle_area = /area/shuttle/escape_pod11/station
+	name = "Escape Pod 11"
+	dock_target = "escape_pod_11"
+	arming_controller = "escape_pod_11_berth"
+	waypoint_station = "escape_pod_11_start"
+	landmark_transition = "escape_pod_11_internim"
+	waypoint_offsite = "escape_pod_11_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod11
+	landmark_tag = "escape_pod_11_start"
+	docking_controller = "escape_pod_11_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod11
+	landmark_tag = "escape_pod_11_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod11
+	landmark_tag = "escape_pod_11_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod12
+	shuttle_area = /area/shuttle/escape_pod12/station
+	name = "Escape Pod 12"
+	dock_target = "escape_pod_12"
+	arming_controller = "escape_pod_12_berth"
+	waypoint_station = "escape_pod_12_start"
+	landmark_transition = "escape_pod_12_internim"
+	waypoint_offsite = "escape_pod_12_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod12
+	landmark_tag = "escape_pod_12_start"
+	docking_controller = "escape_pod_12_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod12
+	landmark_tag = "escape_pod_12_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod12
+	landmark_tag = "escape_pod_12_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod13
+	shuttle_area = /area/shuttle/escape_pod13/station
+	name = "Escape Pod 13"
+	dock_target = "escape_pod_13"
+	arming_controller = "escape_pod_13_berth"
+	waypoint_station = "escape_pod_13_start"
+	landmark_transition = "escape_pod_13_internim"
+	waypoint_offsite = "escape_pod_13_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod13
+	landmark_tag = "escape_pod_13_start"
+	docking_controller = "escape_pod_13_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod13
+	landmark_tag = "escape_pod_13_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod13
+	landmark_tag = "escape_pod_13_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod14
+	shuttle_area = /area/shuttle/escape_pod14/station
+	name = "Escape Pod 14"
+	dock_target = "escape_pod_14"
+	arming_controller = "escape_pod_14_berth"
+	waypoint_station = "escape_pod_14_start"
+	landmark_transition = "escape_pod_14_internim"
+	waypoint_offsite = "escape_pod_14_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod14
+	landmark_tag = "escape_pod_14_start"
+	docking_controller = "escape_pod_14_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod14
+	landmark_tag = "escape_pod_14_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod14
+	landmark_tag = "escape_pod_14_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod15
+	shuttle_area = /area/shuttle/escape_pod15/station
+	name = "Escape Pod 15"
+	dock_target = "escape_pod_15"
+	arming_controller = "escape_pod_15_berth"
+	waypoint_station = "escape_pod_15_start"
+	landmark_transition = "escape_pod_15_internim"
+	waypoint_offsite = "escape_pod_15_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod15
+	landmark_tag = "escape_pod_15_start"
+	docking_controller = "escape_pod_15_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod15
+	landmark_tag = "escape_pod_15_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod15
+	landmark_tag = "escape_pod_15_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod16
+	shuttle_area = /area/shuttle/escape_pod16/station
+	name = "Escape Pod 16"
+	dock_target = "escape_pod_16"
+	arming_controller = "escape_pod_16_berth"
+	waypoint_station = "escape_pod_16_start"
+	landmark_transition = "escape_pod_16_internim"
+	waypoint_offsite = "escape_pod_16_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod16
+	landmark_tag = "escape_pod_16_start"
+	docking_controller = "escape_pod_16_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod16
+	landmark_tag = "escape_pod_16_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod16
+	landmark_tag = "escape_pod_16_out"
+
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod17
+	shuttle_area = /area/shuttle/escape_pod17/station
+	name = "Escape Pod 17"
+	dock_target = "escape_pod_17"
+	arming_controller = "escape_pod_17_berth"
+	waypoint_station = "escape_pod_17_start"
+	landmark_transition = "escape_pod_17_internim"
+	waypoint_offsite = "escape_pod_17_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/pod17
+	landmark_tag = "escape_pod_17_start"
+	docking_controller = "escape_pod_17_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/pod17
+	landmark_tag = "escape_pod_17_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/pod17
+	landmark_tag = "escape_pod_17_out"
+/* //was
+#define TORCH_ESCAPE_POD(NUMBER) \
+/datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod##NUMBER { \
+	shuttle_area = /area/shuttle/escape_pod##NUMBER/station; \
+	name = "Escape Pod " + #NUMBER; \
+	dock_target = "escape_pod_" + #NUMBER; \
+	arming_controller = "escape_pod_"+ #NUMBER +"_berth"; \
+	waypoint_station = "escape_pod_"+ #NUMBER +"_start"; \
+	landmark_transition = "escape_pod_"+ #NUMBER +"_internim"; \
+	waypoint_offsite = "escape_pod_"+ #NUMBER +"_out"; \
+} \
+/obj/effect/shuttle_landmark/escape_pod/start/pod##NUMBER { \
+	landmark_tag = "escape_pod_"+ #NUMBER +"_start"; \
+	docking_controller = "escape_pod_"+ #NUMBER +"_berth"; \
+} \
+/obj/effect/shuttle_landmark/escape_pod/out/pod##NUMBER { \
+	landmark_tag = "escape_pod_"+ #NUMBER +"_internim"; \
+} \
+/obj/effect/shuttle_landmark/escape_pod/transit/pod##NUMBER { \
+	landmark_tag = "escape_pod_"+ #NUMBER +"_out"; \
+}
+
+TORCH_ESCAPE_POD(6)
+TORCH_ESCAPE_POD(7)
+TORCH_ESCAPE_POD(8)
+TORCH_ESCAPE_POD(9)
+TORCH_ESCAPE_POD(10)
+TORCH_ESCAPE_POD(11)
+TORCH_ESCAPE_POD(12)
+TORCH_ESCAPE_POD(13)
+TORCH_ESCAPE_POD(14)
+TORCH_ESCAPE_POD(15)
+TORCH_ESCAPE_POD(16)
+TORCH_ESCAPE_POD(17)
+*/
