@@ -1,5 +1,5 @@
 # NewDawn Baystation 12
-![](https://img.shields.io/codecov/c/github/newdawnstation/NewDawn?style=for-the-badge&token=b821c047-1d15-4721-83b6-ffbbe1e890a6) ![](https://img.shields.io/snyk/vulnerabilities/github/newdawnstation/NewDawn?style=for-the-badge) ![](https://img.shields.io/codefactor/grade/github/newdawnstation/NewDawn?style=for-the-badge) ![](https://img.shields.io/travis/newdawnstation/NewDawn?style=for-the-badge)
+[![codecov](https://codecov.io/gh/newdawnstation/NewDawn/branch/master/graph/badge.svg)](https://codecov.io/gh/newdawnstation/NewDawn) ![](https://img.shields.io/snyk/vulnerabilities/github/newdawnstation/NewDawn?style=for-the-badge) ![](https://img.shields.io/codefactor/grade/github/newdawnstation/NewDawn?style=for-the-badge) ![](https://img.shields.io/travis/newdawnstation/NewDawn?style=for-the-badge)
 
 ![](https://img.shields.io/github/issues-raw/newdawnstation/NewDawn?style=for-the-badge) ![](https://img.shields.io/github/issues-pr-raw/newdawnstation/NewDawn?style=for-the-badge) ![](https://img.shields.io/github/last-commit/newdawnstation/NewDawn/master?style=for-the-badge) ![](https://img.shields.io/github/license/newdawnstation/NewDawn?style=for-the-badge)
 
