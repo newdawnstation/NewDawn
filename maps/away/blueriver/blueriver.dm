@@ -11,6 +11,9 @@
 		"nav_blueriv_3",
 		"nav_blueriv_antag"
 	)
+	known = 1
+	start_x = 10
+	start_y = 10
 
 /obj/effect/overmap/visitable/sector/arcticplanet/New(nloc, max_x, max_y)
 	name = "[generate_planet_name()], \a [name]"
@@ -22,12 +25,12 @@
 	description = "Two z-level map with an arctic planet and an alien underground surface"
 	suffixes = list("blueriver/blueriver-1.dmm", "blueriver/blueriver-2.dmm")
 	generate_mining_by_z = 2
-	area_usage_test_exempted_root_areas = list(/area/bluespaceriver)
+	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
+	area_usage_test_exempted_root_areas = list(/area/bluespaceriver/outside)
 	apc_test_exempt_areas = list(
-		/area/bluespaceriver/underground = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/bluespaceriver/ground = NO_SCRUBBER|NO_VENT|NO_APC
+		/area/bluespaceriver/outside/underground = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/bluespaceriver/outside/ground = NO_SCRUBBER|NO_VENT|NO_APC
 	)
-
 //This is ported from /vg/ and isn't entirely functional. If it sees a threat, it moves towards it, and then activates it's animation.
 //At that point while it sees threats, it will remain in it's attack stage. It's a bug, but I figured it nerfs it enough to not be impossible to deal with
 /mob/living/simple_animal/hostile/hive_alien/defender
@@ -104,27 +107,27 @@
 /obj/effect/shuttle_landmark/nav_blueriv/nav1
 	name = "Arctic Planet Landing Point #1"
 	landmark_tag = "nav_blueriv_1"
-	base_area = /area/bluespaceriver/ground
+	base_area = /area/bluespaceriver/outside/ground
 
 /obj/effect/shuttle_landmark/nav_blueriv/nav2
 	name = "Arctic Planet Landing Point #2"
 	landmark_tag = "nav_blueriv_2"
-	base_area = /area/bluespaceriver/ground
+	base_area = /area/bluespaceriver/outside/ground
 
 /obj/effect/shuttle_landmark/nav_blueriv/nav3
 	name = "Arctic Planet Landing Point #3"
 	landmark_tag = "nav_blueriv_3"
-	base_area = /area/bluespaceriver/ground
+	base_area = /area/bluespaceriver/outside/ground
 
 /obj/effect/shuttle_landmark/nav_blueriv/nav4
 	name = "Arctic Planet Navpoint #4"
 	landmark_tag = "nav_blueriv_antag"
-	base_area = /area/bluespaceriver/ground
+	base_area = /area/bluespaceriver/outside/ground
 
 /turf/simulated/floor/away/blueriver/alienfloor
 	name = "glowing floor"
 	desc = "The floor glows without any apparent reason"
-	icon = 'riverturfs.dmi'
+	icon = 'maps/away/blueriver/riverturfs.dmi'
 	icon_state = "floor"
 	temperature = 233
 
@@ -136,7 +139,7 @@
 /turf/unsimulated/wall/away/blueriver/livingwall
 	name = "alien wall"
 	desc = "You feel a sense of dread from just looking at this wall. Its surface seems to be constantly moving, as if it were breathing."
-	icon = 'riverturfs.dmi'
+	icon = 'maps/away/blueriver/riverturfs.dmi'
 	icon_state = "evilwall_1"
 	opacity = 1
 	density = 1
@@ -151,7 +154,7 @@
 /turf/unsimulated/wall/supermatter/no_spread
 	name = "weird liquid"
 	desc = "The viscous liquid glows and moves as if it were alive."
-	icon='blueriver.dmi'
+	icon='maps/away/blueriver/blueriver.dmi'
 	icon_state = "bluespacecrystal1"
 	layer = SUPERMATTER_WALL_LAYER
 	plane = EFFECTS_ABOVE_LIGHTING_PLANE

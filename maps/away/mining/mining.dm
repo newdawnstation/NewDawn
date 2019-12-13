@@ -17,9 +17,7 @@
 		"nav_cluster_6",
 		"nav_cluster_7"
 	)
-	known = 1
-	start_x = 10
-	start_y = 10
+	known = 0
 
 /obj/effect/overmap/visitable/sector/cluster/generate_skybox()
 	return overlay_image('icons/skybox/rockbox.dmi', "rockbox", COLOR_ASTEROID_ROCK, RESET_COLOR)
@@ -37,7 +35,6 @@
 	cost = 1
 	accessibility_weight = 10
 	generate_mining_by_z = 1
-	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 	apc_test_exempt_areas = list(
 		/area/outpost/abandoned = NO_SCRUBBER,
 		/area/mine/explored = NO_SCRUBBER|NO_VENT|NO_APC,
