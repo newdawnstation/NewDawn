@@ -3,66 +3,66 @@
 /turf/unsimulated/mineral{
 	temperature = 233
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ab" = (
 /turf/unsimulated/mask{
 	temperature = 230
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ac" = (
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ad" = (
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ae" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "af" = (
 /obj/structure/flora/bush,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ag" = (
 /obj/structure/flora/bush,
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ah" = (
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ai" = (
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "aj" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "ak" = (
 /obj/effect/shuttle_landmark/nav_blueriv/nav3,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "al" = (
 /obj/effect/overmap/visitable/sector/arcticplanet{
 	desc = "Sensor array an arctic planet with a small vessle on the surface. The vessle is located in the western region of a plateu surrounded by mineral rich mountains on all four sides. Scans further indicate strange energy levels below the planet's surface. Sunrise expected in 56 hours."
@@ -70,39 +70,39 @@
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "am" = (
 /obj/effect/shuttle_landmark/nav_blueriv/nav1,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "an" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ao" = (
 /obj/machinery/computer/power_monitor,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ap" = (
 /obj/machinery/computer/ship/helm,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aq" = (
 /obj/machinery/computer/ship/sensors,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ar" = (
 /obj/machinery/computer/ship/engines,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "as" = (
 /obj/machinery/light,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ground)
 "at" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger/wallcharger{
@@ -117,78 +117,77 @@
 	info = "We've landed, and aside from the permafrost, there's not a lot to mention on this rock. The readings are strongest in the middle of an open field near the ship, but there's nothing there, meaning we really only have one choice. Digging down. One of the others thinks theres a good chance that it's underground, so we might as well see if they're onto something. We don't have any other decent plans, and we need this find. Fortunate we brought the larger scale excavation equipment."
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "au" = (
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "av" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aw" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ax" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ay" = (
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "az" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aB" = (
 /obj/machinery/door/airlock/command,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aC" = (
 /obj/machinery/vending/boozeomat{
 	req_access = list()
 	},
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aD" = (
 /obj/machinery/computer/rdconsole,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aE" = (
 /obj/machinery/r_n_d/server,
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aF" = (
 /obj/structure/handrai,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aG" = (
 /obj/machinery/door/airlock/science,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/handrai,
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aI" = (
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
-	pixel_x = 0;
 	pixel_y = 29
 	},
 /obj/structure/table/woodentable,
@@ -201,87 +200,86 @@
 	info = "Well, it didn't take the three days I was betting on, so i'm out twenty bucks, but we managed to punch through into a cave of some sort with the drilling equipment. We're lowering a ladder down now and sending one of the guards down to check that there's no spiders in there or anything. Once they report back, we'll Move the whole basecamp down there, and- SO, We've moved down into the cave now, and what we've found is astounding! It looks a LOT like a lake or river of blue goo, but... not? I took some scans, but couldn't pick anything up aside from radiation spikes from the pool. I also lowered a swab into the fluid to take a sample, but when I touched the swab to the surface of the... Fluid? the Swab just... Ceased And yes, that's the best way to describe it. it just stopped existing in my hand. We figure it's best we DON'T touch the blue stuff for now. one of our help has started moving supplies down into the cave to build a bridge of sorts though across the pool. We spotted some sort of structure on the far side, and the bridge is the only way to get to it, so now we wait."
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aK" = (
 /obj/random/maintenance/clean,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aL" = (
 /obj/structure/table/steel,
 /obj/machinery/chemical_dispenser/bar_coffee,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aM" = (
 /obj/machinery/r_n_d/protolathe,
 /obj/item/weapon/paper{
 	info = "Well, it only took three weeks... this trip... but we finally found something worth investigating! An energy signature, just on or under the planet's surface. It's bizarre, similar to a bluespace signature, but... not. I'll need to get down there to really get a reading on it, but this could be the kind of discovery that makes a career. We've identified a landing site, so our pilot is setting the ship down there in the next couple of hours. it'll take some more time after that to set up a base camp and such."
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aN" = (
 /obj/structure/bed/chair/office/light,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aO" = (
 /obj/machinery/smartfridge/chemistry,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aQ" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/storage/lunchbox/nt,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aR" = (
 /obj/structure/table/steel,
 /obj/item/weapon/storage/box/glasses/mug,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aS" = (
 /obj/structure/table/steel,
 /obj/machinery/microwave,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aT" = (
 /obj/machinery/r_n_d/destructive_analyzer,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aU" = (
 /obj/machinery/chemical_dispenser,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aV" = (
 /obj/machinery/chem_master,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/alarm{
 	alarm_id = "petrov3";
 	dir = 4;
 	pixel_x = -25;
-	pixel_y = 0;
 	rcon_setting = 3
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "aZ" = (
 /obj/structure/table/steel,
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -291,11 +289,11 @@
 	},
 /obj/random/maintenance/clean,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ba" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bb" = (
 /obj/machinery/r_n_d/circuit_imprinter,
 /obj/item/device/ano_scanner,
@@ -303,14 +301,14 @@
 	info = "I don't understand where they could have gone, but one of the researchers and a guard disappeared last night. We've started looking for them, figuring maybe they got trapped somewhere in the ruins, maybe a booby trap or something that was still functioning, but we haven't seen any sign of them. their equipment, both of their equipment, is still in the ship, and there's no signs of anything grabbing them in the night, they're just... Gone.  Tomorrow morning we head back into space to go resupply and submit what we've found so far, but when we come back we'll have more than enough manpower to really dig into this place."
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bc" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /obj/item/weapon/reagent_containers/spray,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bd" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
@@ -320,7 +318,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "be" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -334,7 +332,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -343,14 +341,14 @@
 	dir = 4
 	},
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bg" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -360,14 +358,14 @@
 	},
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -376,7 +374,7 @@
 /obj/machinery/light,
 /obj/structure/filingcabinet,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -385,20 +383,20 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bl" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bn" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/rd,
@@ -407,7 +405,7 @@
 	level = 2
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bo" = (
 /obj/machinery/light{
 	dir = 4;
@@ -416,20 +414,20 @@
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ground)
 "bp" = (
 /obj/machinery/fabricator,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bq" = (
 /obj/structure/bed/chair/office/light,
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "br" = (
 /obj/machinery/artifact_analyser,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bs" = (
 /obj/structure/hygiene/toilet{
 	dir = 4
@@ -442,43 +440,43 @@
 	},
 /obj/random/soap,
 /turf/simulated/floor/tiled/freezer,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bt" = (
 /obj/machinery/door/airlock,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bv" = (
 /obj/structure/curtain/open/bed,
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/brown,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bw" = (
 /obj/structure/curtain/open/bed,
 /obj/structure/bed/padded,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bx" = (
 /obj/structure/closet/hydrant,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "by" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bz" = (
 /obj/structure/bed/chair/comfy/red{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bA" = (
 /obj/structure/table/glass,
 /obj/item/weapon/pen,
@@ -493,7 +491,7 @@
 	info = "We've finished the bridge and began our initial investigation into the site. Thus far, we're finding a lot of structures clearly made by a sapient species, one that from all indications was relatively advanced, but no signs of what actually happened to them. There's clear signs of habitation, but no signs of what caused abandonment. We're setting up camp in the ruins tonight so that we can continue studying as long as possible before our scheduled departure for refueling, but I feel confident we'll have enough to secure funds for the forseeable future at least!"
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bB" = (
 /obj/machinery/light{
 	dir = 8
@@ -501,23 +499,23 @@
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ground)
 "bC" = (
 /obj/structure/shuttle/engine/propulsion{
 	icon_state = "propulsion_l"
 	},
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bD" = (
 /obj/machinery/door/window/northright,
 /obj/machinery/door/window/southleft,
 /turf/simulated/floor/reinforced,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bE" = (
 /obj/machinery/door/airlock,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/light{
@@ -526,14 +524,14 @@
 	},
 /obj/random/toolbox,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bG" = (
 /turf/simulated/floor/reinforced,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bH" = (
 /obj/structure/bookcase/manuals/research_and_development,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bI" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/red,
@@ -541,25 +539,25 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bJ" = (
 /obj/structure/curtain/open/bed,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bL" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
 /obj/structure/handrai,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bM" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/green,
@@ -567,7 +565,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/power/apc{
@@ -575,36 +573,35 @@
 	pixel_x = -24
 	},
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bO" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bP" = (
 /obj/structure/fuel_port,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bQ" = (
 /obj/machinery/artifact_scanpad,
 /turf/simulated/floor/reinforced,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bR" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bS" = (
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
 	pixel_x = 28;
-	pixel_y = 0;
 	req_access = newlist()
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -614,31 +611,29 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/item/weapon/mop,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
 /obj/structure/cable,
 /obj/machinery/power/smes/buildable{
-	charge = 0;
 	RCon_tag = "Solar - Port"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	icon_state = "map_universal";
 	dir = 4
 	},
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bW" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 8;
@@ -647,7 +642,7 @@
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ground)
 "bX" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/yellow,
@@ -655,7 +650,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bY" = (
 /obj/structure/bed/padded,
 /obj/item/weapon/bedsheet/captain,
@@ -663,79 +658,79 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "bZ" = (
 /obj/structure/table/woodentable,
 /obj/random/energy,
 /obj/item/weapon/storage/pill_bottle/happy,
 /obj/random/contraband,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ca" = (
 /obj/machinery/door/blast/shutters,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cb" = (
 /obj/machinery/door/blast/shutters,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cc" = (
 /obj/structure/closet/excavation,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cd" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/structure/closet/wardrobe/science_white,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ce" = (
 /obj/structure/closet/radiation,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ch" = (
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ci" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/random/maintenance/clean,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/shieldwallgen,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ck" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/shieldwallgen,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cl" = (
 /obj/structure/sign/warning/vacuum,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cm" = (
 /obj/machinery/door/airlock/external/bolted,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cn" = (
 /obj/structure/closet/secure_closet/scientist,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "co" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -743,14 +738,14 @@
 	},
 /obj/machinery/floodlight,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cp" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
 /obj/machinery/suspension_gen,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cq" = (
 /obj/structure/dispenser/oxygen,
 /obj/machinery/light{
@@ -758,75 +753,75 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cr" = (
 /obj/machinery/light{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cs" = (
 /obj/random/maintenance/clean,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "ct" = (
 /obj/structure/ore_box,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cu" = (
 /obj/machinery/door/blast/regular,
 /turf/simulated/floor/tiled/dark,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "cv" = (
 /obj/machinery/mining/brace,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cw" = (
 /obj/machinery/mining/drill,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cx" = (
 /obj/effect/shuttle_landmark/nav_blueriv/nav4,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cy" = (
 /obj/structure/ladder,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cz" = (
 /obj/item/remains/human,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cA" = (
 /obj/structure/flora/grass/both,
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cB" = (
 /obj/structure/flora/grass/both,
 /obj/structure/flora/bush,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cC" = (
 /obj/effect/shuttle_landmark/nav_blueriv/nav2,
 /turf/simulated/floor/exoplanet/snow{
 	temperature = 240
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "cD" = (
 /obj/effect/landmark/map_data{
 	height = 2
@@ -834,22 +829,22 @@
 /turf/unsimulated/mineral{
 	temperature = 233
 	},
-/area/bluespaceriver/ground)
+/area/bluespaceriver/outside/ground)
 "hN" = (
 /obj/machinery/door/airlock/science,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "Co" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/wall/titanium,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 "Lk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
-/area/bluespaceriver/ship)
+/area/bluespaceriver/outside/ship)
 
 (1,1,1) = {"
 aa
