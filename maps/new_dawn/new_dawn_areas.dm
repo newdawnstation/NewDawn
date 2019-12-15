@@ -16,6 +16,7 @@
 	)
 
 //Fifth Deck (Z-0)
+/*
 /area/hallway/primary/fifthdeck/fore
 	name = "\improper Fifth Deck Fore Hallway"
 	icon_state = "hallF"
@@ -23,11 +24,11 @@
 /area/hallway/primary/fifthdeck/aft
 	name = "\improper Fifth Deck Aft Hallway"
 	icon_state = "hallA"
-
-/area/maintenance/fifthdeck
-	name = "Fifth Deck Maintenance"
+*/
+/area/maintenance/west
+	name = "West Maintenance"
 	icon_state = "maintcentral"
-
+/*
 /area/maintenance/fifthdeck/aftport
 	name = "Fifth Deck Aft Port Maintenance"
 	icon_state = "apmaint"
@@ -39,11 +40,12 @@
 /area/maintenance/fifthdeck/fore
 	name = "Fifth Deck Fore Maintenance"
 	icon_state = "fmaint"
-
-/area/maintenance/substation/fifthdeck
-	name = "Fifth Deck Substation"
+*/
+/area/maintenance/substation/west
+	name = "West Substation"
 
 //Fourth Deck (Z-1)
+/*
 /area/hallway/primary/fourthdeck/fore
 	name = "\improper Fourth Deck Fore Hallway"
 	icon_state = "hallF"
@@ -55,11 +57,11 @@
 /area/hallway/primary/fourthdeck/aft
 	name = "\improper Fourth Deck Aft Hallway"
 	icon_state = "hallA"
-
-/area/maintenance/fourthdeck
-	name = "Fourth Deck Maintenance"
+*/
+/area/maintenance/central
+	name = "Central Maintenance"
 	icon_state = "maintcentral"
-
+/*
 /area/maintenance/fourthdeck/aft
 	name = "Fourth Deck Aft Maintenance"
 	icon_state = "amaint"
@@ -83,14 +85,15 @@
 /area/teleporter/fourthdeck
 	name = "\improper Fourth Deck Teleporter"
 	icon_state = "teleporter"
-
-/area/maintenance/substation/fourthdeck
+*/
+/area/maintenance/substation/central
 	name = "Fourth Deck Substation"
-
+/*
 /area/crew_quarters/safe_room/fourthdeck
 	name = "\improper Fourth Deck Safe Room"
-
+*/
 //Third Deck (Z-2)
+/*
 /area/hallway/primary/thirddeck/fore
 	name = "\improper Third Deck Fore Hallway"
 	icon_state = "hallF"
@@ -102,11 +105,11 @@
 /area/hallway/primary/thirddeck/aft
 	name = "\improper Third Deck Aft Hallway"
 	icon_state = "hallA"
-
-/area/maintenance/thirddeck
-	name = "Third Deck Maintenance"
+*/
+/area/maintenance/north
+	name = "North Maintenance"
 	icon_state = "maintcentral"
-
+/*
 /area/maintenance/thirddeck/foreport
 	name = "Third Deck Fore Port Maintenance"
 	icon_state = "fpmaint"
@@ -134,25 +137,33 @@
 /area/teleporter/thirddeck
 	name = "\improper Third Deck Teleporter"
 	icon_state = "teleporter"
+*/
+/area/maintenance/substation/north
+	name = "North Substation"
 
-/area/maintenance/substation/thirddeck
-	name = "Third Deck Substation"
+/area/crew_quarters/safe_room
+	name = "\improper Safe Room"
+	icon_state = "crew_quarters"
+	sound_env = SMALL_ENCLOSED
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
+/*
 /area/crew_quarters/safe_room
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/crew_quarters/safe_room/thirddeck
 	name = "\improper Third Deck Safe Room"
-
+*/
 /area/crew_quarters/laundry
 	name = "\improper Laundry Room"
 	icon_state = "Sleep"
 
 //Second Deck (Z-3)
-/area/maintenance/seconddeck
-	name = "Second Deck Maintenance"
-	icon_state = "maintcentral"
 
+/area/maintenance/south
+	name = "South Maintenance"
+	icon_state = "maintcentral"
+/*
 /area/maintenance/seconddeck/aftstarboard
 	name = "Second Deck Aft Starboard Maintenance"
 	icon_state = "asmaint"
@@ -191,15 +202,15 @@
 /area/teleporter/seconddeck
 	name = "\improper Second Deck Teleporter"
 	icon_state = "teleporter"
-
-/area/maintenance/substation/seconddeck
-	name = "Second Deck Substation"
+*/
+/area/maintenance/substation/south
+	name = "South Substation"
 
 //First Deck (Z-4)
-/area/maintenance/firstdeck
-	name = "First Deck Maintenance"
+/area/maintenance/east
+	name = "East Maintenance"
 	icon_state = "maintcentral"
-
+/*
 /area/maintenance/firstdeck/aftstarboard
 	name = "First Deck Aft Starboard Maintenance"
 	icon_state = "asmaint"
@@ -235,17 +246,20 @@
 /area/hallway/primary/firstdeck/center
 	name = "\improper First Deck Central Hallway"
 	icon_state = "hallC1"
-
-/area/hallway/primary/firstdeck/aft
-	name = "\improper First Deck Aft Hallway"
+*/
+/area/hallway/primary
+	name = "\improper Primary Hallway"
 	icon_state = "hallA"
-
+/*
 /area/crew_quarters/safe_room/firstdeck
 	name = "\improper First Deck Safe Room"
+*/
+/area/maintenance/substation/east // First Deck (Z-4)
+	name = "East Substation"
 
-/area/maintenance/substation/firstdeck // First Deck (Z-4)
-	name = "First Deck Substation"
-
+/area/maintenance/substation/atmos
+	name = "East Substation"
+/*
 //Bridge (Z-5)
 /area/maintenance/bridge
 	name = "Bridge Maintenance"
@@ -274,7 +288,7 @@
 /area/hallway/primary/bridge/aft
 	name = "\improper Bridge Aft Hallway"
 	icon_state = "hallA"
-
+*/
 /area/maintenance/substation/bridge // First Deck (Z-4)
 	name = "Bridge Substation"
 
@@ -302,7 +316,7 @@
 /area/shuttle/escape_pod8/station
 	name = "Escape Pod Three"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
+/*
 /area/shuttle/escape_pod9/station
 	name = "Escape Pod Four"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -314,7 +328,7 @@
 /area/shuttle/escape_pod11/station
 	name = "Escape Pod Six"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
+*/
 //torch small pods
 /area/shuttle/escape_pod12/station
 	name = "Escape Pod Seven"
@@ -366,7 +380,7 @@
 
 /area/exploration_shuttle/airlock
 	name = "\improper Charon - Airlock Compartment"
-
+/*
 //Aquila
 
 /area/aquila
@@ -408,7 +422,7 @@
 /area/aquila/airlock
 	name = "\improper SEV Aquila - Airlock Compartment"
 	req_access = list(access_solgov_crew)
-
+*/
 //Guppy
 
 /area/guppy_hangar/start
@@ -498,7 +512,7 @@
 /area/shuttle/petrov/eva
 	name = "\improper SRV Petrov - EVA Storage"
 	icon_state = "locker"
-
+/*
 //Turbolift
 /area/turbolift
 	name = "\improper Turbolift"
@@ -540,7 +554,7 @@
 	name = "\improper Robotics Lift"
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
-
+*/
 //Merchant
 
 /area/shuttle/merchant/home
@@ -548,7 +562,7 @@
 	icon_state = "shuttlegrn"
 	req_access = list(access_merchant)
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
+/*
 // Elevator areas.
 /area/turbolift/torch_top
 	name = "lift (bridge)"
@@ -586,18 +600,18 @@
 	lift_floor_name = "Hangar Deck"
 	lift_announce_str = "Arriving at Hangar Deck: Main Hangar. Supply Warehouse. Expedition Preparation. Mineral Processing."
 	base_turf = /turf/simulated/floor
-
+*/
 // Command
 /area/command/conference
 	name = "Briefing Room"
 	icon_state = "head_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
-
+/*
 /area/command/captainmess
 	name = "Officer's Mess"
 	icon_state = "bar"
 	sound_env = MEDIUM_SOFTFLOOR
-
+*/
 /area/command/pathfinder
 	name = "\improper Pathfinder's Office"
 	icon_state = "head_quarters"
@@ -614,7 +628,7 @@
 	name = "\improper Emergency Armory"
 	icon_state = "Warden"
 	req_access = list(list(access_bridge, access_emergency_armory))
-
+/*
 /area/command/armoury/access
 	name = "\improper Emergency Armory - Access"
 
@@ -622,7 +636,7 @@
 	name = "\improper Emergency Armory - Tactical"
 	icon_state = "Tactical"
 	req_access = list(access_emergency_armory)
-
+*/
 /area/command/disperser
 	name = "\improper Obstruction Field Disperser"
 	icon_state = "disperser"
@@ -782,8 +796,10 @@
 
 // Storage
 /area/storage/auxillary
+	name = "Auxillary Storage"
+	icon_state = "auxstorage"
 	req_access = list(access_cargo)
-
+/*
 /area/storage/auxillary/port
 	name = "Port Auxillary Storage"
 	icon_state = "auxstorage"
@@ -791,7 +807,7 @@
 /area/storage/auxillary/starboard
 	name = "Starboard Auxillary Storage"
 	icon_state = "auxstorage"
-
+*/
 /area/storage/cargo
 	name = "Cargo Storage"
 	icon_state = "quartstorage"
@@ -833,10 +849,10 @@
 /area/quartermaster/sorting
 	name ="\improper Supply Sorting"
 	icon_state = "quartstorage"
-
+/*
 /area/quartermaster/storage/upper
 	name = "\improper Supply Upper Warehouse"
-
+*/
 /area/quartermaster/deckchief
 	name = "\improper Deck Chief's Office"
 	icon_state = "quart"
@@ -877,7 +893,7 @@
 	icon_state = "hangar"
 	sound_env = LARGE_ENCLOSED
 	req_access = list(access_hangar)
-
+/*
 /area/quartermaster/hangar/top
 	name = "\improper Hangar Upper Walkway"
 	req_access = list()
@@ -886,7 +902,7 @@
 	name = "\improper Flight Control Tower"
 	icon_state = "hangar"
 	req_access = list(access_hangar)
-
+*/
 // Research
 /area/rnd/canister
 	name = "\improper Canister Storage"
@@ -916,7 +932,7 @@
 	icon_state = "bar"
 	sound_env = LARGE_SOFTFLOOR
 	req_access = list(access_bar)
-
+/*
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"
 	icon_state = "locker"
@@ -936,6 +952,10 @@
 /area/crew_quarters/gym
 	name = "\improper Gym"
 	icon_state = "fitness"
+*/
+/area/crew_quarters/casino
+	name = "\improper Casino"
+	icon_state = "casino"
 
 /area/crew_quarters/mess
 	name = "\improper Mess Hall"
@@ -950,7 +970,7 @@
 	name = "\improper Galley Cold Storage"
 	icon_state = "kitchen"
 	req_access = list(access_kitchen)
-
+/*
 /area/crew_quarters/commissary
 	name = "\improper Commissary"
 	icon_state = "crew_quarters"
@@ -966,17 +986,17 @@
 	icon_state = "crew_quarters"
 	sound_env = SMALL_ENCLOSED
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
+*/
 /area/crew_quarters/sleep/bunk
 	name = "\improper Bunk Room"
 	icon_state = "Sleep"
 	sound_env = SMALL_SOFTFLOOR
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
+/*
 /area/crew_quarters/sleep/cryo/aux
 	name = "\improper First Deck Cryogenic Storage"
 	icon_state = "Sleep"
-
+*/
 /area/crew_quarters/adherent
 	name = "\improper Adherent Maintenence"
 	icon_state = "robotics"
@@ -988,10 +1008,10 @@
 /area/holocontrol
 	name = "\improper Holodeck Control"
 	icon_state = "Holodeck"
-
+/*
 /area/hydroponics/storage
 	name = "\improper Hydroponics Storage"
-
+*/
 // Tcomms
 /area/tcommsat/storage
 	name = "\improper Telecoms Storage"
@@ -1039,7 +1059,7 @@
 /area/security/wing
 	name = "\improper Security Wing"
 	icon_state = "security"
-
+/*
 /area/security/bridgecheck
 	name = "\improper Bridge Deck Security Checkpoint"
 	icon_state = "checkpoint"
@@ -1059,7 +1079,7 @@
 /area/security/oldopscheck
 	name = "\improper Deactivated Security Checkpoint"
 	icon_state = "checkpoint"
-
+*/
 // AI
 /area/turret_protected/ai_foyer
 	name = "\improper AI Chamber Foyer"
@@ -1107,13 +1127,13 @@
 	ambience = list('sound/ambience/signal.ogg')
 	req_access = list(access_psychiatrist)
 	sound_env = SMALL_SOFTFLOOR
-
+/*
 /area/medical/washroom
 	name = "\improper Infirmary Washroom"
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
 	req_access = list()
-
+*/
 /area/chapel/crematorium
 	name = "\improper Crematorium"
 	icon_state = "chapel"
@@ -1153,7 +1173,7 @@
 	name = "\improper Command EVA Storage"
 	icon_state = "eva"
 	req_access = list(access_eva)
-
+/*
 /area/thruster
 	icon_state = "thruster"
 	req_access = list(access_engine)
@@ -1169,7 +1189,7 @@
 
 /area/thruster/d3starboard
 	name = "\improper Third Deck Starboard Nacelle"
-
+*/
 /area/engineering/fuelbay
 	name = "\improper Fuel Bay"
 	icon_state = "engineering"
@@ -1183,7 +1203,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SEV Torch Bridge"
+	name = "\improper Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 
@@ -1471,11 +1491,11 @@
 	icon_state = "morgue"
 	ambience = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg','sound/music/main.ogg')
 	req_access = list(access_morgue)
-
+/*
 /area/medical/morgue/autopsy
 	name = "\improper Autopsy"
 	icon_state = "autopsy"
-
+*/
 /area/medical/sleeper
 	name = "\improper Emergency Treatment Centre"
 	icon_state = "exam_room"
@@ -1485,6 +1505,7 @@
 	icon_state = "surgery"
 	req_access = list(access_surgery)
 
+/*Ramm*/
 /area/medical/surgery2
 	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
@@ -1566,7 +1587,7 @@
 // Crew
 
 /area/crew_quarters/sleep/cryo
-	name = "\improper Third Deck Cryogenic Storage"
+	name = "\improper Cryogenic Storage"
 	icon_state = "Sleep"
 
 /area/hydroponics
@@ -1578,9 +1599,9 @@
 	icon_state = "janitor"
 	req_access = list(access_janitor)
 
-/area/janitor/aux
+/*/area/janitor/aux
 	name = "\improper Aux Custodial Closet"
-
+*/
 // Tcomm
 /area/tcommsat/
 	ambience = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg')

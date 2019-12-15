@@ -3,7 +3,7 @@
 	#include "new_dawn_announcements.dm"
 	#include "new_dawn_antagonism.dm"
 	#include "new_dawn_areas.dm"
-	#include "new_dawn_elevator.dm"
+//	#include "new_dawn_elevator.dm"
 	#include "new_dawn_holodecks.dm"
 	#include "new_dawn_lobby.dm"
 	#include "new_dawn_machinery.dm"
