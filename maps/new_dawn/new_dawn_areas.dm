@@ -837,6 +837,12 @@
 /area/quartermaster
 	req_access = list(access_cargo)
 
+/area/quartermaster/bunker
+	name = "\improper Quartermaster Bunker"
+	icon_state = "quart"
+	req_access = list(access_qm)
+	sound_env = SMALL_ENCLOSED
+
 /area/quartermaster/office
 	name = "\improper Supply Office"
 	icon_state = "quartoffice"
@@ -883,6 +889,16 @@
 	icon_state = "exploration"
 	req_access = list(list(access_explorer, access_pathfinder, access_pilot))
 
+/area/quartermaster/exploration/eva
+	name = "\improper Exploration EVA"
+	icon_state = "exploration"
+	req_access = list(list(access_explorer, access_pathfinder, access_pilot))
+
+/area/quartermaster/exploration/ready_room
+	name = "\improper Exploration Preparation Room"
+	icon_state = "exploration"
+	req_access = list(list(access_explorer, access_pathfinder, access_pilot))
+
 /area/quartermaster/shuttlefuel
 	name = "\improper Shuttle Fuel Bay"
 	icon_state = "toxstorage"
@@ -893,6 +909,16 @@
 	icon_state = "hangar"
 	sound_env = LARGE_ENCLOSED
 	req_access = list(access_hangar)
+
+/area/quartermaster/hangar/charon
+	name = "\improper Hangar Deck Charon"
+
+/area/quartermaster/hangar/storage
+	name = "\improper Hangar Deck Storage Area"
+
+/area/quartermaster/hangar/smlvessels
+	name = "\improper Hangar Deck Small Vessels"
+
 /*
 /area/quartermaster/hangar/top
 	name = "\improper Hangar Upper Walkway"
@@ -960,6 +986,15 @@
 /area/crew_quarters/mess
 	name = "\improper Mess Hall"
 	icon_state = "cafeteria"
+
+/area/crew_quarters/smoking
+	name = "\improper Smoking Room"
+	icon_state = "toilet"
+
+/area/crew_quarters/caf_toilet
+	name = "\improper Cafe Toilet"
+	icon_state = "toilet"
+	sound_env = SMALL_ENCLOSED
 
 /area/crew_quarters/galley
 	name = "\improper Galley"
