@@ -856,18 +856,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/outside/ship)
-"jD" = (
-/obj/machinery/power/apc/hyper{
-	dir = 1;
-	name = "east bump";
-	pixel_y = 20
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled/old_cargo,
-/area/bluespaceriver/mining_outpost)
 "wl" = (
 /turf/simulated/wall/prepainted,
 /area/bluespaceriver/mining_outpost)
@@ -893,10 +881,6 @@
 /turf/simulated/floor/tiled/old_cargo,
 /area/bluespaceriver/mining_outpost)
 "Po" = (
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/machinery/power/terminal,
 /turf/simulated/floor/tiled/old_cargo,
 /area/bluespaceriver/mining_outpost)
@@ -2305,7 +2289,7 @@ ac
 ac
 ac
 wl
-jD
+Ea
 Ea
 Ea
 Ea
