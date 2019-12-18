@@ -1,11 +1,11 @@
 /turf/simulated/floor
-	name = "bare deck"
+	name = "bare flooring"
 
 /turf/simulated/floor/tiled
-	name = "deck"
+	name = "flooring"
 
 /decl/flooring/tiling
-	name = "deck"
+	name = "flooring"
 
 
 /turf/simulated/floor/shuttle_ceiling/torch

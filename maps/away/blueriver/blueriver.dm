@@ -29,7 +29,8 @@
 	area_usage_test_exempted_root_areas = list(/area/bluespaceriver/outside)
 	apc_test_exempt_areas = list(
 		/area/bluespaceriver/outside/underground = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/bluespaceriver/outside/ground = NO_SCRUBBER|NO_VENT|NO_APC
+		/area/bluespaceriver/outside/ground = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/bluespaceriver/mining_outpost = NO_SCRUBBER|NO_VENT|NO_APC
 	)
 //This is ported from /vg/ and isn't entirely functional. If it sees a threat, it moves towards it, and then activates it's animation.
 //At that point while it sees threats, it will remain in it's attack stage. It's a bug, but I figured it nerfs it enough to not be impossible to deal with
@@ -169,3 +170,5 @@
 
 /turf/unsimulated/wall/supermatter/no_spread/Process()
 	return PROCESS_KILL
+
+// turfs

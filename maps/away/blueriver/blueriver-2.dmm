@@ -830,6 +830,25 @@
 	temperature = 233
 	},
 /area/bluespaceriver/outside/ground)
+"dA" = (
+/obj/machinery/power/port_gen/pacman/super,
+/obj/structure/cable/green,
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
+"fr" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
+"gi" = (
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
 "hN" = (
 /obj/machinery/door/airlock/science,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -837,14 +856,58 @@
 	},
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/outside/ship)
+"jD" = (
+/obj/machinery/power/apc/hyper{
+	dir = 1;
+	name = "east bump";
+	pixel_y = 20
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
+"wl" = (
+/turf/simulated/wall/prepainted,
+/area/bluespaceriver/mining_outpost)
 "Co" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/wall/titanium,
 /area/bluespaceriver/outside/ship)
+"Ea" = (
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
+"GQ" = (
+/obj/machinery/door/airlock/external/bolted/cycling,
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
 "Lk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
 /area/bluespaceriver/outside/ship)
+"LG" = (
+/obj/machinery/firealarm{
+	pixel_y = 21
+	},
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
+"Po" = (
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal,
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
+"SU" = (
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/smes/buildable/outpost_substation,
+/turf/simulated/floor/tiled/old_cargo,
+/area/bluespaceriver/mining_outpost)
 
 (1,1,1) = {"
 aa
@@ -1836,7 +1899,7 @@ ac
 ac
 ac
 ac
-af
+ac
 ac
 ac
 ac
@@ -2037,17 +2100,17 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
 ac
 ac
 ac
@@ -2139,17 +2202,17 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+Po
+SU
+fr
+dA
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -2241,17 +2304,17 @@ ai
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+jD
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -2343,17 +2406,17 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+gi
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -2445,20 +2508,20 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ae
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+LG
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
+wl
+wl
+wl
 ac
 ac
 ac
@@ -2547,20 +2610,20 @@ cA
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -2649,20 +2712,20 @@ ac
 ac
 ac
 ac
-ac
-af
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+GQ
+Ea
+Ea
+GQ
 ac
 ac
 ac
@@ -2751,20 +2814,20 @@ cB
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -2853,20 +2916,20 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ai
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
+wl
+wl
+wl
 ac
 ac
 ac
@@ -2955,17 +3018,17 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ai
-ac
-ac
-ac
-ac
-ac
+wl
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -3057,17 +3120,17 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+Ea
+wl
 ac
 ac
 ac
@@ -3159,17 +3222,17 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
+wl
 ac
 ac
 ac
@@ -3263,7 +3326,7 @@ ac
 ac
 ac
 ac
-ai
+ac
 ac
 ac
 ac
