@@ -311,7 +311,7 @@
 /obj/effect/shuttle_landmark/supply/station
 	name = "Hangar"
 	landmark_tag = "nav_cargo_station"
-	base_area = /area/quartermaster/hangar
+	base_area = /area/quartermaster/hangar/smlvessels
 	base_turf = /turf/simulated/floor/plating
 
 /datum/shuttle/autodock/overmap/exploration_shuttle
@@ -330,7 +330,7 @@
 /obj/effect/shuttle_landmark/torch/hangar/exploration_shuttle
 	name = "Charon Hangar"
 	landmark_tag = "nav_hangar_calypso"
-	base_area = /area/quartermaster/hangar
+	base_area = /area/quartermaster/hangar/charon
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/torch/deck1/exploration_shuttle
@@ -376,7 +376,7 @@
 /obj/effect/shuttle_landmark/torch/hangar/guppy
 	name = "Guppy Hangar"
 	landmark_tag = "nav_hangar_guppy"
-	base_area = /area/quartermaster/hangar
+	base_area = /area/quartermaster/hangar/smlvessels
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/torch/deck1/guppy
@@ -403,7 +403,7 @@
 	name = "In transit"
 	landmark_tag = "nav_transit_guppy"
 
-/datum/shuttle/autodock/overmap/aquila
+/*/datum/shuttle/autodock/overmap/aquila
 	name = "Aquila"
 	move_time = 60
 	shuttle_area = list(/area/aquila/cockpit, /area/aquila/maintenance, /area/aquila/storage, /area/aquila/secure_storage, /area/aquila/mess, /area/aquila/passenger, /area/aquila/medical, /area/aquila/head, /area/aquila/airlock)
@@ -444,7 +444,7 @@
 /obj/effect/shuttle_landmark/transit/torch/aquila
 	name = "In transit"
 	landmark_tag = "nav_transit_aquila"
-
+*/
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management
 	default_access = list(access_hangar, access_cargo, access_heads)
@@ -523,7 +523,7 @@
 
 /obj/effect/shuttle_landmark/escape_pod/transit/pod8
 	landmark_tag = "escape_pod_8_out"
-
+/*
 /datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod9
 	shuttle_area = /area/shuttle/escape_pod9/station
 	name = "Escape Pod 9"
@@ -580,7 +580,7 @@
 
 /obj/effect/shuttle_landmark/escape_pod/transit/pod11
 	landmark_tag = "escape_pod_11_out"
-
+*/
 /datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod12
 	shuttle_area = /area/shuttle/escape_pod12/station
 	name = "Escape Pod 12"

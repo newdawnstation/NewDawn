@@ -56,7 +56,6 @@
 "g" = (
 /obj/effect/step_trigger/thrower{
 	affect_ghosts = 1;
-	direction = 2;
 	name = "thrower_throwdown";
 	tiles = 0
 	},
@@ -65,7 +64,6 @@
 "h" = (
 /obj/effect/step_trigger/thrower{
 	affect_ghosts = 1;
-	direction = 2;
 	name = "thrower_throwdownside";
 	nostop = 1;
 	stopper = 0;
@@ -127,7 +125,6 @@
 /obj/effect/step_trigger/thrower{
 	direction = 1;
 	name = "thrower_throwup";
-	nostop = 0;
 	tiles = 0
 	},
 /turf/space/transit/north,
@@ -160,7 +157,6 @@
 "x" = (
 /obj/effect/step_trigger/thrower{
 	affect_ghosts = 1;
-	direction = 2;
 	name = "thrower_throwdownside";
 	nostop = 1;
 	stopper = 0;
@@ -172,15 +168,10 @@
 /obj/effect/shuttle_landmark/escape_pod/transit/pod8,
 /turf/space/transit/north,
 /area/space)
-"z" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
-/turf/space/transit/north,
-/area/space)
 "A" = (
 /obj/effect/step_trigger/thrower{
 	direction = 1;
 	name = "thrower_throwup";
-	nostop = 0;
 	tiles = 0
 	},
 /turf/space/bluespace,
@@ -193,10 +184,6 @@
 	affect_ghosts = 1;
 	name = "thrower_leftnostop"
 	},
-/turf/space/transit/east,
-/area/space)
-"D" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod11,
 /turf/space/transit/east,
 /area/space)
 "E" = (
@@ -220,14 +207,6 @@
 /obj/effect/shuttle_landmark/transit/torch/guppy,
 /turf/space/transit/north,
 /area/space)
-"I" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod10,
-/turf/space/transit/east,
-/area/space)
-"J" = (
-/obj/effect/shuttle_landmark/transit/torch/aquila,
-/turf/space/transit/north,
-/area/space)
 "K" = (
 /obj/effect/shuttle_landmark/escape_pod/out/pod6,
 /turf/space,
@@ -248,14 +227,6 @@
 /obj/effect/shuttle_landmark/escape_pod/out/pod14,
 /turf/space,
 /area/space)
-"P" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod11,
-/turf/space,
-/area/space)
-"Q" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod10,
-/turf/space,
-/area/space)
 "R" = (
 /obj/effect/shuttle_landmark/escape_pod/out/pod15,
 /turf/space,
@@ -270,10 +241,6 @@
 /area/space)
 "U" = (
 /obj/effect/shuttle_landmark/escape_pod/out/pod8,
-/turf/space,
-/area/space)
-"V" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod9,
 /turf/space,
 /area/space)
 "W" = (
@@ -293,7 +260,6 @@
 /obj/effect/step_trigger/thrower{
 	direction = 1;
 	name = "thrower_throwup";
-	nostop = 0;
 	tiles = 0
 	},
 /turf/space,
@@ -306,13 +272,11 @@
 /obj/effect/step_trigger/thrower{
 	direction = 1;
 	name = "thrower_throwup";
-	nostop = 0;
 	tiles = 0
 	},
 /obj/effect/step_trigger/thrower{
 	direction = 1;
 	name = "thrower_throwup";
-	nostop = 0;
 	tiles = 0
 	},
 /turf/space,
@@ -1502,7 +1466,6 @@ d
 d
 d
 d
-P
 d
 d
 d
@@ -1514,7 +1477,8 @@ d
 d
 d
 d
-Q
+d
+d
 d
 d
 d
@@ -1577,15 +1541,15 @@ a
 B
 C
 B
-D
-B
-C
-B
 B
 B
 C
 B
-I
+B
+B
+C
+B
+B
 B
 C
 B
@@ -5605,7 +5569,7 @@ e
 e
 e
 e
-z
+e
 s
 e
 e
@@ -8188,7 +8152,7 @@ d
 d
 d
 d
-V
+d
 d
 d
 d
@@ -15327,7 +15291,7 @@ e
 e
 e
 e
-J
+e
 e
 e
 e
