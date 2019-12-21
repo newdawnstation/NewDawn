@@ -311,7 +311,7 @@
 /obj/effect/shuttle_landmark/supply/station
 	name = "Hangar"
 	landmark_tag = "nav_cargo_station"
-	base_area = /area/quartermaster/hangar
+	base_area = /area/quartermaster/hangar/smlvessels
 	base_turf = /turf/simulated/floor/plating
 
 /datum/shuttle/autodock/overmap/exploration_shuttle
@@ -330,7 +330,7 @@
 /obj/effect/shuttle_landmark/torch/hangar/exploration_shuttle
 	name = "Charon Hangar"
 	landmark_tag = "nav_hangar_calypso"
-	base_area = /area/quartermaster/hangar
+	base_area = /area/quartermaster/hangar/charon
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/torch/deck1/exploration_shuttle
@@ -376,7 +376,7 @@
 /obj/effect/shuttle_landmark/torch/hangar/guppy
 	name = "Guppy Hangar"
 	landmark_tag = "nav_hangar_guppy"
-	base_area = /area/quartermaster/hangar
+	base_area = /area/quartermaster/hangar/smlvessels
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/torch/deck1/guppy
