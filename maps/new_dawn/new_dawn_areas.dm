@@ -87,7 +87,7 @@
 	icon_state = "teleporter"
 */
 /area/maintenance/substation/central
-	name = "Fourth Deck Substation"
+	name = "Central Substation"
 /*
 /area/crew_quarters/safe_room/fourthdeck
 	name = "\improper Fourth Deck Safe Room"
@@ -258,7 +258,7 @@
 	name = "East Substation"
 
 /area/maintenance/substation/atmos
-	name = "East Substation"
+	name = "Atmos Substation"
 /*
 //Bridge (Z-5)
 /area/maintenance/bridge
@@ -697,12 +697,12 @@
 	icon_state = "heads_sr"
 	name = "\improper Command - SCGR's Office"
 	req_access = list(access_representative)
-
+/*
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
 	name = "\improper Command - SEA's Office"
 	req_access = list(access_senadv)
-
+*/
 // Engineering
 
 /area/engineering/shieldbay
@@ -947,6 +947,13 @@
 	name = "\improper Research Locker Room"
 	icon_state = "locker"
 
+/area/rnd/storage
+	name = "\improper Research Storage"
+	icon_state = "storage"
+
+/area/maintenance/substation/rnd
+	name = "Research Substation"
+
 /area/rnd/xenobiology/entry
 	name = "\improper Xenobiology Access"
 	icon_state = "xeno_lab"
@@ -958,6 +965,13 @@
 	icon_state = "bar"
 	sound_env = LARGE_SOFTFLOOR
 	req_access = list(access_bar)
+
+/area/crew_quarters/barman
+	name = "\improper Barman's room"
+	icon_state = "bar"
+	sound_env = LARGE_SOFTFLOOR
+	req_access = list(access_bar)
+
 /*
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"
@@ -1043,10 +1057,10 @@
 /area/holocontrol
 	name = "\improper Holodeck Control"
 	icon_state = "Holodeck"
-/*
+
 /area/hydroponics/storage
 	name = "\improper Hydroponics Storage"
-*/
+
 // Tcomms
 /area/tcommsat/storage
 	name = "\improper Telecoms Storage"
