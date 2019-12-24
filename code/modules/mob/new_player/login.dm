@@ -37,3 +37,4 @@
 	if(SL.up_description)
 		alert_desc = SL.up_description
 	to_chat(src, "<span class='notice'>The alert level on the [station_name()] is currently: <font color=[SL.light_color_alarm]><B>[SL.name]</B></font>. [alert_desc]</span>")
+	client.apply_fps(client.prefs.clientfps) //NewDawn
