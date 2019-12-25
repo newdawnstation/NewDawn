@@ -218,7 +218,7 @@
 	deform = 'icons/mob/human_races/species/diona/deformed_body.dmi'
 	preview_icon = 'icons/mob/human_races/species/diona/preview.dmi'
 	hidden_from_codex = FALSE
-	move_intents = list(/decl/move_intent/walk, /decl/move_intent/creep)
+	move_intents = list(/decl/move_intent/walk)
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/diona)
 	//primitive_form = "Nymph"
 	slowdown = 5

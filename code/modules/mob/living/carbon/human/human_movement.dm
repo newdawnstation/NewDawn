@@ -55,7 +55,7 @@
 			var/obj/item/organ/external/E = get_organ(organ_name)
 			tally += E ? E.movement_delay(4) : 4
 
-	if(shock_stage >= 10 || get_stamina() <= 0)
+	if(shock_stage >= 10)
 		tally += 3
 
 	if(is_asystole()) tally += 10  //heart attacks are kinda distracting
