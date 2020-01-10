@@ -23,9 +23,11 @@ Rebel_228 - HeadAdmin
 Keller251 - HeadAdmin
 WERSAYD - HeadAdmin
 PaikFest - HeadAdmin
+zigamus - HeadAdmin
+Rv666 - Host
+Hrober - HeadAdmin
 
-# Rv666 - Host
 # jediofgood - GameAdmin
 # Bumer5117 - TrialAdmin
-# zigamus - GameAdmin
+
 # dakapapreta - HeadAdmin
