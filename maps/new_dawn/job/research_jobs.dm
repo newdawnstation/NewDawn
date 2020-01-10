@@ -121,3 +121,43 @@
 						access_mining_office, access_mining_station, access_xenobiology,
 						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry)
+
+/datum/job/roboticist
+	title = "Roboticist"
+	department = "Science"
+	department_flag = SCI
+
+	total_positions = 2
+	spawn_positions = 2
+	minimal_player_age = 0
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	supervisors = "the Chief Science Officer and the Workplace Liaison."
+	selection_color = "#633d63"
+	economic_power = 6
+	alt_titles = list("Biomechanical Engineer","Mechatronic Engineer")
+	outfit_type = /decl/hierarchy/outfit/job/science/roboticist
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
+	                    SKILL_DEVICES		= SKILL_ADEPT,
+	                    SKILL_EVA           = SKILL_ADEPT,
+	                    SKILL_ANATOMY       = SKILL_ADEPT,
+	                    SKILL_MECH          = HAS_PERK)
+
+	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
+	                    SKILL_ELECTRICAL   = SKILL_MAX,
+	                    SKILL_ATMOS        = SKILL_EXPERT,
+	                    SKILL_ENGINES      = SKILL_EXPERT,
+	                    SKILL_DEVICES      = SKILL_MAX,
+	                    SKILL_MEDICAL      = SKILL_EXPERT,
+	                    SKILL_ANATOMY      = SKILL_EXPERT)
+	skill_points = 20
+
+	access = list(access_robotics, access_robotics_engineering, access_research, access_petrov, access_petrov_helm,
+						access_mining_office, access_mining_station, access_guppy_helm,
+						access_nanotrasen, access_expedition_shuttle, access_guppy, access_hangar,
+						access_petrov_analysis, access_petrov_chemistry, access_tox_storage)
+	minimal_access = list()
+
+/datum/job/roboticist/get_description_blurb()
+	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Chief Science Officer and the Workplace Liaison."
