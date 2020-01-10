@@ -6,10 +6,10 @@
 	post_round_safe_areas = list (
 		/area/centcom,
 		/area/shuttle/escape/centcom,
-		/area/shuttle/escape_pod1/centcom,
-		/area/shuttle/escape_pod2/centcom,
 		/area/shuttle/escape_pod3/centcom,
-		/area/shuttle/escape_pod5/centcom,
+		/area/shuttle/escape_pod4/centcom,
+		/area/shuttle/escape_pod9/centcom,
+		/area/shuttle/escape_pod10/centcom,
 		/area/shuttle/transport1/centcom,
 		/area/shuttle/administration/centcom,
 		/area/shuttle/specops/centcom,
@@ -101,6 +101,10 @@
 	name = "Research Maintenance"
 	icon_state = "maint_research"
 
+/area/maintenance/east/med
+	name = "Medical Maintenance"
+	icon_state = "maint_research"
+
 /area/maintenance/south
 	name = "South Maintenance"
 	icon_state = "maintcentral"
@@ -184,54 +188,43 @@
 	icon_state = "shuttle"
 	name = "\improper Transport Shuttle Centcom"
 
-//torch large pods
-/area/shuttle/escape_pod6/station
+//New Dawn large pods
+/area/shuttle/escape_pod1/station
 	name = "Escape Pod One"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod7/station
+/area/shuttle/escape_pod2/station
 	name = "Escape Pod Two"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod8/station
+/area/shuttle/escape_pod3/station
 	name = "Escape Pod Three"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-/*
-/area/shuttle/escape_pod9/station
+
+//New Dawn small pods
+
+/area/shuttle/escape_pod4/station
 	name = "Escape Pod Four"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod10/station
+/area/shuttle/escape_pod5/station
 	name = "Escape Pod Five"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod11/station
+/area/shuttle/escape_pod6/station
 	name = "Escape Pod Six"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-*/
-//torch small pods
-/area/shuttle/escape_pod12/station
+
+/area/shuttle/escape_pod7/station
 	name = "Escape Pod Seven"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod13/station
+/area/shuttle/escape_pod8/station
 	name = "Escape Pod Eight"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod14/station
+/area/shuttle/escape_pod9/station
 	name = "Escape Pod Nine"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
-/area/shuttle/escape_pod15/station
-	name = "Escape Pod Ten"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
-/area/shuttle/escape_pod16/station
-	name = "Escape Pod Eleven"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
-/area/shuttle/escape_pod17/station
-	name = "Escape Pod Twelve"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 //Charon
@@ -904,6 +897,11 @@
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
+/area/crew_quarters/medical
+	name = "\improper Medical chillzone"
+	icon_state = "crew_quarters"
+	req_access = list(access_medical)
+
 /area/medical/subacute
 	name = "\improper Sub-Acute Ward"
 	icon_state = "patients"
@@ -1329,19 +1327,19 @@
 	req_access = list(access_cent_general)
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
-/area/shuttle/escape_pod1/centcom
-	icon_state = "shuttle"
-	req_access = list(access_cent_general)
-
-/area/shuttle/escape_pod2/centcom
-	icon_state = "shuttle"
-	req_access = list(access_cent_general)
-
 /area/shuttle/escape_pod3/centcom
 	icon_state = "shuttle"
 	req_access = list(access_cent_general)
 
-/area/shuttle/escape_pod5/centcom
+/area/shuttle/escape_pod4/centcom
+	icon_state = "shuttle"
+	req_access = list(access_cent_general)
+
+/area/shuttle/escape_pod9/centcom
+	icon_state = "shuttle"
+	req_access = list(access_cent_general)
+
+/area/shuttle/escape_pod10/centcom
 	icon_state = "shuttle"
 	req_access = list(access_cent_general)
 

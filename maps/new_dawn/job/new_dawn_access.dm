@@ -47,7 +47,7 @@
 /datum/access/robotics_engineering
 	id = access_robotics_engineering
 	desc = "Biomechanical Engineering"
-	region = ACCESS_REGION_ENGINEERING
+	region = ACCESS_REGION_RESEARCH
 
 /var/const/access_emergency_armory = "ACCESS_TORCH_ARMORY" //83
 /datum/access/emergency_armory
@@ -152,7 +152,7 @@
 ************/
 
 /datum/access/robotics
-	region = ACCESS_REGION_ENGINEERING
+	region = ACCESS_REGION_RESEARCH
 
 /datum/access/network
 	region = ACCESS_REGION_COMMAND
