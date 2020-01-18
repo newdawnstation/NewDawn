@@ -29,6 +29,7 @@
 		/area/shuttle/escape_pod1/station = NO_SCRUBBER|NO_APC,
 		/area/shuttle/escape_pod2/station = NO_SCRUBBER|NO_APC,
 		/area/shuttle/escape_pod3/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/escape_shuttle/station = NO_SCRUBBER|NO_APC,
 		/area/solar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/storage = NO_SCRUBBER|NO_VENT,
 		/area/storage/primary = 0,

@@ -188,6 +188,10 @@
 	icon_state = "shuttle"
 	name = "\improper Transport Shuttle Centcom"
 
+/area/shuttle/escape_shuttle/station
+	name = "Escape Shuttle"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
+
 //New Dawn large pods
 /area/shuttle/escape_pod1/station
 	name = "Escape Pod One"

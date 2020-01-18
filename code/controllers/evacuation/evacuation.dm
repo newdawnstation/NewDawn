@@ -143,7 +143,6 @@ var/datum/evacuation_controller/evacuation_controller
 		return
 
 	state = EVAC_IN_TRANSIT
-
 	if (emergency_evacuation)
 		priority_announcement.Announce(replacetext(replacetext(GLOB.using_map.emergency_shuttle_leaving_dock, "%dock_name%", "[GLOB.using_map.dock_name]"),  "%ETA%", "[round(get_eta()/60,1)] minute\s"))
 	else
@@ -167,6 +166,8 @@ var/datum/evacuation_controller/evacuation_controller
 		if(world.time >= evac_launch_time)
 			launch_evacuation()
 	else if(state == EVAC_IN_TRANSIT)
+		if(world.time >= evac_launch_time + 100)
+			launch_evacuation()
 		if(world.time >= evac_arrival_time)
 			finish_evacuation()
 	else if(state == EVAC_COOLDOWN)

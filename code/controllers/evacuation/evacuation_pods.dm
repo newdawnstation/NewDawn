@@ -8,9 +8,9 @@
 /datum/evacuation_controller/starship
 	name = "escape pod controller"
 
-	evac_prep_delay    = 5 MINUTES
-	evac_launch_delay  = 3 MINUTES
-	evac_transit_delay = 2 MINUTES
+	evac_prep_delay    = 1 MINUTES //5
+	evac_launch_delay  = 1 MINUTES //3
+	evac_transit_delay = 1 MINUTES //2
 
 	transfer_prep_additional_delay     = 15 MINUTES
 	autotransfer_prep_additional_delay = 5 MINUTES
@@ -33,15 +33,20 @@
 
 /datum/evacuation_controller/starship/launch_evacuation()
 
-	state = EVAC_IN_TRANSIT
-
 	if (emergency_evacuation)
 		// Abondon Ship
 		for (var/datum/shuttle/autodock/ferry/escape_pod/pod in escape_pods) // Launch the pods!
-			if (!pod.arming_controller || pod.arming_controller.armed)
+			if ((!pod.arming_controller || pod.arming_controller.armed ) && pod != escape_pods_by_name["Escape Shuttle"] && state == EVAC_IN_TRANSIT)
 				pod.move_time = (evac_transit_delay/10)
 				pod.launch(src)
 
+		var/datum/shuttle/autodock/ferry/escape_pod/shuttle = escape_pods_by_name["Escape Shuttle"]
+		if (!shuttle.arming_controller || shuttle.arming_controller.armed && state != EVAC_IN_TRANSIT)
+			shuttle.move_time = (evac_transit_delay/10)
+			shuttle.launch(src)
+		
+		state = EVAC_IN_TRANSIT
+		
 		priority_announcement.Announce(replacetext(replacetext(GLOB.using_map.emergency_shuttle_leaving_dock, "%dock_name%", "[GLOB.using_map.dock_name]"),  "%ETA%", "[round(get_eta()/60,1)] minute\s"))
 	else
 		// Bluespace Jump

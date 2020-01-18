@@ -186,6 +186,10 @@
 	},
 /turf/space/transit/east,
 /area/space)
+"D" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/shuttle,
+/turf/space,
+/area/space)
 "E" = (
 /obj/effect/shuttle_landmark/ninja/internim,
 /turf/space/bluespace,
@@ -211,6 +215,14 @@
 /obj/effect/shuttle_landmark/escape_pod/out/pod1,
 /turf/space,
 /area/space)
+"J" = (
+/obj/effect/shuttle_landmark/escape_pod/out/pod9,
+/turf/space,
+/area/space)
+"K" = (
+/obj/effect/shuttle_landmark/escape_pod/out/pod3,
+/turf/space,
+/area/space)
 "L" = (
 /obj/effect/shuttle_landmark/escape_pod/out/pod7,
 /turf/space,
@@ -223,8 +235,16 @@
 /obj/effect/shuttle_landmark/escape_pod/out/pod8,
 /turf/space,
 /area/space)
+"Q" = (
+/obj/effect/shuttle_landmark/escape_pod/out/shuttle,
+/turf/space,
+/area/space)
 "R" = (
 /obj/effect/shuttle_landmark/escape_pod/out/pod5,
+/turf/space,
+/area/space)
+"T" = (
+/obj/effect/shuttle_landmark/escape_pod/out/pod4,
 /turf/space,
 /area/space)
 "U" = (
@@ -2253,7 +2273,7 @@ d
 d
 d
 d
-d
+K
 d
 d
 d
@@ -9672,7 +9692,7 @@ d
 d
 d
 d
-d
+Q
 d
 d
 d
@@ -11347,7 +11367,7 @@ d
 d
 d
 d
-d
+J
 d
 d
 d
@@ -12761,7 +12781,7 @@ d
 d
 d
 d
-d
+T
 d
 d
 d
@@ -22589,7 +22609,7 @@ d
 d
 d
 d
-d
+D
 d
 d
 d

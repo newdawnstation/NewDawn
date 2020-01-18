@@ -11544,10 +11544,6 @@
 	icon_state = "wood_broken4"
 	},
 /area/holodeck/source_temple)
-"hnA" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod9,
-/turf/space,
-/area/shuttle/escape_pod9/centcom)
 "hzB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11760,10 +11756,6 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
-"lXR" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod4,
-/turf/space,
-/area/shuttle/escape_pod4/centcom)
 "mjR" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
@@ -11802,10 +11794,6 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
-"mBO" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod3,
-/turf/space,
-/area/space)
 "mRm" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert1"
@@ -18512,7 +18500,7 @@ aab
 aab
 "}
 (32,1,1) = {"
-hnA
+aao
 aao
 aao
 aao
@@ -19320,7 +19308,7 @@ aab
 aab
 "}
 (36,1,1) = {"
-lXR
+aap
 aap
 aap
 aap
@@ -28928,7 +28916,7 @@ aab
 aab
 aab
 aab
-mBO
+aab
 aab
 aab
 aab

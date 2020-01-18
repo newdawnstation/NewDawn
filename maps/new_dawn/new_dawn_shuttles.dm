@@ -468,6 +468,26 @@
 
 //Pods NewDawn. Yes, I have rewritten this part making copypasta for each pod because of StrongDMM - RedHawk
 //Large pods
+
+/datum/shuttle/autodock/ferry/escape_pod/newdawnpod/escape_shuttle
+	shuttle_area = /area/shuttle/escape_shuttle/station
+	name = "Escape Shuttle"
+	dock_target = "escape_shuttle"
+	arming_controller = "escape_shuttle_berth"
+	waypoint_station = "escape_shuttle_start"
+	landmark_transition = "escape_shuttle_internim"
+	waypoint_offsite = "escape_shuttle_out"
+
+/obj/effect/shuttle_landmark/escape_pod/start/shuttle
+	landmark_tag = "escape_shuttle_start"
+	docking_controller = "escape_shuttle_berth"
+
+/obj/effect/shuttle_landmark/escape_pod/out/shuttle
+	landmark_tag = "escape_shuttle_internim"
+
+/obj/effect/shuttle_landmark/escape_pod/transit/shuttle
+	landmark_tag = "escape_shuttle_out"
+
 /datum/shuttle/autodock/ferry/escape_pod/newdawnpod/escape_pod1
 	shuttle_area = /area/shuttle/escape_pod1/station
 	name = "Escape Pod 1"
