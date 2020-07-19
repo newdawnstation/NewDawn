@@ -166,8 +166,6 @@ var/datum/evacuation_controller/evacuation_controller
 		if(world.time >= evac_launch_time)
 			launch_evacuation()
 	else if(state == EVAC_IN_TRANSIT)
-		if(world.time >= evac_launch_time + 100)
-			launch_evacuation()
 		if(world.time >= evac_arrival_time)
 			finish_evacuation()
 	else if(state == EVAC_COOLDOWN)
