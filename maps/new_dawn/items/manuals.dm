@@ -9,7 +9,7 @@
 	. = ..()
 	dat = {"
 
-		<html><head>
+		<html><meta charset="UTF-8"><head>
 		</head>
 
 		<body>
@@ -32,7 +32,7 @@
 	. = ..()
 	dat = {"
 
-		<html><head>
+		<html><meta charset="UTF-8"><head>
 		</head>
 
 		<body>
@@ -54,7 +54,7 @@
 	. = ..()
 	dat = {"
 
-		<html><head>
+		<html><meta charset="UTF-8"><head>
 		</head>
 
 		<body>

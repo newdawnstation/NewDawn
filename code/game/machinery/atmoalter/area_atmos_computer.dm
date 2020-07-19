@@ -27,6 +27,7 @@
 			return
 		var/dat = {"
 		<html>
+		<meta charset="UTF-8">
 			<head>
 				<style type="text/css">
 					a.green:link

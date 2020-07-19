@@ -18,7 +18,7 @@
 /obj/machinery/computer/drone_control/interact(mob/user)
 	user.set_machine(src)
 	var/dat
-	dat += "<B>Maintenance Units</B><BR>"
+	dat += "<meta charset='UTF-8'><B>Maintenance Units</B><BR>"
 
 	for(var/mob/living/silicon/robot/drone/D in world)
 		if(D.z != src.z)

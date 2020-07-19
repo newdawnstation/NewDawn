@@ -251,6 +251,7 @@
 				url = config.wikiurl + "?title=" + url
 		dat = {"
 			<html>
+			<meta charset="UTF-8">
 				<head>
 				</head>
 				<body>

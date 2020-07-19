@@ -414,7 +414,7 @@
 	if(!module)
 		module = new /obj/item/weapon/robot_module/drone(src)
 
-	var/dat = "<HEAD><TITLE>Drone modules</TITLE></HEAD><BODY>\n"
+	var/dat = "<meta charset='UTF-8'><HEAD><TITLE>Drone modules</TITLE></HEAD><BODY>\n"
 	dat += {"
 	<B>Activated Modules</B>
 	<BR>
@@ -425,8 +425,8 @@
 	<B>Installed Modules</B><BR><BR>"}
 
 
-	var/tools = "<B>Tools and devices</B><BR>"
-	var/resources = "<BR><B>Resources</B><BR>"
+	var/tools = "<meta charset='UTF-8'><B>Tools and devices</B><BR>"
+	var/resources = "<meta charset='UTF-8'><BR><B>Resources</B><BR>"
 
 	for (var/O in module.equipment)
 

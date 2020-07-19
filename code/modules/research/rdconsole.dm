@@ -625,7 +625,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 					if(PROTOLATHE) dat += "Lathe Type: Proto-lathe<BR>"
 				dat += "Required Materials:<BR>"
 				for(var/M in d_disk.blueprint.materials)
-					if(copytext(M, 1, 2) == "$") dat += "* [copytext(M, 2)] x [d_disk.blueprint.materials[M]]<BR>"
+					if(copytext_char(M, 1, 2) == "$") dat += "* [copytext_char(M, 2)] x [d_disk.blueprint.materials[M]]<BR>"
 					else dat += "* [M] x [d_disk.blueprint.materials[M]]<BR>"
 				dat += "<HR>Operations: "
 				dat += "<A href='?src=\ref[src];updt_design=1'>Upload to Database</A> || "
@@ -751,7 +751,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 					for(var/T in D.chemicals)
 						temp_dat += ", [round(D.chemicals[T]*linked_lathe.mat_efficiency * protolathe_bonus)] [CallReagentName(T)]"
 					if(temp_dat)
-						temp_dat = " \[[copytext(temp_dat, 3)]\]"
+						temp_dat = " \[[copytext_char(temp_dat, 3)]\]"
 					if(linked_lathe.canBuild(D, protolathe_bonus))
 						final_dat += "<LI><B><A href='?src=\ref[src];build=[D.id]'>[name_dat]</A></B>[temp_dat]"
 					else
@@ -863,7 +863,7 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 					for(var/T in D.chemicals)
 						temp_dat += ", [round(D.chemicals[T]*linked_imprinter.mat_efficiency * circuit_imprinter_bonus)] [CallReagentName(T)]"
 					if(temp_dat)
-						temp_dat = " \[[copytext(temp_dat,3)]\]"
+						temp_dat = " \[[copytext_char(temp_dat,3)]\]"
 					if(linked_imprinter.canBuild(D, circuit_imprinter_bonus))
 						final_dat += "<LI><B><A href='?src=\ref[src];imprint=[D.id]'>[name_dat]</A></B>[temp_dat]"
 					else

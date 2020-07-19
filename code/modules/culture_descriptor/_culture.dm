@@ -57,7 +57,7 @@
 #define COLLAPSED_CULTURE_BLURB_LEN 48
 /decl/cultural_info/proc/get_description(var/header, var/append, var/verbose = TRUE)
 	var/list/dat = list()
-	dat += "<table padding='8px'><tr>"
+	dat += "<meta charset='UTF-8'><table padding='8px'><tr>"
 	dat += "<td width='260px'>"
 	dat += "[header ? header : "<b>[desc_type]:</b>[name]"]<br>"
 	if(verbose)
@@ -65,10 +65,10 @@
 		dat += "[jointext(get_text_details(), "<br>")]"
 		dat += "</small>"
 	dat += "</td><td width>"
-	if(verbose || length(get_text_body()) <= COLLAPSED_CULTURE_BLURB_LEN)
+	if(verbose || length_char(get_text_body()) <= COLLAPSED_CULTURE_BLURB_LEN)
 		dat += "[get_text_body()]"
 	else
-		dat += "[copytext(get_text_body(), 1, COLLAPSED_CULTURE_BLURB_LEN)] \[...\]"
+		dat += "[copytext_char(get_text_body(), 1, COLLAPSED_CULTURE_BLURB_LEN)] \[...\]"
 	dat += "</td>"
 	if(append)
 		dat += "<td width = '100px'>[append]</td>"

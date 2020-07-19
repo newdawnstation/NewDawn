@@ -26,7 +26,7 @@
 
 /obj/item/weapon/paper/admin/proc/generateInteractions()
 	//clear first
-	interactions = null
+	interactions = {"<meta charset="UTF-8">"}
 
 	//Snapshot is crazy and likes putting each topic hyperlink on a seperate line from any other tags so it's nice and clean.
 	interactions += "<HR><center><font size= \"1\">The fax will transmit everything above this line</font><br>"
@@ -45,7 +45,7 @@
 	var/challengehash = copytext(md5("[game_id]"),1,10) // changed to a hash of the game ID so it's more consistant but changes every round.
 	var/text = null
 	//TODO change logo based on who you're contacting.
-	text = "<center><img src = [logo]></br>"
+	text = {"<meta charset="UTF-8"><center><img src = [logo]></br>"}
 	text += "<b>[origin] Quantum Uplink Signed Message</b><br>"
 	text += "<font size = \"1\">Encryption key: [originhash]<br>"
 	text += "Challenge: [challengehash]<br></font></center><hr>"
@@ -55,7 +55,7 @@
 /obj/item/weapon/paper/admin/proc/generateFooter()
 	var/text = null
 
-	text = "<hr><font size= \"1\">"
+	text = "<meta charset='UTF-8'><hr><font size= \"1\">"
 	text += "This transmission is intended only for the addressee and may contain confidential information. Any unauthorized disclosure is strictly prohibited. <br><br>"
 	text += "If this transmission is recieved in error, please notify both the sender and the office of [GLOB.using_map.boss_name] Internal Affairs immediately so that corrective action may be taken."
 	text += "Failure to comply is a breach of regulation and may be prosecuted to the fullest extent of the law, where applicable."
@@ -71,7 +71,7 @@
 	updateDisplay()
 
 obj/item/weapon/paper/admin/proc/updateDisplay()
-	usr << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[headerOn ? header : ""][info_links][stamps][footerOn ? footer : ""][interactions]</BODY></HTML>", "window=[name];can_close=0")
+	usr << browse({"<HTML><meta charset="UTF-8"><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[headerOn ? header : ""][info_links][stamps][footerOn ? footer : ""][interactions]</BODY></HTML>"}, "window=[name];can_close=0")
 
 
 

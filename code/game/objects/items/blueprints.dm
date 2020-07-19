@@ -101,7 +101,7 @@
 	var/str = sanitizeSafe(input("New area name:","Blueprint Editing", ""), MAX_NAME_LEN)
 	if(!str || !length(str)) //cancel
 		return
-	if(length(str) > 50)
+	if(length_char(str) > 50)
 		to_chat(usr, "<span class='warning'>Name too long.</span>")
 		return
 	var/area/A = new
@@ -122,7 +122,7 @@
 	var/str = sanitizeSafe(input("New area name:","Blueprint Editing", prevname), MAX_NAME_LEN)
 	if(!str || !length(str) || str==prevname) //cancel
 		return
-	if(length(str) > 50)
+	if(length_char(str) > 50)
 		to_chat(usr, "<span class='warning'>Text too long.</span>")
 		return
 	set_area_machinery_title(A,str,prevname)

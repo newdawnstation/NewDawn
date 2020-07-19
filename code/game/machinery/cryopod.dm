@@ -43,7 +43,7 @@
 /obj/machinery/computer/cryopod/interact(mob/user)
 	user.set_machine(src)
 
-	var/dat
+	var/dat = "<meta charset='UTF-8'>"
 
 	dat += "<hr/><br/><b>[storage_name]</b><br/>"
 	dat += "<i>Welcome, [user.real_name].</i><br/><br/><hr/>"
@@ -68,7 +68,7 @@
 	else if(href_list["view"])
 		if(!allow_items) return
 
-		var/dat = "<b>Recently stored objects</b><br/><hr/><br/>"
+		var/dat = "<meta charset='UTF-8'><b>Recently stored objects</b><br/><hr/><br/>"
 		for(var/obj/item/I in frozen_items)
 			dat += "[I.name]<br/>"
 		dat += "<hr/>"

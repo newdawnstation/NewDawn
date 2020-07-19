@@ -7,7 +7,7 @@
 	if(!speaking)
 		speaking = parse_language(message)
 		if (speaking)
-			message = copytext(message,2+length(speaking.key))
+			message = copytext_char(message,2+length_char(speaking.key))
 		else
 			speaking = get_any_good_language(set_default=TRUE)
 			if (!speaking)
@@ -32,8 +32,8 @@
 			to_chat(src, "<span class='warning'>You don't have enough air[L ? " in [L]" : ""] to make a sound!</span>")
 			return
 		else if(L.breath_fail_ratio > 0.7)
-			whisper_say(length(message) > 5 ? stars(message) : message, speaking)
-		else if(L.breath_fail_ratio > 0.4 && length(message) > 10)
+			whisper_say(length_char(message) > 5 ? stars(message) : message, speaking)
+		else if(L.breath_fail_ratio > 0.4 && length_char(message) > 10)
 			whisper_say(message, speaking)
 	else
 		return ..(message, speaking = speaking, whispering = whispering)
@@ -44,29 +44,29 @@
 		if(client)
 			var/virgin = 1	//has the text been modified yet?
 			var/temp = winget(client, "input", "text")
-			if(findtextEx(temp, "Say \"", 1, 7) && length(temp) > 5)	//case sensitive means
+			if(findtextEx_char(temp, "Say \"", 1, 7) && length_char(temp) > 5)	//case sensitive means
 				var/main_key = get_prefix_key(/decl/prefix/radio_main_channel)
 				temp = replacetext(temp, main_key, "")	//general radio
 
 				var/channel_key = get_prefix_key(/decl/prefix/radio_channel_selection)
-				if(findtext(trim_left(temp), channel_key, 6, 7))	//dept radio
-					temp = copytext(trim_left(temp), 8)
+				if(findtext_char(trim_left(temp), channel_key, 6, 7))	//dept radio
+					temp = copytext_char(trim_left(temp), 8)
 					virgin = 0
 
 				if(virgin)
-					temp = copytext(trim_left(temp), 6)	//normal speech
+					temp = copytext_char(trim_left(temp), 6)	//normal speech
 					virgin = 0
 
-				while(findtext(trim_left(temp), channel_key, 1, 2))	//dept radio again (necessary)
-					temp = copytext(trim_left(temp), 3)
+				while(findtext_char(trim_left(temp), channel_key, 1, 2))	//dept radio again (necessary)
+					temp = copytext_char(trim_left(temp), 3)
 
 				var/custom_emote_key = get_prefix_key(/decl/prefix/custom_emote)
-				if(findtext(temp, custom_emote_key, 1, 2))	//emotes
+				if(findtext_char(temp, custom_emote_key, 1, 2))	//emotes
 					return
-				temp = copytext(trim_left(temp), 1, rand(5,8))
+				temp = copytext_char(trim_left(temp), 1, rand(5,8))
 
 				var/trimmed = trim_left(temp)
-				if(length(trimmed))
+				if(length_char(trimmed))
 					if(append)
 						temp += pick(append)
 
@@ -230,12 +230,12 @@
 	. = ..()
 
 /mob/living/carbon/human/parse_language(var/message)
-	var/prefix = copytext(message,1,2)
+	var/prefix = copytext_char(message,1,2)
 	if(length(message) >= 1 && prefix == get_prefix_key(/decl/prefix/audible_emote))
 		return all_languages["Noise"]
 
-	if(length(message) >= 2 && is_language_prefix(prefix))
-		var/language_prefix = lowertext(copytext(message, 2 ,3))
+	if(length_char(message) >= 2 && is_language_prefix(prefix))
+		var/language_prefix = lowertext(copytext_char(message, 2 ,3))
 		var/datum/language/L = language_keys[language_prefix]
 		if (can_speak(L))
 			return L

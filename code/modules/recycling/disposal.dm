@@ -243,7 +243,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 		return
 
 	var/ai = isAI(user)
-	var/dat = "<head><title>Waste Disposal Unit</title></head><body><TT><B>Waste Disposal Unit</B><HR>"
+	var/dat = "<meta charset='UTF-8'><head><title>Waste Disposal Unit</title></head><body><TT><B>Waste Disposal Unit</B><HR>"
 
 	if(!ai)  // AI can't pull flush handle
 		if(flush)

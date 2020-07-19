@@ -27,17 +27,17 @@
 		return
 
 	var/list/seperate = list()
-	if(findtext(msg,"(("))
+	if(findtext_char(msg,"(("))
 		return
-	else if(findtext(msg,"))"))
+	else if(findtext_char(msg,"))"))
 		return
-	else if(findtext(msg," ")==0)
+	else if(findtext_char(msg," ")==0)
 		return
 	else
-		/*var/l = lentext(msg)
-		if(findtext(msg," ",l,l+1)==0)
+		/*var/l = length_char(msg)
+		if(findtext_char(msg," ",l,l+1)==0)
 			msg+=" "*/
-		seperate = splittext(msg, " ")
+		seperate = splittext_char(msg, " ")
 
 	for(var/Xa = 1,Xa<seperate.len,Xa++)
 		var/next = Xa + 1
@@ -78,13 +78,13 @@
 	if(!word)
 		text = "[pick(heard_words)]"
 	else
-		text = pick(splittext(word, " "))
-	if(lentext(text)==1)
+		text = pick(splittext_char(word, " "))
+	if(length_char(text)==1)
 		text=uppertext(text)
 	else
-		var/cap = copytext(text,1,2)
+		var/cap = copytext_char(text,1,2)
 		cap = uppertext(cap)
-		cap += copytext(text,2,lentext(text)+1)
+		cap += copytext_char(text,2,length_char(text)+1)
 		text=cap
 	var/q = 0
 	msg+=text

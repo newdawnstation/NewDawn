@@ -107,6 +107,6 @@
 	if(!client && stat == CONSCIOUS)
 		message = lowertext(message)
 		for(var/aaa in aaa_words)
-			if(findtext(message, aaa))
+			if(findtext_char(message, aaa))
 				respond_to_damage()
 				return

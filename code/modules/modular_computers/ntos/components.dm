@@ -8,7 +8,7 @@
 
 /datum/extension/interactive/ntos/proc/find_hardware_by_name(var/partname)
 	for(var/obj/item/weapon/stock_parts/P in holder)
-		if(findtext(P.name, partname))
+		if(findtext_char(P.name, partname))
 			return P
 
 /datum/extension/interactive/ntos/proc/has_component(var/part_type)

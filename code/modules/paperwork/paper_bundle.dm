@@ -49,7 +49,7 @@
 		if(istype(W, /obj/item/weapon/tape_roll))
 			return 0
 		if(istype(W, /obj/item/weapon/pen))
-			show_browser(user, "", "window=[name]") //Closes the dialog
+			close_browser(user, "window=[name]") //Closes the dialog
 		var/obj/P = pages[page]
 		P.attackby(W, user)
 
@@ -103,7 +103,7 @@
 		to_chat(user, "<span class='notice'>It is too far away.</span>")
 
 /obj/item/weapon/paper_bundle/proc/show_content(mob/user as mob)
-	var/dat
+	var/dat = "<meta charset='UTF-8'>"
 	var/obj/item/weapon/W = pages[page]
 
 	// first
@@ -124,11 +124,11 @@
 
 	if(istype(pages[page], /obj/item/weapon/paper))
 		var/obj/item/weapon/paper/P = W
-		dat+= "<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.show_info(user)][P.stamps]</BODY></HTML>"
+		dat+= {"<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.show_info(user)][P.stamps]</BODY></HTML>"}
 		show_browser(user, dat, "window=[name]")
 	else if(istype(pages[page], /obj/item/weapon/photo))
 		var/obj/item/weapon/photo/P = W
-		dat += "<html><head><title>[P.name]</title></head><body style='overflow:hidden'>"
+		dat += {"<html><head><title>[P.name]</title></head><body style='overflow:hidden'>"}
 		dat += "<div> <img src='tmp_photo.png' width = '180'[P.scribble ? "<div> Written on the back:<br><i>[P.scribble]</i>" : null ]</body></html>"
 		user << browse_rsc(P.img, "tmp_photo.png")
 		show_browser(user, JOINTEXT(dat), "window=[name]")

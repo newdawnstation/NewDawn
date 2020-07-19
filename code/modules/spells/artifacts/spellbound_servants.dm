@@ -249,7 +249,7 @@
 	if(user.mind && !GLOB.wizards.is_antagonist(user.mind))
 		use_type(pick(types),user)
 		return
-	var/dat = "<center><b><h3>Summoning Stone</h3></b><i>Choose a companion to help you.</i><br><br></center>"
+	var/dat = "<meta charset='UTF-8'><center><b><h3>Summoning Stone</h3></b><i>Choose a companion to help you.</i><br><br></center>"
 	for(var/type in types)
 		var/datum/spellbound_type/SB = type
 		dat += "<br><a href='byond://?src=\ref[src];type=[type]'>[initial(SB.name)]</a> - [initial(SB.desc)]"
@@ -273,7 +273,7 @@
 			if(turfs.len)
 				src.visible_message("<span class='notice'>\The [src] vanishes!</span>")
 				src.forceMove(pick(turfs))
-	show_browser(user, null, "window=summoning")
+	close_browser(user, "window=summoning")
 	qdel(src)
 
 /obj/item/weapon/summoning_stone/OnTopic(user, href_list, state)

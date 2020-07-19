@@ -148,6 +148,7 @@
 
 
 		dat += {"
+	<meta charset='UTF-8'>
 	<b>Processing chamber contains:</b><br>
 	[processing_chamber]<br>
 	[beaker_contents]<hr>
@@ -160,7 +161,7 @@
 			dat += "<A href='?src=\ref[src];action=detach'>Detach the beaker</a><BR>"
 	else
 		dat += "Please wait..."
-	dat = "<HEAD><TITLE>[name]</TITLE></HEAD><TT>[JOINTEXT(dat)]</TT>"
+	dat = "<meta charset='UTF-8'><HEAD><TITLE>[name]</TITLE></HEAD><TT>[JOINTEXT(dat)]</TT>"
 	show_browser(user, strip_improper(dat), "window=reagentgrinder")
 	onclose(user, "reagentgrinder")
 

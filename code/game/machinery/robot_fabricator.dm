@@ -39,12 +39,14 @@
 
 	if (src.operating)
 		dat = {"
+<meta charset='UTF-8'>
 <TT>Building [src.being_built.name].<BR>
 Please wait until completion...</TT><BR>
 <BR>
 "}
 	else
 		dat = {"
+<meta charset='UTF-8'>
 <B>Metal Amount:</B> [min(150000, src.metal_amount)] cm<sup>3</sup> (MAX: 150,000)<BR><HR>
 <BR>
 <A href='?src=\ref[src];make=1'>Left Arm (25,000 cc metal.)<BR>
@@ -56,7 +58,7 @@ Please wait until completion...</TT><BR>
 <A href='?src=\ref[src];make=7'>Robot Frame (75,000 cc metal).<BR>
 "}
 
-	user << browse("<HEAD><TITLE>Robotic Fabricator Control Panel</TITLE></HEAD><TT>[dat]</TT>", "window=robot_fabricator")
+	user << browse("<HEAD><meta charset='UTF-8'><TITLE>Robotic Fabricator Control Panel</TITLE></HEAD><TT>[dat]</TT>", "window=robot_fabricator")
 	onclose(user, "robot_fabricator")
 	return
 

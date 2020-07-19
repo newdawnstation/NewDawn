@@ -111,7 +111,7 @@
 		..()
 
 /mob/living/bot/medbot/GetInteractTitle()
-	. = "<head><title>Medibot v1.0 controls</title></head>"
+	. = "<meta charset='UTF-8'><head><title>Medibot v1.0 controls</title></head>"
 	. += "<b>Automatic Medical Unit v1.0</b>"
 
 /mob/living/bot/medbot/GetInteractStatus()
@@ -123,7 +123,7 @@
 		. += "None loaded"
 
 /mob/living/bot/medbot/GetInteractPanel()
-	. = "Healing threshold: "
+	. = "<meta charset='UTF-8'>Healing threshold: "
 	. += "<a href='?src=\ref[src];command=adj_threshold;amount=-10'>--</a> "
 	. += "<a href='?src=\ref[src];command=adj_threshold;amount=-5'>-</a> "
 	. += "[heal_threshold] "
@@ -140,7 +140,7 @@
 	. += "<br>The speaker switch is [vocal ? "on" : "off"]. <a href='?src=\ref[src];command=togglevoice'>Toggle</a>"
 
 /mob/living/bot/medbot/GetInteractMaintenance()
-	. = "Injection mode: "
+	. = "<meta charset='UTF-8'>Injection mode: "
 	switch(emagged)
 		if(0)
 			. += "<a href='?src=\ref[src];command=emag'>Treatment</a>"

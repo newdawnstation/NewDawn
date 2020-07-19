@@ -4,8 +4,8 @@
 
 	var/verb = say_quote(message)
 
-	if(copytext(message,1,2) == get_prefix_key(/decl/prefix/custom_emote))
-		return emote(copytext(message,2))
+	if(copytext_char(message,1,2) == get_prefix_key(/decl/prefix/custom_emote))
+		return emote(copytext_char(message,2))
 
 	return ..(message, null, verb)
 

@@ -125,8 +125,8 @@ The answer was five and a half years -ZeroBits
 				error_message = "Network Error: Unable to upload to the Archive. Contact your system Administrator for assistance."
 				return 1
 			else
-				log_and_message_admins("has uploaded the book titled [B.name], [length(B.dat)] signs")
-				log_game("[usr.name]/[usr.key] has uploaded the book titled [B.name], [length(B.dat)] signs")
+				log_and_message_admins("has uploaded the book titled [B.name], [length_char(B.dat)] signs")
+				log_game("[usr.name]/[usr.key] has uploaded the book titled [B.name], [length_char(B.dat)] signs")
 				alert("Upload Complete.")
 			return 1
 

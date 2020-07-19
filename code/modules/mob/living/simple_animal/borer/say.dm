@@ -18,11 +18,11 @@
 			return
 
 	if (copytext(message, 1, 2) == "*")
-		return emote(copytext(message, 2))
+		return emote(copytext_char(message, 2))
 
 	var/datum/language/L = parse_language(message)
 	if(L && L.flags & HIVEMIND)
-		L.broadcast(src,trim(copytext(message,3)),src.truename)
+		L.broadcast(src,trim(copytext_char(message,3)),src.truename)
 		return
 
 	if(!host)

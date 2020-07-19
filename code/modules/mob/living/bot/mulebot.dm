@@ -62,7 +62,7 @@
 	load(C)
 
 /mob/living/bot/mulebot/GetInteractTitle()
-	. = "<head><title>Mulebot [suffix ? "([suffix])" : ""]</title></head>"
+	. = "<meta charset='UTF-8'><head><title>Mulebot [suffix ? "([suffix])" : ""]</title></head>"
 	. += "<b>Multiple Utility Load Effector Mk. III</b>"
 	. += "<br>ID: [suffix]"
 
@@ -71,6 +71,7 @@
 	. += "<br>Current Load: [load ? load.name : "<i>none</i>"]"
 
 /mob/living/bot/mulebot/GetInteractPanel()
+	. += "<meta charset='UTF-8'>"
 	. += "<a href='?src=\ref[src];command=stop'>Stop</a>"
 	. += "<br><a href='?src=\ref[src];command=go'>Proceed</a>"
 	. += "<br><a href='?src=\ref[src];command=home'>Return to home</a>"
@@ -83,7 +84,7 @@
 		. += "<br><a href='?src=\ref[src];command=unload'>Unload now</a>"
 
 /mob/living/bot/mulebot/GetInteractMaintenance()
-	. = "<a href='?src=\ref[src];command=safety'>Toggle safety</a> ([safety ? "On" : "Off - DANGER"])"
+	. = "<meta charset='UTF-8'><a href='?src=\ref[src];command=safety'>Toggle safety</a> ([safety ? "On" : "Off - DANGER"])"
 
 /mob/living/bot/mulebot/ProcessCommand(var/mob/user, var/command, var/href_list)
 	..()

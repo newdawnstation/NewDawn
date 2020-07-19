@@ -77,7 +77,7 @@
 
 /obj/machinery/computer/guestpass/interact(var/mob/user)
 	user.set_machine(src)
-	var/dat
+	var/dat = "<meta charset='UTF-8'>"
 
 	if (mode == 1) //Logs
 		dat += "<h3>Activity log</h3><br>"

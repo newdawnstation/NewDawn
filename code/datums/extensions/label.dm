@@ -36,7 +36,7 @@
 		atom_holder.verbs -= /atom/proc/RemoveLabel
 
 	var/full_label = " ([label])"
-	var/index = findtextEx(atom_holder.name, full_label)
+	var/index = findtextEx_char(atom_holder.name, full_label)
 	if(!index) // Playing it safe, something might not have set the name properly
 		return
 
@@ -45,7 +45,7 @@
 
 	var/old_name = atom_holder.name
 	// We find and replace the first instance, since that's the one we removed from the list
-	atom_holder.name = replacetext(atom_holder.name, full_label, "", index, index + length(full_label))
+	atom_holder.name = replacetext_char(atom_holder.name, full_label, "", index, index + length_char(full_label))
 	GLOB.name_set_event.raise_event(src, old_name, atom_holder.name)
 
 // We may have to do something more complex here
@@ -67,10 +67,10 @@
 	return TRUE
 
 /datum/extension/labels/proc/ExcessLabelLength(var/label, var/user)
-	. = length(label) + 3 // Each label also adds a space and two brackets when applied to a name
+	. = length_char(label) + 3 // Each label also adds a space and two brackets when applied to a name
 	if(LAZYLEN(labels))
 		for(var/entry in labels)
-			. += length(entry) + 3
+			. += length_char(entry) + 3
 	. = . > 64 ? TRUE : FALSE
 	if(. && user)
 		to_chat(user, "<span class='warning'>The label won't fit.</span>")

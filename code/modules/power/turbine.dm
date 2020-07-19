@@ -155,7 +155,7 @@
 
 	user.machine = src
 
-	var/t = "<TT><B>Gas Turbine Generator</B><HR><PRE>"
+	var/t = "<meta charset='UTF-8'><TT><B>Gas Turbine Generator</B><HR><PRE>"
 
 	t += "Generated power : [round(lastgen)] W<BR><BR>"
 
@@ -218,7 +218,7 @@
 	user.machine = src
 	var/dat
 	if(src.compressor)
-		dat += {"<BR><B>Gas turbine remote control system</B><HR>
+		dat += {"<meta charset='UTF-8'><BR><B>Gas turbine remote control system</B><HR>
 		\nTurbine status: [ src.compressor.starter ? "<A href='?src=\ref[src];str=1'>Off</A> <B>On</B>" : "<B>Off</B> <A href='?src=\ref[src];str=1'>On</A>"]
 		\n<BR>
 		\nTurbine speed: [src.compressor.rpm]rpm<BR>

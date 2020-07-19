@@ -12,6 +12,7 @@
 	title = "Cyborgs for Dummies"
 
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 21px; margin: 15px 0px 5px;}
@@ -297,7 +298,7 @@
 	..()
 	dat = {"
 
-		<html><head>
+		<html><meta charset="UTF-8"><head>
 		</head>
 
 		<body>
@@ -317,6 +318,7 @@
 /obj/item/weapon/book/manual/engineering_particle_accelerator/New()
 	..()
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
@@ -379,7 +381,7 @@
 	..()
 	dat = {"
 
-		<html><head>
+		<html><meta charset="UTF-8"><head>
 		</head>
 
 		<body>
@@ -398,6 +400,7 @@
 	title = "Singularity Safety in Special Circumstances"
 
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
@@ -449,6 +452,7 @@
 	title = "APLU \"Ripley\" Construction and Operation Manual"
 
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
@@ -524,6 +528,7 @@
 	author = "Maria Crash, Senior Atmospherics Technician"
 	title = "Pipes and You: Getting To Know Your Scary Tools"
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
@@ -632,6 +637,7 @@
 	author = "Maria Crash, Senior Atmospherics Technician"
 	title = "EVA Gear and You: Not Spending All Day Inside"
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}

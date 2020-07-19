@@ -69,7 +69,7 @@
 	set category = "Godhood"
 
 	var/dat = list()
-	dat += {"<h3><center><b>Choose a Form</b></h3>
+	dat += {"<meta charset='UTF-8'><h3><center><b>Choose a Form</b></h3>
 	<i>This choice is permanent. Choose carefully, but quickly.</i></center>
 	<table border="1" style="width:100%;border-collapse:collapse;">
 	<tr>
@@ -101,7 +101,7 @@
 		if(newname)
 			fully_replace_character_name(newname)
 	src.verbs -= /mob/living/deity/verb/choose_form
-	show_browser(src, null, "window=godform")
+	close_browser(src, "window=godform")
 	for(var/m in minions)
 		var/datum/mind/mind = m
 		var/mob/living/L = mind.current

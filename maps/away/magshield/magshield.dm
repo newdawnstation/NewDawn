@@ -147,6 +147,7 @@
 	title = "Standard operating procedures for Planetary Shield Orbital Station"
 
 	dat = {"<html>
+				<meta charset="UTF-8">
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}

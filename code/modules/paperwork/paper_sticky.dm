@@ -29,7 +29,7 @@
 			to_chat(user, SPAN_WARNING("You are banned from leaving persistent information across rounds."))
 			return
 
-		var/writing_space = MAX_MESSAGE_LEN - length(written_text)
+		var/writing_space = MAX_MESSAGE_LEN - length_char(written_text)
 		if(writing_space <= 0)
 			to_chat(user, SPAN_WARNING("There is no room left on \the [src]."))
 			return

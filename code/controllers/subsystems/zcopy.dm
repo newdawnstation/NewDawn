@@ -254,7 +254,7 @@ SUBSYSTEM_DEF(zcopy)
 		return
 
 	var/list/out = list(
-		"<h1>Analysis of [T] at [T.x],[T.y],[T.z]</h1>",
+		"<meta charset='UTF-8'><h1>Analysis of [T] at [T.x],[T.y],[T.z]</h1>",
 		"<b>Queue occurrences:</b> [T.z_queued]",
 		"<b>Above space:</b> [T.is_above_space() ? "Yes" : "No"]",
 		"<b>Z Flags</b>: [english_list(bitfield2list(T.z_flags, global.mimic_defines), "(none)")]",

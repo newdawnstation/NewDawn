@@ -136,7 +136,7 @@
 
 /obj/item/device/electronic_assembly/proc/closed_interact(mob/user)
 	var/HTML = list()
-	HTML += "<html><head><title>[src.name]</title></head><body>"
+	HTML += {"<html><meta charset="UTF-8"><head><title>[src.name]</title></head><body>"}
 	HTML += "<br><a href='?src=\ref[src];refresh=1'>\[Refresh\]</a>"
 	HTML += "<br><br>"
 
@@ -169,7 +169,7 @@
 	var/total_complexity = return_total_complexity()
 	var/list/HTML = list()
 
-	HTML += "<html><head><title>[name]</title></head><body>"
+	HTML += {"<html><meta charset="UTF-8"><head><title>[name]</title></head><body>"}
 
 	HTML += "<a href='?src=\ref[src]'>\[Refresh\]</a>  |  <a href='?src=\ref[src];rename=1'>\[Rename\]</a><br>"
 	HTML += "[total_part_size]/[max_components] space taken up in the assembly.<br>"
@@ -211,7 +211,7 @@
 	if(href_list["ghostscan"])
 		if((isobserver(usr) && ckeys_allowed_to_scan[usr.ckey]) || check_rights(R_ADMIN,0,usr))
 			if(assembly_components.len)
-				var/saved = "On circuit printers with cloning enabled, you may use the code below to clone the circuit:<br><br><code>[SScircuit.save_electronic_assembly(src)]</code>"
+				var/saved = "<meta charset='UTF-8'>On circuit printers with cloning enabled, you may use the code below to clone the circuit:<br><br><code>[SScircuit.save_electronic_assembly(src)]</code>"
 				show_browser(usr, saved, "window=circuit_scan;size=500x600;border=1;can_resize=1;can_close=1;can_minimize=1")
 			else
 				to_chat(usr, "<span class='warning'>The circuit is empty!</span>")

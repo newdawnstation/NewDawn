@@ -66,7 +66,7 @@
 
 		var/tmp_label = ""
 		var/label_text = sanitizeSafe(input(user, "Inscribe some text into \the [initial(BB.name)]","Inscription",tmp_label), MAX_NAME_LEN)
-		if(length(label_text) > 20)
+		if(length_char(label_text) > 20)
 			to_chat(user, "<span class='warning'>The inscription can be at most 20 characters long.</span>")
 		else if(!label_text)
 			to_chat(user, "<span class='notice'>You scratch the inscription off of [initial(BB)].</span>")

@@ -332,7 +332,7 @@ var/const/enterloopsanity = 100
 
 	vandal.visible_message("<span class='warning'>\The [vandal] begins carving something into \the [src].</span>")
 
-	if(!do_after(vandal, max(20, length(message)), src))
+	if(!do_after(vandal, max(20, length_char(message)), src))
 		return FALSE
 
 	vandal.visible_message("<span class='danger'>\The [vandal] carves some graffiti into \the [src].</span>")

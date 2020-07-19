@@ -161,7 +161,7 @@
 /obj/machinery/seed_storage/interact(mob/user as mob)
 	user.set_machine(src)
 
-	var/dat = "<center><h1>Seed storage contents</h1></center>"
+	var/dat = "<meta charset='UTF-8'><center><h1>Seed storage contents</h1></center>"
 	if (piles.len == 0)
 		dat += "<font color='red'>No seeds</font>"
 	else

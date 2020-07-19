@@ -103,7 +103,7 @@
 	if(!Ps)
 		return
 
-	var/list/signature_and_data = splittext(Ps, ":")
+	var/list/signature_and_data = splittext_char(Ps, ":")
 
 	if(signature_and_data.len < 2)
 		return

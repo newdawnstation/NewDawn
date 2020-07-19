@@ -266,7 +266,7 @@
 		message = "<B>[speaker]</B> [nverb], \"[message]\""
 	else
 		var/adverb
-		var/length = length(message) * pick(0.8, 0.9, 1.0, 1.1, 1.2)	//Inserts a little fuzziness.
+		var/length = length_char(message) * pick(0.8, 0.9, 1.0, 1.1, 1.2)	//Inserts a little fuzziness.
 		switch(length)
 			if(0 to 12) 	adverb = " briefly"
 			if(12 to 30)	adverb = " a short message"
@@ -286,13 +286,13 @@
 	var/heard = ""
 	if(prob(15))
 		var/list/punctuation = list(",", "!", ".", ";", "?")
-		var/list/messages = splittext(message, " ")
+		var/list/messages = splittext_char(message, " ")
 		var/R = rand(1, messages.len)
 		var/heardword = messages[R]
-		if(copytext(heardword,1, 1) in punctuation)
-			heardword = copytext(heardword,2)
-		if(copytext(heardword,-1) in punctuation)
-			heardword = copytext(heardword,1,lentext(heardword))
+		if(copytext_char(heardword,1, 1) in punctuation)
+			heardword = copytext_char(heardword,2)
+		if(copytext_char(heardword,-1) in punctuation)
+			heardword = copytext_char(heardword,1,length_char(heardword))
 		heard = "<span class = 'game_say'>...You hear something about...[heardword]</span>"
 
 	else

@@ -5,7 +5,7 @@
 	. = ..()
 	if(!.)
 		return
-	var/dat = "<B>Admin Log<HR></B>"
+	var/dat = "<meta charset='UTF-8'><B>Admin Log<HR></B>"
 	for(var/l in GLOB.admin_log)
 		dat += "<li>[l]</li>"
 	if(!GLOB.admin_log.len)

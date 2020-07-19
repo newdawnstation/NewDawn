@@ -65,7 +65,7 @@
 		scramble_cache -= input
 		scramble_cache[input] = n
 		return n
-	var/i = length(input)
+	var/i = length_char(input)
 	var/scrambled_text = ""
 	while(i)
 		i--

@@ -63,11 +63,11 @@
 		return
 
 	user.set_machine(src)
-	var/dat = list("<center><table>")
+	var/dat = list("<meta charset='UTF-8'><center><table>")
 	for(var/obj/item/P in src)
 		dat += "<tr><td><a href='?src=\ref[src];retrieve=\ref[P]'>[P.name]</a></td></tr>"
 	dat += "</table></center>"
-	user << browse("<html><head><title>[name]</title></head><body>[jointext(dat,null)]</body></html>", "window=filingcabinet;size=350x300")
+	user << browse({"<html><meta charset="UTF-8"><head><title>[name]</title></head><body>[jointext(dat,null)]</body></html>"}, "window=filingcabinet;size=350x300")
 
 /obj/structure/filingcabinet/Topic(href, href_list)
 	if(href_list["retrieve"])

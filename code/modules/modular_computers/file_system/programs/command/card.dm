@@ -131,7 +131,7 @@
 			if(computer.has_component(PART_PRINTER)) //This option should never be called if there is no printer
 				if(module.mod_mode)
 					if(can_run(user, 1))
-						var/contents = {"<h4>Access Report</h4>
+						var/contents = {"<meta charset='UTF-8'><h4>Access Report</h4>
 									<u>Prepared By:</u> [user_id_card.registered_name ? user_id_card.registered_name : "Unknown"]<br>
 									<u>For:</u> [id_card.registered_name ? id_card.registered_name : "Unregistered"]<br>
 									<hr>
@@ -152,7 +152,7 @@
 							to_chat(usr, "<span class='notice'>Hardware error: Printer was unable to print the file. It may be out of paper.</span>")
 							return
 				else
-					var/contents = {"<h4>Crew Manifest</h4>
+					var/contents = {"<meta charset='UTF-8'><h4>Crew Manifest</h4>
 									<br>
 									[html_crew_manifest()]
 									"}

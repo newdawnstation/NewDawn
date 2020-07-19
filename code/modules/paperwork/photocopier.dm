@@ -22,7 +22,7 @@
 /obj/machinery/photocopier/interact(mob/user)
 	user.set_machine(src)
 
-	var/dat = "Photocopier<BR><BR>"
+	var/dat = "<meta charset='UTF-8'>Photocopier<BR><BR>"
 	if(copyitem)
 		dat += "<a href='byond://?src=\ref[src];remove=1'>Remove Item</a><BR>"
 		if(toner)

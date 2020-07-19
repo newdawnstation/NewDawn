@@ -38,7 +38,7 @@
 
 /obj/machinery/computer/HolodeckControl/interact(var/mob/user)
 	user.set_machine(src)
-	var/dat
+	var/dat = "<meta charset='UTF-8'>"
 
 	dat += "<B>Holodeck Control System</B><BR>"
 	if(!islocked)

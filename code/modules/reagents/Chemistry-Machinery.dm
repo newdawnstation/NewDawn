@@ -75,7 +75,7 @@
 			loaded_pill_bottle.dropInto(loc)
 			loaded_pill_bottle = null
 	else if(href_list["close"])
-		show_browser(user, null, "window=chem_master")
+		close_browser(user, "window=chem_master")
 		user.unset_machine()
 		return
 
@@ -216,7 +216,7 @@
 	if(!beaker || !reagent)
 		return
 	. = list()
-	. += "<TITLE>[name]</TITLE>"
+	. += "<meta charset='UTF-8'><TITLE>[name]</TITLE>"
 	. += "[heading]:<BR><BR>Name:<BR>[reagent.name]"
 	. += "<BR><BR>Description:<BR>"
 	if(detailed_blood && istype(reagent, /datum/reagent/blood))
@@ -254,7 +254,7 @@
 			for(var/sprite in BOTTLE_SPRITES)
 				usr << browse_rsc(icon('icons/obj/chemical.dmi', sprite), "[sprite].png")
 	var/dat = list()
-	dat += "<TITLE>[name]</TITLE>"
+	dat += "<meta charset='UTF-8'><TITLE>[name]</TITLE>"
 	dat += "[name] Menu:"
 	if(!beaker)
 		dat += "Please insert beaker.<BR>"
@@ -303,7 +303,7 @@
 //Use to add extra stuff to the end of the menu.
 /obj/machinery/chem_master/proc/extra_options()
 	. = list()
-	. += "<HR><BR><A href='?src=\ref[src];createpill=1'>Create pill (30 units max)</A><a href=\"?src=\ref[src]&change_pill=1\"><img src=\"pill[pillsprite].png\" /></a><BR>"
+	. += "<meta charset='UTF-8'><HR><BR><A href='?src=\ref[src];createpill=1'>Create pill (30 units max)</A><a href=\"?src=\ref[src]&change_pill=1\"><img src=\"pill[pillsprite].png\" /></a><BR>"
 	. += "<A href='?src=\ref[src];createpill_multiple=1'>Create multiple pills</A><BR>"
 	. += "<A href='?src=\ref[src];createbottle=1'>Create bottle (60 units max)<a href=\"?src=\ref[src]&change_bottle=1\"><img src=\"[bottlesprite].png\" /></A>"
 	return JOINTEXT(.)
@@ -320,4 +320,4 @@
 	reagents.trans_to_obj(P,50)
 
 /obj/machinery/chem_master/condimaster/extra_options()
-	return "<A href='?src=\ref[src];createbottle=1'>Create bottle (50 units max)</A>"
+	return "<meta charset='UTF-8'><A href='?src=\ref[src];createbottle=1'>Create bottle (50 units max)</A>"

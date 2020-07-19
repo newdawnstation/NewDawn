@@ -71,7 +71,7 @@ datum/preferences
 		close_load_dialog(user)
 		return
 
-	var/dat = "<html><body><center>"
+	var/dat = {"<html><meta charset="UTF-8"><body><center>"}
 
 	if(path)
 		dat += "Slot - "
@@ -148,8 +148,8 @@ datum/preferences
 		if(culture) real_name = culture.get_random_name(gender)
 
 	if(config.humans_need_surnames)
-		var/firstspace = findtext(real_name, " ")
-		var/name_length = length(real_name)
+		var/firstspace = findtext_char(real_name, " ")
+		var/name_length = length_char(real_name)
 		if(!firstspace)	//we need a surname
 			real_name += " [pick(GLOB.last_names)]"
 		else if(firstspace == name_length)

@@ -20,7 +20,7 @@ GLOBAL_LIST_INIT(terminal_commands, init_subtypes(/datum/terminal_command))
 
 // null return: continue. "" return will break and show a blank line. Return list() to break and not show anything.
 /datum/terminal_command/proc/parse(text, mob/user, datum/terminal/terminal)
-	if(!findtext(text, regex))
+	if(!findtext_char(text, regex))
 		return
 	if(!user.skill_check(core_skill, skill_needed))
 		return skill_fail_message()
@@ -68,7 +68,7 @@ Subtypes
 		return
 	if(length(text) < 5)
 		return "man: improper syntax. Use man \[command\]"
-	text = copytext(text, 5)
+	text = copytext_char(text, 5)
 	var/datum/terminal_command/command_datum = terminal.command_by_name(text)
 	if(!command_datum)
 		return "man: command '[text]' not found."
@@ -100,7 +100,7 @@ Subtypes
 		return
 	if(length(text) < 8)
 		return "hwinfo: Improper syntax. Use hwinfo \[name\]."
-	text = copytext(text, 8)
+	text = copytext_char(text, 8)
 	var/obj/item/weapon/stock_parts/computer/ch = terminal.computer.find_hardware_by_name(text)
 	if(!ch)
 		return "hwinfo: No such hardware found."
@@ -243,7 +243,7 @@ Subtypes
 	var/syntax_error = "proxy: Invalid input. Enter man proxy for syntax help."
 	if(length(text) < 10)
 		return syntax_error
-	if(copytext(text, 1, 10) != "proxy -s ")
+	if(copytext_char(text, 1, 10) != "proxy -s ")
 		return syntax_error
 	var/id = text2num(copytext(text, 10))
 	if(!id)

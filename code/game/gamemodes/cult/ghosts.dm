@@ -90,7 +90,7 @@
 		return
 
 	if(message && (bloodless || (choice && (choice in range(1)))))
-		if(length(message) > max_length)
+		if(length_char(message) > max_length)
 			message += "-"
 			to_chat(src, "<span class='warning'>You ran out of blood to write with!</span>")
 

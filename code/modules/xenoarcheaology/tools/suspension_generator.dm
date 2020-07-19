@@ -36,7 +36,7 @@
 			I.forceMove(suspension_field)
 
 /obj/machinery/suspension_gen/interact(var/mob/user)
-	var/dat = "<b>Multi-phase mobile suspension field generator MK II \"Steadfast\"</b><br>"
+	var/dat = "<meta charset='UTF-8'><b>Multi-phase mobile suspension field generator MK II \"Steadfast\"</b><br>"
 	var/obj/item/weapon/cell/cell = get_cell()
 	if(cell)
 		var/colour = "red"

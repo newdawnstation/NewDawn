@@ -381,7 +381,7 @@
 		if(!istype(S))
 			return
 		var/HTML = list()
-		HTML += "<h2>[S.name]</h2>"
+		HTML += "<meta charset='UTF-8'><h2>[S.name]</h2>"
 		HTML += "[S.desc]<br>"
 		var/i
 		for(i=1, i <= length(S.levels), i++)

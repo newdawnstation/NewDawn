@@ -9,7 +9,7 @@
 /datum/integrated_io/lists/proc/interact(mob/user)
 	. = ..()
 	var/list/my_list = data
-	var/t = "<h2>[src]</h2><br>"
+	var/t = "<meta charset='UTF-8'><h2>[src]</h2><br>"
 	t += "List length: [my_list.len]<br>"
 	t += "<a href='?src=\ref[src]'>\[Refresh\]</a>  |  "
 	t += "<a href='?src=\ref[src];add=1'>\[Add\]</a>  |  "

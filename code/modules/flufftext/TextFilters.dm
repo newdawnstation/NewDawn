@@ -2,12 +2,12 @@
 
 proc/Intoxicated(phrase)
 	phrase = html_decode(phrase)
-	var/leng=lentext(phrase)
-	var/counter=lentext(phrase)
+	var/leng=length_char(phrase)
+	var/counter=length_char(phrase)
 	var/newphrase=""
 	var/newletter=""
 	while(counter>=1)
-		newletter=copytext(phrase,(leng-counter)+1,(leng-counter)+2)
+		newletter=copytext_char(phrase,(leng-counter)+1,(leng-counter)+2)
 		if(rand(1,3)==3)
 			if(lowertext(newletter)=="o")	newletter="u"
 			if(lowertext(newletter)=="s")	newletter="ch"
@@ -26,7 +26,7 @@ proc/Intoxicated(phrase)
 proc/NewStutter(phrase,stunned)
 	phrase = html_decode(phrase)
 
-	var/list/split_phrase = splittext(phrase," ") //Split it up into words.
+	var/list/split_phrase = splittext_char(phrase," ") //Split it up into words.
 
 	var/list/unstuttered_words = split_phrase.Copy()
 	var/i = rand(1,3)
@@ -40,8 +40,8 @@ proc/NewStutter(phrase,stunned)
 		var/index = split_phrase.Find(word) //Find the word in the split phrase so we can replace it.
 
 		//Search for dipthongs (two letters that make one sound.)
-		var/first_sound = copytext(word,1,3)
-		var/first_letter = copytext(word,1,2)
+		var/first_sound = copytext_char(word,1,3)
+		var/first_letter = copytext_char(word,1,2)
 		if(lowertext(first_sound) in list("ch","th","sh"))
 			first_letter = first_sound
 
@@ -66,7 +66,7 @@ proc/Ellipsis(original_msg, chance = 50)
 	if(chance <= 0) return "..."
 	if(chance >= 100) return original_msg
 
-	var/list/words = splittext(original_msg," ")
+	var/list/words = splittext_char(original_msg," ")
 	var/list/new_words = list()
 
 	var/new_msg = ""
@@ -95,20 +95,20 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 		language = user.get_default_language()
 	message = html_decode(message)
 	var/new_message = ""
-	var/input_size = length(message)
-	var/lentext = 0
+	var/input_size = length_char(message)
+	var/length = 0
 	if(input_size < 20) // Short messages get distorted too. Bit hacksy.
 		distortion += (20-input_size)/2
-	while(lentext <= input_size)
-		var/newletter=copytext(message, lentext, lentext+1)
+	while(length <= input_size)
+		var/newletter=copytext_char(message, length, length+1)
 		if(!prob(distortion_chance))
 			new_message += newletter
-			lentext += 1
+			length += 1
 			continue
 		if(newletter != " ")
 			if(prob(0.08 * distortion)) // Major cutout
 				newletter = "*zzzt*"
-				lentext += rand(1, (length(message) - lentext)) // Skip some characters
+				length += rand(1, (length_char(message) - length)) // Skip some characters
 				distortion += 1 * distortion_speed
 			else if(prob(0.8 * distortion)) // Minor cut out
 				if(prob(25))
@@ -134,14 +134,14 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 					if(english_only)
 						newletter += "*"
 					else
-						newletter = pick("ø", "Ð", "%", "æ", "µ")
+						newletter = pick("ï¿½", "ï¿½", "%", "ï¿½", "ï¿½")
 				distortion += 0.5 * distortion_speed
 			else if(prob(0.75 * distortion)) // Incomprehensible
 				newletter = pick("<", ">", "!", "$", "%", "^", "&", "*", "~", "#")
 				distortion += 0.75 * distortion_speed
 			else if(prob(0.05 * distortion)) // Total cut out
 				if(!english_only)
-					newletter = "¦w¡¼b»%> -BZZT-"
+					newletter = "ï¿½wï¿½ï¿½bï¿½%> -BZZT-"
 				else
 					newletter = "srgt%$hjc< -BZZT-"
 				new_message += newletter
@@ -151,15 +151,15 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 					if("s")
 						newletter = "$"
 					if("e")
-						newletter = "£"
+						newletter = "ï¿½"
 					if("w")
-						newletter = "ø"
+						newletter = "ï¿½"
 					if("y")
-						newletter = "¡"
+						newletter = "ï¿½"
 					if("x")
-						newletter = "æ"
+						newletter = "ï¿½"
 					if("u")
-						newletter = "µ"
+						newletter = "ï¿½"
 		else
 			if(prob(0.2 * distortion))
 				newletter = " *crackle* "
@@ -167,6 +167,6 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 		if(prob(20))
 			capitalize(newletter)
 		new_message += newletter
-		lentext += 1
+		length += 1
 	return new_message
 

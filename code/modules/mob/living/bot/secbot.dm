@@ -66,18 +66,18 @@
 	icon_state = "secbot[on]"
 
 /mob/living/bot/secbot/GetInteractTitle()
-	. = "<head><title>Securitron controls</title></head>"
+	. = "<meta charset='UTF-8'><head><title>Securitron controls</title></head>"
 	. += "<b>Automatic Security Unit</b>"
 
 /mob/living/bot/secbot/GetInteractPanel()
-	. = "Check for weapon authorization: <a href='?src=\ref[src];command=idcheck'>[idcheck ? "Yes" : "No"]</a>"
+	. = "<meta charset='UTF-8'>Check for weapon authorization: <a href='?src=\ref[src];command=idcheck'>[idcheck ? "Yes" : "No"]</a>"
 	. += "<br>Check security records: <a href='?src=\ref[src];command=ignorerec'>[check_records ? "Yes" : "No"]</a>"
 	. += "<br>Check arrest status: <a href='?src=\ref[src];command=ignorearr'>[check_arrest ? "Yes" : "No"]</a>"
 	. += "<br>Report arrests: <a href='?src=\ref[src];command=declarearrests'>[declare_arrests ? "Yes" : "No"]</a>"
 	. += "<br>Auto patrol: <a href='?src=\ref[src];command=patrol'>[will_patrol ? "On" : "Off"]</a>"
 
 /mob/living/bot/secbot/GetInteractMaintenance()
-	. = "Threat identifier status: "
+	. = "<meta charset='UTF-8'>Threat identifier status: "
 	switch(emagged)
 		if(0)
 			. += "<a href='?src=\ref[src];command=emag'>Normal</a>"

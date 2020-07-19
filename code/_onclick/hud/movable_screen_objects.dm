@@ -86,7 +86,7 @@
 			num = 0
 		. = view*2 + 1 - num
 	else if(findtext(Y,"SOUTH+"))
-		var/num = text2num(copytext(Y,7)) //Time SOUTH+
+		var/num = text2num(copytext(Y,7)) //Trim SOUTH+
 		if(!num)
 			num = 0
 		. = num+1

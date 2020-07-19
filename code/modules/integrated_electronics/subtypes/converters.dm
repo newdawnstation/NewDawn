@@ -97,7 +97,7 @@
 
 /obj/item/integrated_circuit/converter/refdecode/do_work()
 	pull_data()
-	var/list/signature_and_data = splittext(get_pin_data(IC_INPUT, 1), ":")
+	var/list/signature_and_data = splittext_char(get_pin_data(IC_INPUT, 1), ":")
 	var/signature = signature_and_data[1]
 	var/dec = signature_and_data[2]
 
@@ -207,10 +207,10 @@
 	var/text = get_pin_data(IC_INPUT, 1)
 	var/index = get_pin_data(IC_INPUT, 2)
 
-	var/split = min(index+1, length(text))
+	var/split = min(index+1, length_char(text))
 
-	var/before_text = copytext(text, 1, split)
-	var/after_text = copytext(text, split, 0)
+	var/before_text = copytext_char(text, 1, split)
+	var/after_text = copytext_char(text, split, 0)
 
 	set_pin_data(IC_OUTPUT, 1, before_text)
 	set_pin_data(IC_OUTPUT, 2, after_text)
@@ -237,7 +237,7 @@
 /obj/item/integrated_circuit/converter/indexer/do_work()
 	var/strin = get_pin_data(IC_INPUT, 1)
 	var/ind = get_pin_data(IC_INPUT, 2)
-	if(ind > 0 && ind <= length(strin))
+	if(ind > 0 && ind <= length_char(strin))
 		set_pin_data(IC_OUTPUT, 1, strin[ind])
 	else
 		set_pin_data(IC_OUTPUT, 1, "")
@@ -264,7 +264,7 @@
 
 
 /obj/item/integrated_circuit/converter/findstring/do_work()
-	var/position = findtext(get_pin_data(IC_INPUT, 1),get_pin_data(IC_INPUT, 2))
+	var/position = findtext_char(get_pin_data(IC_INPUT, 1),get_pin_data(IC_INPUT, 2))
 
 	set_pin_data(IC_OUTPUT, 1, position)
 	push_data()
@@ -289,7 +289,7 @@
 	spawn_flags = IC_SPAWN_DEFAULT|IC_SPAWN_RESEARCH
 
 /obj/item/integrated_circuit/converter/stringlength/do_work()
-	set_pin_data(IC_OUTPUT, 1, length(get_pin_data(IC_INPUT, 1)))
+	set_pin_data(IC_OUTPUT, 1, length_char(get_pin_data(IC_INPUT, 1)))
 	push_data()
 
 	activate_pin(2)
@@ -316,9 +316,9 @@
 	var/strin = get_pin_data(IC_INPUT, 1)
 	var/delimiter = get_pin_data(IC_INPUT, 2)
 	if(delimiter == null)
-		set_pin_data(IC_OUTPUT, 1, splittext(strin,null))
+		set_pin_data(IC_OUTPUT, 1, splittext_char(strin,null))
 	else
-		set_pin_data(IC_OUTPUT, 1, splittext(strin, delimiter))
+		set_pin_data(IC_OUTPUT, 1, splittext_char(strin, delimiter))
 	push_data()
 
 	activate_pin(2)

@@ -32,7 +32,7 @@
 	return TRUE
 
 /obj/machinery/artifact_analyser/interact(mob/user)
-	var/dat = "<B>Anomalous material analyser</B><BR>"
+	var/dat = "<meta charset='UTF-8'><B>Anomalous material analyser</B><BR>"
 	dat += "<HR>"
 	if(!owned_scanner)
 		reconnect_scanner()

@@ -5,7 +5,7 @@
 	. = ..()
 	if(!.)
 		return
-	var/dat
+	var/dat = "<meta charset='UTF-8'>"
 	dat += "<h4>Crew Manifest</h4>"
 	dat += html_crew_manifest()
 

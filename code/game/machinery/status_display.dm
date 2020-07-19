@@ -89,13 +89,13 @@
 					message2 = "Launch"
 				else
 					message2 = get_shuttle_timer()
-					if(length(message2) > CHARS_PER_LINE)
+					if(length_char(message2) > CHARS_PER_LINE)
 						message2 = "Error"
 				update_display(message1, message2)
 			else if(evacuation_controller.has_eta())
 				message1 = "-ETA-"
 				message2 = get_shuttle_timer()
-				if(length(message2) > CHARS_PER_LINE)
+				if(length_char(message2) > CHARS_PER_LINE)
 					message2 = "Error"
 				update_display(message1, message2)
 			return 1
@@ -106,8 +106,8 @@
 			if(!index1)
 				line1 = message1
 			else
-				line1 = copytext(message1+"|"+message1, index1, index1+CHARS_PER_LINE)
-				var/message1_len = length(message1)
+				line1 = copytext_char(message1+"|"+message1, index1, index1+CHARS_PER_LINE)
+				var/message1_len = length_char(message1)
 				index1 += SCROLL_SPEED
 				if(index1 > message1_len)
 					index1 -= message1_len
@@ -115,8 +115,8 @@
 			if(!index2)
 				line2 = message2
 			else
-				line2 = copytext(message2+"|"+message2, index2, index2+CHARS_PER_LINE)
-				var/message2_len = length(message2)
+				line2 = copytext_char(message2+"|"+message2, index2, index2+CHARS_PER_LINE)
+				var/message2_len = length_char(message2)
 				index2 += SCROLL_SPEED
 				if(index2 > message2_len)
 					index2 -= message2_len
@@ -145,14 +145,14 @@
 
 /obj/machinery/status_display/proc/set_message(m1, m2)
 	if(m1)
-		index1 = (length(m1) > CHARS_PER_LINE)
+		index1 = (length_char(m1) > CHARS_PER_LINE)
 		message1 = m1
 	else
 		message1 = ""
 		index1 = 0
 
 	if(m2)
-		index2 = (length(m2) > CHARS_PER_LINE)
+		index2 = (length_char(m2) > CHARS_PER_LINE)
 		message2 = m2
 	else
 		message2 = ""

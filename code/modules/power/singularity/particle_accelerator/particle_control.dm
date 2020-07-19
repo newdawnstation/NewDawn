@@ -232,7 +232,7 @@
 	user.set_machine(src)
 
 	var/dat = ""
-	dat += "Particle Accelerator Control Panel<BR>"
+	dat += "<meta charset='UTF-8'>Particle Accelerator Control Panel<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR><BR>"
 	dat += "Status:<BR>"
 	if(!assembled)

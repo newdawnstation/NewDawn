@@ -41,6 +41,7 @@
 /obj/item/device/assembly/signaler/interact(mob/user as mob, flag1)
 	var/t1 = "-------"
 	var/dat = {"
+		<meta charset='UTF-8'>
 		<TT>
 
 		<A href='byond://?src=\ref[src];send=1'>Send Signal</A><BR>

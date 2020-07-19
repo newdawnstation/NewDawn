@@ -49,7 +49,7 @@
 			MK.dropInto(loc)
 			// Will help make emagging the console not so easy to get away with.
 			MK.info += "<br><br><font color='red'>£%@%(*$%&(£&?*(%&£/{}</font>"
-			spawn(100*length(src.linkedServer.decryptkey)) UnmagConsole()
+			spawn(100*length_char(src.linkedServer.decryptkey)) UnmagConsole()
 			message = rebootmsg
 			update_icon()
 			return 1
@@ -79,7 +79,7 @@
 	if(hacking || emag)
 		message = rebootmsg
 	var/list/dat = list()
-	dat += "<head><title>Message Monitor Console</title></head><body>"
+	dat += "<meta charset='UTF-8'><head><title>Message Monitor Console</title></head><body>"
 	dat += "<center><h2>Message Monitor Console</h2></center><hr>"
 	dat += "<center><h4><font color='blue'[message]</h5></center>"
 
@@ -254,9 +254,9 @@
 				if(dkey && dkey != "")
 					if(src.linkedServer.decryptkey == dkey)
 						var/newkey = trim(input(usr,"Please enter the new key (3 - 16 characters max):"))
-						if(length(newkey) <= 3)
+						if(length_char(newkey) <= 3)
 							message = "<span class='notice'>NOTICE: Decryption key too short!</span>"
-						else if(length(newkey) > 16)
+						else if(length_char(newkey) > 16)
 							message = "<span class='notice'>NOTICE: Decryption key too long!</span>"
 						else if(newkey && newkey != "")
 							src.linkedServer.decryptkey = newkey
@@ -271,7 +271,7 @@
 			src.screen = 2
 			update_icon()
 			//Time it takes to bruteforce is dependant on the password length.
-			spawn(100*length(src.linkedServer.decryptkey))
+			spawn(100*length_char(src.linkedServer.decryptkey))
 				if(src && src.linkedServer && usr)
 					BruteForce(usr)
 

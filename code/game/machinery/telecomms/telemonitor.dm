@@ -24,7 +24,7 @@
 			return
 		user.set_machine(src)
 		var/list/dat = list()
-		dat += "<TITLE>Telecommunications Monitor</TITLE><center><b>Telecommunications Monitor</b></center>"
+		dat += "<meta charset='UTF-8'><TITLE>Telecommunications Monitor</TITLE><center><b>Telecommunications Monitor</b></center>"
 
 		switch(screen)
 
@@ -110,7 +110,7 @@
 
 			var/newnet = input(usr, "Which network do you want to view?", "Comm Monitor", network) as null|text
 			if(newnet && ((usr in range(1, src) || issilicon(usr))))
-				if(length(newnet) > 15)
+				if(length_char(newnet) > 15)
 					temp = "<font color = #d70b00>- FAILED: NETWORK TAG STRING TOO LENGHTLY -</font>"
 
 				else

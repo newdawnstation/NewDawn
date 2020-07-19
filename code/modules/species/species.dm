@@ -712,16 +712,16 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		"poison" = toxins_mod
 	)
 	if(!header)
-		header = "<center><h2>[name]</h2></center><hr/>"
+		header = "<meta charset='UTF-8'><center><h2>[name]</h2></center><hr/>"
 	var/dat = list()
 	dat += "[header]"
 	dat += "<table padding='8px'>"
 	dat += "<tr>"
 	dat += "<td width = 400>"
-	if(verbose || length(description) <= MAX_DESC_LEN)
+	if(verbose || length_char(description) <= MAX_DESC_LEN)
 		dat += "[description]"
 	else
-		dat += "[copytext(description, 1, MAX_DESC_LEN)] \[...\]"
+		dat += "[copytext_char(description, 1, MAX_DESC_LEN)] \[...\]"
 	if(append)
 		dat += "<br>[append]"
 	dat += "</td>"

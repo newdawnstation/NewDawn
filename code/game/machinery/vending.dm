@@ -75,7 +75,7 @@
 /obj/machinery/vending/Initialize(mapload, d=0, populate_parts = TRUE)
 	. = ..()
 	if(product_slogans)
-		slogan_list += splittext(product_slogans, ";")
+		slogan_list += splittext_char(product_slogans, ";")
 
 		// So not all machines speak at the exact same time.
 		// The first time this machine says something will be at slogantime + this random value,
@@ -83,7 +83,7 @@
 		last_slogan = world.time + rand(0, slogan_delay)
 
 	if(product_ads)
-		ads_list += splittext(product_ads, ";")
+		ads_list += splittext_char(product_ads, ";")
 
 	build_inventory(populate_parts)
 

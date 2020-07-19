@@ -52,7 +52,7 @@
 				match[M] += 10 // an exact match is far better than a partial one
 			else
 				for(var/searchstr in search)
-					if(findtext(text, searchstr))
+					if(findtext_char(text, searchstr))
 						match[M] += 1
 
 	var/maxstrength = 0

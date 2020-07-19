@@ -115,9 +115,9 @@ client
 		titles += "<center><h1>EPISODE [rand(1,1000)]<br>[GLOB.end_credits_title]<h1></h1></h1></center>"
 
 	for(var/mob/living/carbon/human/H in GLOB.living_mob_list_|GLOB.dead_mob_list_)
-		if(findtext(H.real_name,"(mannequin)"))
+		if(findtext_char(H.real_name,"(mannequin)"))
 			continue
-		if(H.isMonkey() && findtext(H.real_name,"[lowertext(H.species.name)]")) //no monki
+		if(H.isMonkey() && findtext_char(H.real_name,"[lowertext(H.species.name)]")) //no monki
 			continue
 		if(H.timeofdeath && H.timeofdeath < 5 MINUTES) //don't mention these losers (prespawned corpses mostly)
 			continue
@@ -162,7 +162,7 @@ client
 	for(var/mob/living/carbon/human/H in GLOB.dead_mob_list_)
 		if(H.timeofdeath < 5 MINUTES) //no prespawned corpses
 			continue
-		if(H.isMonkey() && findtext(H.real_name,"[lowertext(H.species.name)]"))
+		if(H.isMonkey() && findtext_char(H.real_name,"[lowertext(H.species.name)]"))
 			monkies[H.species.name] += 1
 		else if(H.real_name)
 			corpses += H.real_name

@@ -59,13 +59,13 @@
 		if(LAZYACCESS(partial_understanding, L.name))
 			understand_chance += partial_understanding[L.name]
 
-	var/list/words = splittext(input, " ")
+	var/list/words = splittext_char(input, " ")
 	var/list/scrambled_text = list()
 	var/new_sentence = 0
 	for(var/w in words)
 		var/nword = "[w] "
-		var/input_ending = copytext(w, length(w))
-		var/ends_sentence = findtext(".?!",input_ending)
+		var/input_ending = copytext_char(w, length_char(w))
+		var/ends_sentence = findtext_char(".?!",input_ending)
 		if(!prob(understand_chance))
 			nword = scramble_word(w)
 			if(new_sentence)
@@ -95,11 +95,11 @@
 		scramble_cache[input] = n
 		return n
 
-	var/input_size = length(input)
+	var/input_size = length_char(input)
 	var/scrambled_text = ""
 	var/capitalize = 0
 
-	while(length(scrambled_text) < input_size)
+	while(length_char(scrambled_text) < input_size)
 		var/next = pick(syllables)
 		if(capitalize)
 			next = capitalize(next)
@@ -213,7 +213,7 @@
 	set category = "IC"
 	set src = usr
 
-	var/dat = "<b><font size = 5>Known Languages</font></b><br/><br/>"
+	var/dat = "<meta charset='UTF-8'><b><font size = 5>Known Languages</font></b><br/><br/>"
 
 	for(var/datum/language/L in languages)
 		if(!(L.flags & NONGLOBAL))
@@ -223,7 +223,7 @@
 	return
 
 /mob/living/check_languages()
-	var/dat = "<b><font size = 5>Known Languages</font></b><br/><br/>"
+	var/dat = "<meta charset='UTF-8'><b><font size = 5>Known Languages</font></b><br/><br/>"
 
 	if(default_language)
 		dat += "Current default language: [default_language] - <a href='byond://?src=\ref[src];default_lang=reset'>reset</a><br/><br/>"
