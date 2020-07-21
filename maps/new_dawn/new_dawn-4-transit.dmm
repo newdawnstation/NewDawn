@@ -118,8 +118,8 @@
 /turf/space/bluespace,
 /area/space)
 "r" = (
-/obj/effect/shuttle_landmark/merc/internim,
-/turf/space/bluespace,
+/obj/effect/shuttle_landmark/transit/torch/guppy,
+/turf/space/transit/north,
 /area/space)
 "s" = (
 /obj/effect/step_trigger/thrower{
@@ -206,10 +206,6 @@
 "G" = (
 /obj/effect/shuttle_landmark/skipjack/internim,
 /turf/space/bluespace,
-/area/space)
-"H" = (
-/obj/effect/shuttle_landmark/transit/torch/guppy,
-/turf/space/transit/north,
 /area/space)
 "I" = (
 /obj/effect/shuttle_landmark/escape_pod/out/pod1,
@@ -4993,9 +4989,9 @@ s
 s
 s
 s
-d
-d
-d
+s
+s
+s
 d
 d
 d
@@ -5194,10 +5190,10 @@ d
 d
 d
 d
-s
-s
 e
 e
+e
+s
 e
 e
 e
@@ -5397,9 +5393,9 @@ e
 e
 e
 e
+e
+e
 s
-e
-e
 e
 e
 e
@@ -5599,9 +5595,9 @@ e
 e
 e
 e
+d
+e
 s
-e
-e
 e
 e
 e
@@ -5795,15 +5791,15 @@ e
 e
 e
 e
-H
+e
+r
 e
 e
 e
 e
+d
 e
 s
-e
-e
 e
 e
 e
@@ -6003,9 +5999,9 @@ e
 e
 e
 e
+d
+e
 s
-e
-e
 e
 e
 e
@@ -6205,9 +6201,9 @@ e
 e
 e
 e
+d
+e
 s
-e
-e
 e
 e
 e
@@ -6408,8 +6404,8 @@ s
 s
 s
 s
-e
-e
+s
+s
 e
 e
 e
@@ -15866,7 +15862,7 @@ f
 f
 f
 f
-r
+f
 f
 f
 f
