@@ -7,7 +7,7 @@
 		create_object_html = file2text('html/create_object.html')
 		create_object_html = replacetext(create_object_html, "null /* object types */", "\"[objectjs]\"")
 
-	show_browser(user, replacetext(create_object_html, "/* ref src */", "\ref[src]"), "window=create_object;size=425x475")
+	show_browser(user, replacetext(create_object_html, "/* ref src */", "\ref[src]"), "window=create_object;size=590x570")
 
 
 /datum/admins/proc/quick_create_object(var/mob/user)

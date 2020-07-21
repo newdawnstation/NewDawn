@@ -1518,6 +1518,8 @@
 
 			for (var/page = 1, page <= B.pages.len, page++)
 				var/obj/pageobj = B.pages[page]
+				if ( page == 1 )
+					data += "<meta charset='UTF-8'>"  // adds UTF-8 encoding in the start
 				data += "<A href='?src=\ref[src];AdminFaxViewPage=[page];paper_bundle=\ref[B]'>Page [page] - [pageobj.name]</A><BR>"
 
 			show_browser(usr, data, "window=[B.name]")
