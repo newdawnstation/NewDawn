@@ -87,7 +87,7 @@
 	update_nearby_tiles(need_rebuild=1)
 
 /obj/machinery/door/Initialize()
-	set_extension(src, /datum/extension/penetration/proc_call, .proc/CheckPenetration)
+	set_extension(src, /datum/extension/penetration, /datum/extension/penetration/proc_call, .proc/CheckPenetration)
 	. = ..()
 	if(autoset_access)
 #ifdef UNIT_TEST
@@ -238,11 +238,10 @@
 			if (!transfer)
 				to_chat(user, "<span class='warning'>You must weld or remove \the [repairing] from \the [src] before you can add anything else.</span>")
 		else
-			repairing = stack.split(amount_needed, force=TRUE)
+			repairing = stack.split(amount_needed)
 			if (repairing)
-				repairing.dropInto(loc)
+				repairing.dropInto(src)
 				transfer = repairing.amount
-				repairing.uses_charge = FALSE //for clean robot door repair - stacks hint immortal if true
 
 		if (transfer)
 			to_chat(user, "<span class='notice'>You fit [transfer] [stack.singular_name]\s to damaged and broken parts on \the [src].</span>")

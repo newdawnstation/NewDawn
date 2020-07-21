@@ -39,6 +39,11 @@
 	emote_message_3p = "USER chirps!"
 	emote_sound = 'sound/misc/nymphchirp.ogg'
 
+/decl/emote/audible/multichirp
+	key ="mchirp"
+	emote_message_3p = "USER chirps a chorus of notes!"
+	emote_sound = 'sound/misc/multichirp.ogg'
+
 /decl/emote/audible/alarm
 	key = "alarm"
 	emote_message_1p = "You sound an alarm."
@@ -190,3 +195,14 @@
 	key ="hiss_"
 	emote_message_3p_target = "USER hisses softly at TARGET."
 	emote_message_3p = "USER hisses softly."
+	
+/decl/emote/audible/lizard_bellow
+	key = "bellow"
+	emote_message_3p_target = "USER bellows deeply at TARGET!"
+	emote_message_3p = "USER bellows!"
+	emote_sound = 'sound/voice/LizardBellow.ogg'
+
+/decl/emote/audible/lizard_squeal
+	key = "squeal"
+	emote_message_3p = "USER squeals."
+	emote_sound = 'sound/voice/LizardSqueal.ogg'

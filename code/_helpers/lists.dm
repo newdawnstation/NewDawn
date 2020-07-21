@@ -11,7 +11,7 @@
 
 //Returns a list in plain english as a string
 /proc/english_list(var/list/input, nothing_text = "nothing", and_text = " and ", comma_text = ", ", final_comma_text = "," )
-	switch(input.len)
+	switch(length(input))
 		if(0) return nothing_text
 		if(1) return "[input[1]]"
 		if(2) return "[input[1]][and_text][input[2]]"
@@ -393,7 +393,7 @@ Checks if a list has the same entries and values as an element of big.
 
 //Don't use this on lists larger than half a dozen or so
 /proc/insertion_sort_numeric_list_ascending(var/list/L)
-	//world.log << "ascending len input: [L.len]"
+	//to_world_log("ascending len input: [L.len]")
 	var/list/out = list(pop(L))
 	for(var/entry in L)
 		if(isnum(entry))
@@ -406,13 +406,13 @@ Checks if a list has the same entries and values as an element of big.
 			if(!success)
 				out.Add(entry)
 
-	//world.log << "	output: [out.len]"
+	//to_world_log("output: [out.len]")
 	return out
 
 /proc/insertion_sort_numeric_list_descending(var/list/L)
-	//world.log << "descending len input: [L.len]"
+	//to_world_log("descending len input: [L.len]")
 	var/list/out = insertion_sort_numeric_list_ascending(L)
-	//world.log << "	output: [out.len]"
+	//to_world_log("output: [out.len]")
 	return reverselist(out)
 
 
@@ -680,7 +680,7 @@ proc/dd_sortedTextList(list/incoming)
 //Move a single element from position fromIndex within a list, to position toIndex
 //All elements in the range [1,toIndex) before the move will be before the pivot afterwards
 //All elements in the range [toIndex, L.len+1) before the move will be after the pivot afterwards
-//In other words, it's as if the range [fromIndex,toIndex) have been rotated using a <<< operation common to other languages.
+//In other words, it's as if the range [fromIndex,toIndex) have been rotated using an unsigned shift operation common to other languages.
 //fromIndex and toIndex must be in the range [1,L.len+1]
 //This will preserve associations ~Carnie
 /proc/moveElement(list/L, fromIndex, toIndex)

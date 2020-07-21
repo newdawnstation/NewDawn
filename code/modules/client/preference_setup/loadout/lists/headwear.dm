@@ -27,6 +27,11 @@
 	path = /obj/item/clothing/head/hairflower/bow
 	flags = GEAR_HAS_COLOR_SELECTION
 
+/datum/gear/head/flat_cap
+	display_name = "flat cap, colour select"
+	path = /obj/item/clothing/head/flatcap
+	flags = GEAR_HAS_COLOR_SELECTION
+
 /datum/gear/head/cap
 	display_name = "cap selection"
 	path = /obj/item/clothing/head
@@ -36,7 +41,6 @@
 	var/caps = list()
 	caps["black cap"] = /obj/item/clothing/head/soft/black
 	caps["blue cap"] = /obj/item/clothing/head/soft/blue
-	caps["flat cap"] = /obj/item/clothing/head/flatcap
 	caps["green cap"] = /obj/item/clothing/head/soft/green
 	caps["grey cap"] = /obj/item/clothing/head/soft/grey
 	caps["mailman cap"] = /obj/item/clothing/head/mailman
@@ -162,3 +166,14 @@
 /datum/gear/tactical/balaclava
 	display_name = "balaclava"
 	path = /obj/item/clothing/mask/balaclava
+
+/datum/gear/head/corporateberet
+	display_name = "corporate beret selection"
+	path = /obj/item/clothing/head/beret
+
+/datum/gear/head/corporateberet/New()
+	..()
+	var/list/options = list()
+	options += /obj/item/clothing/head/beret/pcrc
+	options += /obj/item/clothing/head/beret/saare
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(options)

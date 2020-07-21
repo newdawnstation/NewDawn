@@ -274,7 +274,8 @@
 	icon_state = "revolver"
 
 /obj/random/projectile/spawn_choices()
-	return list(/obj/item/weapon/gun/projectile/shotgun/pump = 3,
+	return list(/obj/item/weapon/gun/projectile/heavysniper/boltaction = 4,
+				/obj/item/weapon/gun/projectile/shotgun/pump = 3,
 				/obj/item/weapon/gun/projectile/automatic/merc_smg = 2,
 				/obj/item/weapon/gun/projectile/automatic/assault_rifle = 2,
 				/obj/item/weapon/gun/projectile/automatic/bullpup_rifle = 2,
@@ -523,7 +524,7 @@ obj/random/closet //A couple of random closets to spice up maint
 /obj/random/tank/spawn_choices()
 	return list(/obj/item/weapon/tank/oxygen = 5,
 				/obj/item/weapon/tank/oxygen/yellow = 4,
-				/obj/item/weapon/tank/oxygen/red = 4,
+				/obj/item/weapon/tank/emergency/oxygen/double/red = 4,
 				/obj/item/weapon/tank/air = 3,
 				/obj/item/weapon/tank/emergency/oxygen = 4,
 				/obj/item/weapon/tank/emergency/oxygen/engi = 3,
@@ -679,7 +680,7 @@ obj/random/obstruction/spawn_choices()
 				/obj/item/weapon/reagent_containers/food/snacks/spacetwinkie,
 				/obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers,
 				/obj/item/weapon/reagent_containers/food/snacks/tastybread,
-				/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar,
+				/obj/item/weapon/reagent_containers/food/snacks/proteinbar,
 				/obj/item/weapon/reagent_containers/food/snacks/syndicake,
 				/obj/item/weapon/reagent_containers/food/snacks/donut,
 				/obj/item/weapon/reagent_containers/food/snacks/donut/cherryjelly,
@@ -1135,6 +1136,16 @@ var/list/multi_point_spawns
 	id = "Captain's spare id"
 	item_path = /obj/item/weapon/card/id/captains_spare
 
+/obj/random_multi/single_item/skelestand
+	name = "Multi Point - Medical Skeleton"
+	id = "Medical Skeleton"
+	item_path = /obj/structure/skele_stand
+
+/obj/random_multi/single_item/skelestand/maint
+	name = "Multi Point - Maintenance Skeleton"
+	id = "Maint Skeleton"
+	item_path = /obj/structure/skele_stand/maint
+
 var/list/random_junk_
 var/list/random_useful_
 /proc/get_random_useful_type()
@@ -1241,7 +1252,7 @@ var/list/random_useful_
 
 /obj/random/mre/dessert/spawn_choices()
 	return list(/obj/item/weapon/reagent_containers/food/snacks/candy,
-				/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar,
+				/obj/item/weapon/reagent_containers/food/snacks/proteinbar,
 				/obj/item/weapon/reagent_containers/food/snacks/donut/normal,
 				/obj/item/weapon/reagent_containers/food/snacks/donut/cherryjelly,
 				/obj/item/weapon/reagent_containers/food/snacks/chocolatebar,
@@ -1337,7 +1348,8 @@ var/list/random_useful_
 /obj/random/vendor/spawn_choices()
 	return list(/obj/machinery/vending/weeb,
 				/obj/machinery/vending/sol,
-				/obj/machinery/vending/snix
+				/obj/machinery/vending/snix,
+				/obj/machinery/vending/soda
 				)
 
 /obj/random/single/playing_cards

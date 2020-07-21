@@ -61,7 +61,7 @@
 		/obj/item/weapon/pen/invisible,
 		/obj/item/weapon/lipstick/random,
 		/obj/item/weapon/grenade/smokebomb,
-		/obj/item/weapon/corncob,
+		/obj/item/weapon/carvable/corncob,
 		/obj/item/weapon/contraband/poster,
 		/obj/item/weapon/book/manual/barman_recipes,
 		/obj/item/weapon/book/manual/chef_recipes,
@@ -91,7 +91,10 @@
 		/obj/item/device/paicard,
 		/obj/item/device/synthesized_instrument/violin,
 		/obj/item/weapon/storage/belt/utility/full,
-		/obj/item/clothing/accessory/horrible)
+		/obj/item/clothing/accessory/horrible,
+		/obj/item/weapon/storage/box/large/foam_gun,
+		/obj/item/weapon/storage/box/large/foam_gun/burst,
+		/obj/item/weapon/storage/box/large/foam_gun/revolver)
 
 	if(!ispath(gift_type,/obj/item))	return
 

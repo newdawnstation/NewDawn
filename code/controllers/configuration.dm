@@ -19,7 +19,7 @@ var/list/gamemode_cache = list()
 	var/log_pda = 0						// log pda messages
 	var/log_hrefs = 0					// logs all links clicked in-game. Could be used for debugging and tracking down exploits
 	var/log_runtime = 0					// logs world.log to a file
-	var/log_world_output = 0			// log world.log << messages
+	var/log_world_output = 0			// log world.log to game log
 	var/allow_admin_ooccolor = 0		// Allows admins with relevant permissions to have their own ooc colour
 	var/allow_vote_restart = 0 			// allow votes to restart
 	var/ert_admin_call_only = 0
@@ -53,6 +53,7 @@ var/list/gamemode_cache = list()
 	var/list/modes = list()				// allowed modes
 	var/list/votable_modes = list()		// votable modes
 	var/list/probabilities = list()		// relative probability of each mode
+	var/secret_hide_possibilities = FALSE // Whether or not secret modes show list of possible round types
 	var/humans_need_surnames = 0
 	var/allow_random_events = 0			// enables random events mid-round when set to 1
 	var/allow_ai = 1					// allow ai job
@@ -96,6 +97,11 @@ var/list/gamemode_cache = list()
 	var/forumurl
 	var/githuburl
 	var/issuereporturl
+
+	var/forbidden_message_regex
+	var/forbidden_message_warning = "<B>Your message matched a filter and has not been sent.</B>"
+	var/forbidden_message_no_notifications = FALSE
+	var/forbidden_message_hide_details = FALSE
 
 	var/forbid_singulo_possession = 0
 
@@ -156,7 +162,7 @@ var/list/gamemode_cache = list()
 	var/gateway_delay = 18000 //How long the gateway takes before it activates. Default is half an hour.
 	var/ghost_interaction = 0
 
-	var/comms_password = ""
+	var/comms_password = null
 	var/ban_comms_password = null
 	var/list/forbidden_versions = list() // Clients with these byond versions will be autobanned. Format: string "byond_version.byond_build"; separate with ; in config, e.g. 512.1234;512.1235
 	var/minimum_byond_version = 0
@@ -550,9 +556,6 @@ var/list/gamemode_cache = list()
 				if("popup_admin_pm")
 					config.popup_admin_pm = 1
 
-				if("allow_holidays")
-					Holiday = 1
-
 				if("use_irc_bot")
 					use_irc_bot = 1
 
@@ -571,6 +574,9 @@ var/list/gamemode_cache = list()
 					config.antag_hud_allowed = 1
 				if("antag_hud_restricted")
 					config.antag_hud_restricted = 1
+
+				if("secret_hide_possibilities")
+					secret_hide_possibilities = TRUE
 
 				if("humans_need_surnames")
 					humans_need_surnames = 1
@@ -758,6 +764,26 @@ var/list/gamemode_cache = list()
 				if ("act_interval")
 					config.act_interval = text2num(value) SECONDS
 
+				if ("forbidden_message_regex")
+					var/end = findlasttext(value, "/")
+					if (length(value) < 3 || value[1] != "/" || end < 3)
+						log_error("Invalid regex '[value]' supplied to '[name]'")
+					var/matcher = copytext(value, 2, end)
+					var/flags = end == length(value) ? FALSE : copytext(value, end + 1)
+					try
+						config.forbidden_message_regex = flags ? regex(matcher, flags) : regex(matcher)
+					catch(var/exception/ex)
+						log_error("Invalid regex '[value]' supplied to '[name]': [ex]")
+
+				if ("forbidden_message_warning")
+					config.forbidden_message_warning = length(value) ? value : FALSE
+
+				if ("forbidden_message_no_notifications")
+					config.forbidden_message_no_notifications = TRUE
+
+				if ("forbidden_message_hide_details")
+					config.forbidden_message_hide_details = TRUE
+
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
 
@@ -822,6 +848,12 @@ var/list/gamemode_cache = list()
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
+
+		else if(type == "using_map")
+			if(!value)
+				log_misc("Unknown value for setting [name] in [filename].")
+			else
+				GLOB.using_map.setup_config(name, value, filename)
 
 	fps = round(fps)
 	if(fps <= 0)

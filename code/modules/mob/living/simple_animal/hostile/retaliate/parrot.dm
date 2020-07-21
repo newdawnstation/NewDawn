@@ -2,7 +2,7 @@
  * Contains
  * 		Defines
  *		Inventory (headset stuff)
- *		Attack responces
+ *		Attack responses
  *		AI
  *		Procs / Verbs (usable by players)
  *		Poly
@@ -57,7 +57,7 @@
 	skin_material = MATERIAL_SKIN_FEATHERS
 
 	var/parrot_state = PARROT_WANDER //Hunt for a perch when created
-	var/parrot_sleep_max = 25 //The time the parrot sits while perched before looking around. Mosly a way to avoid the parrot's AI in life() being run every single tick.
+	var/parrot_sleep_max = 25 //The time the parrot sits while perched before looking around. Mostly a way to avoid the parrot's AI in life() being run every single tick.
 	var/parrot_sleep_dur = 25 //Same as above, this is the var that physically counts down
 	var/parrot_dam_zone = list(BP_CHEST, BP_HEAD, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG) //For humans, select a bodypart to attack
 
@@ -74,8 +74,8 @@
 	//mobs it wants to attack or mobs that have attacked it
 	var/atom/movable/parrot_interest = null
 
-	//Parrots will generally sit on their pertch unless something catches their eye.
-	//These vars store their preffered perch and if they dont have one, what they can use as a perch
+	//Parrots will generally sit on their perch unless something catches their eye.
+	//These vars store their preferred perch and if they don't have one, what they can use as a perch
 	var/obj/parrot_perch = null
 	var/obj/desired_perches = list(/obj/machinery/constructable_frame/computerframe, 		/obj/structure/displaycase, \
 									/obj/structure/filingcabinet,		/obj/machinery/teleport, \
@@ -143,16 +143,16 @@
 	else
 		dat +=	"<br><b>Headset:</b> <a href='?src=\ref[src];add_inv=ears'>Nothing</a>"
 
-	user << browse(dat, text("window=mob[];size=325x500", name))
+	show_browser(user, dat, text("window=mob[];size=325x500", name))
 	onclose(user, "mob[real_name]")
 	return
 
-/mob/living/simple_animal/hostile/retaliate/parrot/Topic(href, href_list, state = GLOB.physical_state)
-	if((. = ..()))
-		return
+/mob/living/simple_animal/hostile/retaliate/parrot/DefaultTopicState()
+	return GLOB.physical_state
 
-	//Is the usr's mob type able to do this?
-	if(ishuman(usr) || issmall(usr) || isrobot(usr))
+/mob/living/simple_animal/hostile/retaliate/parrot/OnTopic(mob/user, href_list)
+	//Is the user's mob type able to do this?
+	if(ishuman(user) || issmall(user) || isrobot(user))
 
 		//Removing from inventory
 		if(href_list["remove_inv"])
@@ -170,34 +170,34 @@
 							if(copytext_char(possible_phrase,1,3) in department_radio_keys)
 								possible_phrase = copytext(possible_phrase,3,length(possible_phrase))
 					else
-						to_chat(usr, "<span class='warning'>There is nothing to remove from its [remove_from].</span>")
-						return
+						to_chat(user, "<span class='warning'>There is nothing to remove from its [remove_from].</span>")
+			return TOPIC_HANDLED
 
 		//Adding things to inventory
-		else if(href_list["add_inv"])
+		if(href_list["add_inv"])
 			var/add_to = href_list["add_inv"]
-			if(!usr.get_active_hand())
-				to_chat(usr, "<span class='warning'>You have nothing in your hand to put on its [add_to].</span>")
-				return
+			if(!user.get_active_hand())
+				to_chat(user, "<span class='warning'>You have nothing in your hand to put on its [add_to].</span>")
+				return TOPIC_HANDLED
 			switch(add_to)
 				if("ears")
 					if(ears)
-						to_chat(usr, "<span class='warning'>It's already wearing something.</span>")
-						return
+						to_chat(user, "<span class='warning'>It's already wearing something.</span>")
+						return TOPIC_HANDLED
 					else
 						var/obj/item/item_to_add = usr.get_active_hand()
 						if(!item_to_add)
-							return
+							return TOPIC_HANDLED
 
 						if( !istype(item_to_add,  /obj/item/device/radio/headset) )
-							to_chat(usr, "<span class='warning'>This object won't fit.</span>")
-							return
-						if(!usr.unEquip(item_to_add, src))
-							return
+							to_chat(user, "<span class='warning'>This object won't fit.</span>")
+							return TOPIC_HANDLED
+						if(!user.unEquip(item_to_add, src))
+							return TOPIC_HANDLED
 						var/obj/item/device/radio/headset/headset_to_add = item_to_add
 
 						src.ears = headset_to_add
-						to_chat(usr, "You fit the headset onto [src].")
+						to_chat(user, "You fit the headset onto [src].")
 
 						clearlist(available_channels)
 						for(var/ch in headset_to_add.channels)
@@ -216,8 +216,9 @@
 									available_channels.Add(":d")
 								if("Cargo")
 									available_channels.Add(":q")
-		else
-			..()
+			return TOPIC_HANDLED
+
+	return ..()
 
 
 /*
@@ -309,7 +310,7 @@
 	/* Parrot speech mimickry!
 	   Phrases that the parrot hears in mob/living/say() get added to speach_buffer.
 	   Every once in a while, the parrot picks one of the lines from the buffer and replaces an element of the 'speech' list.
-	   Then it clears the buffer to make sure they dont magically remember something from hours ago. */
+	   Then it clears the buffer to make sure they don't magically remember something from hours ago. */
 	if(speech_buffer.len && prob(10))
 		if(speak.len)
 			speak.Remove(pick(speak))
@@ -356,7 +357,7 @@
 
 						newspeak.Add(possible_phrase)
 
-				else //If we have no headset or channels to use, dont try to use any!
+				else //If we have no headset or channels to use, don't try to use any!
 					for(var/possible_phrase in speak)
 						if(copytext_char(possible_phrase,1,3) in department_radio_keys)
 							possible_phrase = "[copytext(possible_phrase,3,length(possible_phrase)+1)]" //crop out the channel prefix
@@ -371,7 +372,7 @@
 				icon_state = "[icon_set]_fly"
 			return
 
-//-----WANDERING - This is basically a 'I dont know what to do yet' state
+//-----WANDERING - This is basically a 'I don't know what to do yet' state
 	else if(parrot_state == PARROT_WANDER)
 		//Stop movement, we'll set it later
 		walk(src, 0)
@@ -397,11 +398,11 @@
 					return
 			return
 
-		if(parrot_interest && parrot_interest in view(src))
+		if(parrot_interest && (parrot_interest in view(src)))
 			parrot_state = PARROT_SWOOP | PARROT_STEAL
 			return
 
-		if(parrot_perch && parrot_perch in view(src))
+		if(parrot_perch && (parrot_perch in view(src)))
 			parrot_state = PARROT_SWOOP | PARROT_RETURN
 			return
 

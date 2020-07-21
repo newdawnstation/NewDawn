@@ -26,7 +26,6 @@ var/list/floor_decals = list()
 		var/cache_key = "[alpha]-[color]-[dir]-[icon_state]-[plane]-[layer]-[detail_overlay]-[detail_color]"
 		if(!floor_decals[cache_key])
 			var/image/I = image(icon = src.icon, icon_state = src.icon_state, dir = src.dir)
-			I.plane = plane
 			I.layer = layer
 			I.appearance_flags = appearance_flags
 			I.color = src.color
@@ -1124,6 +1123,18 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/sign/p
 	icon_state = "white_p"
+
+/obj/effect/floor_decal/sign/or1
+	icon_state = "white_or1"
+
+/obj/effect/floor_decal/sign/or2
+	icon_state = "white_or2"
+
+/obj/effect/floor_decal/sign/tr
+	icon_state = "white_tr"
+
+/obj/effect/floor_decal/sign/pop
+	icon_state = "white_pop"
 
 /obj/effect/floor_decal/solarpanel
 	icon_state = "solarpanel"

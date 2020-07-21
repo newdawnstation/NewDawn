@@ -552,7 +552,6 @@
 	inputs = list("teleporter", "rift direction")
 	outputs = list()
 	activators = list("open rift" = IC_PINTYPE_PULSE_IN)
-	spawn_flags = IC_SPAWN_RESEARCH
 	action_flags = IC_ACTION_LONG_RANGE
 
 	origin_tech = list(TECH_MAGNET = 1, TECH_BLUESPACE = 3)
@@ -561,7 +560,8 @@
 /obj/item/integrated_circuit/manipulation/bluespace_rift/do_work()
 	var/obj/machinery/computer/teleporter/tporter = get_pin_data_as_type(IC_INPUT, 1, /obj/machinery/computer/teleporter)
 	var/step_dir = get_pin_data(IC_INPUT, 2)
-	if(!(get(z) in GetConnectedZlevels(get_z(tporter))))
+
+	if(!AreConnectedZLevels(get_z(src), get_z(tporter)))
 		tporter = null
 
 	var/turf/rift_location = get_turf(src)

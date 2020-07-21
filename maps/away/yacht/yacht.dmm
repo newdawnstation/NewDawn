@@ -38,8 +38,8 @@
 /area/yacht/bridge)
 "aj" = (
 /obj/machinery/computer/ship/sensors{
-	icon_state = "computer";
-	dir = 4
+	dir = 4;
+	icon_state = "computer"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/yacht/bridge)
@@ -52,8 +52,8 @@
 /area/yacht/bridge)
 "al" = (
 /obj/machinery/computer/ship/engines{
-	icon_state = "computer";
-	dir = 8
+	dir = 8;
+	icon_state = "computer"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/yacht/bridge)
@@ -655,8 +655,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/smes/buildable,
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
 /area/yacht/engine)
@@ -806,8 +806,8 @@
 /area/yacht/engine)
 "cn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	icon_state = "map_universal";
-	dir = 4
+	dir = 4;
+	icon_state = "map_universal"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
@@ -822,11 +822,11 @@
 /area/yacht/engine)
 "cp" = (
 /obj/structure/cable{
-	icon_state = "0-2";
-	dir = 4;
-	pixel_y = 0;
 	d1 = 16;
-	d2 = 0
+	d2 = 0;
+	dir = 4;
+	icon_state = "0-2";
+	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/ash,
 /obj/effect/decal/cleanable/blood/oil/streak,
@@ -961,8 +961,8 @@
 /area/yacht/engine)
 "cJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/wall/titanium,
 /area/yacht/engine)
@@ -1127,7 +1127,6 @@
 	dir = 8;
 	external_pressure_bound = 0;
 	external_pressure_bound_default = 0;
-	frequency = 1439;
 	icon_state = "map_vent_in";
 	id_tag = null;
 	initialize_directions = 1;
@@ -1145,7 +1144,6 @@
 	dir = 4;
 	external_pressure_bound = 0;
 	external_pressure_bound_default = 0;
-	frequency = 1439;
 	icon_state = "map_vent_in";
 	id_tag = null;
 	initialize_directions = 1;
@@ -1163,8 +1161,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/meter,
 /obj/machinery/light/small{
-	dir = 8;
-	
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/yacht/engine)
@@ -1260,7 +1257,7 @@
 /area/yacht/living)
 "fb" = (
 /obj/machinery/access_button/airlock_exterior{
-	frequency = 1420;
+	frequency = 1439;
 	master_tag = "yacht_airlock";
 	pixel_x = 24
 	},
@@ -1275,7 +1272,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/constructable_frame/computerframe,
 /obj/machinery/access_button/airlock_interior{
-	frequency = 1420;
+	frequency = 1439;
 	master_tag = "yacht_airlock";
 	pixel_x = -24
 	},
@@ -1283,8 +1280,8 @@
 /area/yacht/engine)
 "hb" = (
 /obj/machinery/power/terminal{
-	icon_state = "term";
-	dir = 1
+	dir = 1;
+	icon_state = "term"
 	},
 /obj/structure/cable{
 	d2 = 2;
@@ -1321,7 +1318,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/airlock/external/bolted{
-	frequency = 1420;
+	frequency = 1439;
 	id_tag = "yacht_outer"
 	},
 /turf/simulated/floor/airless,
@@ -1334,7 +1331,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1420;
+	frequency = 1439;
 	id_tag = "yacht_airlock";
 	pixel_y = 24;
 	tag_airpump = "yacht_pump";
@@ -1344,11 +1341,10 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1420;
 	id_tag = "yacht_pump"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1420;
+	frequency = 1439;
 	id_tag = "yacht_sensor";
 	pixel_y = -24
 	},
@@ -1366,7 +1362,7 @@
 	icon_state = "intact"
 	},
 /obj/machinery/door/airlock/external/bolted{
-	frequency = 1420;
+	frequency = 1439;
 	id_tag = "yacht_inner"
 	},
 /turf/simulated/floor/plating,
@@ -1432,8 +1428,8 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,

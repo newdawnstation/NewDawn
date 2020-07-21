@@ -81,7 +81,7 @@
 		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/melee/baton/loaded,
-		/obj/item/weapon/gun/energy/gun/secure,
+		/obj/item/weapon/gun/energy/gun/secure/preauthorized,
 		/obj/item/weapon/melee/telebaton,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/clothing/accessory/storage/black_vest,
@@ -95,6 +95,7 @@
 		/obj/item/device/taperecorder,
 		/obj/item/weapon/hand_labeler,
 		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/device/personal_shield,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)
@@ -115,7 +116,7 @@
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/weapon/melee/baton/loaded,
-		/obj/item/weapon/gun/energy/gun/secure,
+		/obj/item/weapon/gun/energy/gun/secure/preauthorized,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/handcuffs,
 		/obj/item/device/hailer,
@@ -150,6 +151,7 @@
 		/obj/item/taperoll/police,
 		/obj/item/device/tape/random = 3,
 		/obj/item/clothing/glasses/sunglasses/sechud/toggle,
+		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
 		/obj/item/device/holowarrant,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/storage/belt/holster/forensic,

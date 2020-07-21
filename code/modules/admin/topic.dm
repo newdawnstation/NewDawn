@@ -232,7 +232,6 @@
 
 		switch(href_list["simplemake"])
 			if("observer")			M.change_mob_type( /mob/observer/ghost , null, null, delmob )
-			if("larva")				M.change_mob_type( /mob/living/carbon/alien/larva , null, null, delmob )
 			if("nymph")				M.change_mob_type( /mob/living/carbon/alien/diona , null, null, delmob )
 			if("human")				M.change_mob_type( /mob/living/carbon/human , null, null, delmob, href_list["species"])
 			if("slime")				M.change_mob_type( /mob/living/carbon/slime , null, null, delmob )
@@ -309,10 +308,10 @@
 		ban_unban_log_save("[key_name(usr)] edited [banned_key]'s ban. Reason: [reason] Duration: [duration]")
 		log_and_message_admins("edited [banned_key]'s ban. Reason: [reason] Duration: [duration]")
 		Banlist.cd = "/base/[banfolder]"
-		Banlist["reason"] << reason
-		Banlist["temp"] << temp
-		Banlist["minutes"] << minutes
-		Banlist["bannedby"] << usr.ckey
+		to_save(Banlist["reason"], reason)
+		to_save(Banlist["temp"], temp)
+		to_save(Banlist["minutes"], minutes)
+		to_save(Banlist["bannedby"], usr.ckey)
 		Banlist.cd = "/base"
 		SSstatistics.add_field("ban_edit",1)
 		unbanpanel()
@@ -633,9 +632,9 @@
 		jobs += "</tr></table>"
 
 	// Finalize and display.
-		body = "<meta charset='UTF-8'><body>[jobs]</body>"
+		body = "<body>[jobs]</body>"
 		dat = "<meta charset='UTF-8'><tt>[header][body]</tt>"
-		usr << browse(dat, "window=jobban2;size=800x490")
+		show_browser(usr, dat, "window=jobban2;size=800x490")
 		return
 
 	//JOBBAN'S INNARDS
@@ -974,7 +973,7 @@
 		dat += {"<A href='?src=\ref[src];c_mode2=secret'>Secret</A><br>"}
 		dat += {"<A href='?src=\ref[src];c_mode2=random'>Random</A><br>"}
 		dat += {"Now: [SSticker.master_mode]"}
-		usr << browse(dat, "window=c_mode")
+		show_browser(usr, dat, "window=c_mode")
 
 	else if(href_list["f_secret"])
 		if(!check_rights(R_ADMIN))	return
@@ -988,7 +987,7 @@
 			dat += {"<A href='?src=\ref[src];f_secret2=[mode]'>[config.mode_names[mode]]</A><br>"}
 		dat += {"<A href='?src=\ref[src];f_secret2=secret'>Random (default)</A><br>"}
 		dat += {"Now: [secret_force_mode]"}
-		usr << browse(dat, "window=f_secret")
+		show_browser(usr, dat, "window=f_secret")
 
 	else if(href_list["c_mode2"])
 		if(!check_rights(R_ADMIN|R_SERVER))	return
@@ -1049,6 +1048,23 @@
 		M.say(speech)
 		speech = sanitize(speech) // Nah, we don't trust them
 		log_and_message_admins("forced [key_name_admin(M)] to say: [speech]")
+
+	else if (href_list["reloadsave"])
+		if(!check_rights(R_DEBUG))	return
+		var/mob/M = locate(href_list["reloadsave"])
+		if (!ismob(M))
+			return
+		if (!M.client)
+			return
+		var/client/C = M.client
+		to_chat(usr, SPAN_NOTICE("Attempting to reload save for [C.key] <A HREF='?src=\ref[src];reloadsaveshow=\ref[C.prefs]'>View Prefs Datum</A>"))
+		C.prefs.setup()
+
+	else if (href_list["reloadsaveshow"])
+		if(!check_rights(R_DEBUG))	return
+		var/datum/preferences/prefs = locate(href_list["reloadsaveshow"])
+		if (prefs)
+			usr.client.debug_variables(prefs)
 
 	else if(href_list["sendtoprison"])
 		if(!check_rights(R_ADMIN))	return
@@ -1290,7 +1306,7 @@
 		var/mob/observer/ghost/G = C.mob
 		if(istype(G))
 			sleep(2)
-			G.ManualFollow(M)
+			G.start_following(M)
 
 	else if(href_list["check_antagonist"])
 		check_antagonists()
@@ -1503,9 +1519,8 @@
 			for (var/page = 1, page <= B.pages.len, page++)
 				var/obj/pageobj = B.pages[page]
 				data += "<A href='?src=\ref[src];AdminFaxViewPage=[page];paper_bundle=\ref[B]'>Page [page] - [pageobj.name]</A><BR>"
-			if ( data != "" )
-				data = "<meta charset='UTF-8'>" + data
-			usr << browse(data, "window=[B.name]")
+
+			show_browser(usr, data, "window=[B.name]")
 		else
 			to_chat(usr, "<span class='warning'>The faxed item is not viewable. This is probably a bug, and should be reported on the tracker: [fax.type]</span>")
 	else if (href_list["AdminFaxViewPage"])

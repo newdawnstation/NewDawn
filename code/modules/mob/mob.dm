@@ -82,7 +82,7 @@
 // message is the message output to anyone who can see e.g. "[src] does something!"
 // self_message (optional) is what the src mob sees  e.g. "You do something!"
 // blind_message (optional) is what blind people will hear e.g. "You hear something!"
-/mob/visible_message(var/message, var/self_message, var/blind_message, var/range = world.view, var/checkghosts = null, var/narrate = FALSE)
+/mob/visible_message(message, self_message, blind_message, range = world.view, checkghosts = null, narrate = FALSE, list/exclude_objs = null, list/exclude_mobs = null)
 	var/turf/T = get_turf(src)
 	var/list/mobs = list()
 	var/list/objs = list()
@@ -90,10 +90,17 @@
 
 	for(var/o in objs)
 		var/obj/O = o
+		if (exclude_objs?.len && (O in exclude_objs))
+			exclude_objs -= O
+			continue
 		O.show_message(message, VISIBLE_MESSAGE, blind_message, AUDIBLE_MESSAGE)
 
 	for(var/m in mobs)
 		var/mob/M = m
+		if (exclude_mobs?.len && (M in exclude_mobs))
+			exclude_mobs -= M
+			continue
+		
 		var/mob_message = message
 
 		if(isghost(M))
@@ -105,7 +112,7 @@
 			M.show_message(self_message, VISIBLE_MESSAGE, blind_message, AUDIBLE_MESSAGE)
 			continue
 
-		if(!M.is_blind() || narrate)
+		if((!M.is_blind() && M.see_invisible >= src.invisibility) || narrate)
 			M.show_message(mob_message, VISIBLE_MESSAGE, blind_message, AUDIBLE_MESSAGE)
 			continue
 
@@ -114,7 +121,7 @@
 			continue
 	//Multiz, have shadow do same
 	if(bound_overlay)
-		bound_overlay.visible_message(message, self_message, blind_message)
+		bound_overlay.visible_message(message, blind_message, range)
 
 // Show a message to all mobs and objects in earshot of this one
 // This would be for audible actions by the src mob
@@ -122,7 +129,7 @@
 // self_message (optional) is what the src mob hears.
 // deaf_message (optional) is what deaf people will see.
 // hearing_distance (optional) is the range, how many tiles away the message can be heard.
-/mob/audible_message(var/message, var/self_message, var/deaf_message, var/hearing_distance = world.view, var/checkghosts = null, var/narrate = FALSE)
+/mob/audible_message(message, self_message, deaf_message, hearing_distance = world.view, checkghosts = null, narrate = FALSE, list/exclude_objs = null, list/exclude_mobs = null)
 	var/turf/T = get_turf(src)
 	var/list/mobs = list()
 	var/list/objs = list()
@@ -130,6 +137,9 @@
 
 	for(var/m in mobs)
 		var/mob/M = m
+		if (exclude_mobs?.len && (M in exclude_mobs))
+			exclude_mobs -= M
+			continue
 		var/mob_message = message
 
 		if(isghost(M))
@@ -146,6 +156,9 @@
 
 	for(var/o in objs)
 		var/obj/O = o
+		if (exclude_objs?.len && (O in exclude_objs))
+			exclude_objs -= O
+			continue
 		O.show_message(message, AUDIBLE_MESSAGE, deaf_message, VISIBLE_MESSAGE)
 
 /mob/proc/add_ghost_track(var/message, var/mob/observer/ghost/M)
@@ -227,10 +240,10 @@
 	return restrained() ? FULLY_BUCKLED : PARTIALLY_BUCKLED
 
 /mob/proc/is_blind()
-	return ((sdisabilities & BLIND) || blinded || incapacitated(INCAPACITATION_KNOCKOUT))
+	return ((sdisabilities & BLINDED) || blinded || incapacitated(INCAPACITATION_KNOCKOUT))
 
 /mob/proc/is_deaf()
-	return ((sdisabilities & DEAF) || ear_deaf || incapacitated(INCAPACITATION_KNOCKOUT))
+	return ((sdisabilities & DEAFENED) || ear_deaf || incapacitated(INCAPACITATION_KNOCKOUT))
 
 /mob/proc/is_physically_disabled()
 	return incapacitated(INCAPACITATION_DISABLED)
@@ -379,12 +392,10 @@
 		else
 			attack_empty_hand(BP_R_HAND)
 
-/mob/proc/update_flavor_text()
-	set src in usr
-	if(usr != src)
-		to_chat(usr, "No.")
+/mob/proc/update_flavor_text(var/key)
 	var/msg = sanitize(input(usr,"Set the flavor text in your 'examine' verb. Can also be used for OOC notes about your character.","Flavor Text",html_decode(flavor_text)) as message|null, extra = 0)
-
+	if(!CanInteract(usr, GLOB.self_state))
+		return
 	if(msg != null)
 		flavor_text = msg
 
@@ -406,6 +417,7 @@
 	set category = "OOC"
 	getFiles(
 		'html/88x31.png',
+		'html/auction-hammer-gavel.png',
 		'html/bug-minus.png',
 		'html/burn-exclamation.png',
 		'html/chevron.png',
@@ -424,7 +436,7 @@
 		'html/changelog.css',
 		'html/changelog.html'
 		)
-	src << browse('html/changelog.html', "window=changes;size=675x650")
+	show_browser(src, 'html/changelog.html', "window=changes;size=675x650")
 	if(prefs.lastchangelog != changelog_hash)
 		prefs.lastchangelog = changelog_hash
 		SScharacter_setup.queue_preferences_save(prefs)
@@ -436,20 +448,37 @@
 	unset_machine()
 	reset_view(null)
 
-/mob/Topic(href, href_list)
+/mob/DefaultTopicState()
+	return GLOB.view_state
+
+// Use to field Topic calls for which usr == src is required, which will first be funneled into here.
+/mob/proc/OnSelfTopic(href_list)
 	if(href_list["mach_close"])
 		var/t1 = text("window=[href_list["mach_close"]]")
 		unset_machine()
-		src << browse(null, t1)
-
-	if(href_list["flavor_more"])
-		usr << browse(text({"<HTML><meta charset="UTF-8"><HEAD><TITLE>[]</TITLE></HEAD><BODY><TT>[]</TT></BODY></HTML>"}, name, replacetext(flavor_text, "\n", "<BR>")), text("window=[];size=500x200", name))
-		onclose(usr, "[name]")
+		show_browser(src, null, t1)
+		return TOPIC_HANDLED
 	if(href_list["flavor_change"])
-		update_flavor_text()
+		update_flavor_text(href_list["flavor_change"])
+		return TOPIC_HANDLED
 
-//	..()
-	return
+// If usr != src, or if usr == src but the Topic call was not resolved, this is called next.
+/mob/OnTopic(mob/user, href_list, datum/topic_state/state)
+	if(href_list["flavor_more"])
+		var/text = "<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY><TT>[replacetext(flavor_text, "\n", "<BR>")]</TT></BODY></HTML>"
+		show_browser(user, text, "window=[name];size=500x200")
+		onclose(user, "[name]")
+		return TOPIC_HANDLED
+
+// You probably do not need to override this proc. Use one of the two above.
+/mob/Topic(href, href_list, datum/topic_state/state)
+	if(CanUseTopic(usr, GLOB.self_state, href_list) == STATUS_INTERACTIVE)
+		. = OnSelfTopic(href_list)
+		if(.)
+			return
+	else if(href_list["flavor_change"] && !is_admin(usr) && (usr != src))
+		log_and_message_admins(usr, "is suspected of trying to change flavor text on [key_name_admin(src)] via Topic exploits.")
+	return ..()
 
 /mob/proc/pull_damage()
 	return 0

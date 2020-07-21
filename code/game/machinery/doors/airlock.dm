@@ -1066,11 +1066,12 @@ About the new airlock wires panel:
 		if(!W.remove_fuel(0,user))
 			to_chat(user, SPAN_NOTICE("Your [W.name] doesn't have enough fuel."))
 			return
-		playsound(loc, 'sound/items/Welder.ogg', 50, 1)
+		playsound(src, 'sound/items/Welder.ogg', 50, 1)
 		user.visible_message(SPAN_WARNING("\The [user] begins welding \the [src] [welded ? "open" : "closed"]!"),
 							SPAN_NOTICE("You begin welding \the [src] [welded ? "open" : "closed"]."))
 		if(do_after(user, (rand(3,5)) SECONDS, src))
 			if(density && !(operating > 0) && !repairing)
+				playsound(src, 'sound/items/Welder2.ogg', 50, 1)
 				welded = !welded
 				update_icon()
 				return
@@ -1083,8 +1084,12 @@ About the new airlock wires panel:
 				to_chat(user, "<span class='warning'>The panel is broken, and cannot be closed.</span>")
 			else
 				src.p_open = 0
+				user.visible_message(SPAN_NOTICE("[user.name] closes the maintenance panel on \the [src]."), SPAN_NOTICE("You close the maintenance panel on \the [src]."))
+				playsound(src.loc, "sound/items/Screwdriver.ogg", 20)
 		else
 			src.p_open = 1
+			user.visible_message(SPAN_NOTICE("[user.name] opens the maintenance panel on \the [src]."), SPAN_NOTICE("You open the maintenance panel on \the [src]."))
+			playsound(src.loc, "sound/items/Screwdriver.ogg", 20)
 		src.update_icon()
 	else if(isWirecutter(C))
 		return src.attack_hand(user)
@@ -1368,7 +1373,7 @@ About the new airlock wires panel:
 		brace = A
 		brace.airlock = src
 		brace.forceMove(src)
-		if(brace.electronics)
+		if(brace.electronics && !length(brace.req_access))
 			brace.electronics.set_access(src)
 			brace.update_access()
 		update_icon()

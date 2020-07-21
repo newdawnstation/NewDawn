@@ -81,7 +81,7 @@
 					body += "<a href='?src=\ref[src];traitor="+ref+"'>TP</a> - "
 					body += "<a href='?src=\ref[usr];priv_msg=\ref"+ref+"'>PM</a> - "
 					body += "<a href='?src=\ref[src];narrateto="+ref+"'>DN</a> - "
-					body += "<a href='?src=\ref[src];adminplayerobservejump="+ref+"'>JMP</a><br>"
+					body += "<a href='?src=\ref[src];adminplayerobservefollow="+ref+"'>JMP</a><br>"
 					if(antagonist > 0)
 						body += "<font size='2'><a href='?src=\ref[src];check_antagonist=1'><font color='red'><b>Antagonist</b></font></a></font>";
 
@@ -319,7 +319,7 @@
 	</body></html>
 	"}
 
-	usr << browse(dat, "window=players;size=600x480")
+	show_browser(usr, dat, "window=players;size=600x480")
 
 //The old one
 /datum/admins/proc/player_panel_old()
@@ -386,7 +386,7 @@
 
 	dat += "</table></body></html>"
 
-	usr << browse(dat, "window=players;size=640x480")
+	show_browser(usr, dat, "window=players;size=640x480")
 
 
 
@@ -412,6 +412,6 @@
 			var/datum/antagonist/A = all_antag_types[antag_type]
 			dat += A.get_check_antag_output(src)
 		dat += "</body></html>"
-		usr << browse(jointext(dat,null), "window=roundstatus;size=400x500")
+		show_browser(usr, jointext(dat,null), "window=roundstatus;size=400x500")
 	else
 		alert("The game hasn't started yet!")

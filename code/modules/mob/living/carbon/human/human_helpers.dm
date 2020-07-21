@@ -184,7 +184,7 @@
 		ping_image.layer = BEAM_PROJECTILE_LAYER
 		ping_image.pixel_x = (T.x - src.x) * WORLD_ICON_SIZE
 		ping_image.pixel_y = (T.y - src.y) * WORLD_ICON_SIZE
-		show_image(src, ping_image)
+		image_to(src, ping_image)
 		spawn(8)
 			qdel(ping_image)
 		var/feedback = list("<span class='notice'>There are noises of movement ")
@@ -344,3 +344,6 @@
 	for(var/obj/screen/equipment_screen in equipment_overlays) // check through our overlays to see if we have any source of the meson overlay
 		if (equipment_screen.icon_state == "meson_hud")
 			return TRUE
+
+/mob/living/carbon/human/proc/is_in_pocket(var/obj/item/I)
+	return I in list(l_store, r_store)

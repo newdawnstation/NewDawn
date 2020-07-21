@@ -20,10 +20,12 @@
 #define FACTION_FLEET          "SCG Fleet"
 #define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
+#define FACTION_SAARE          "Strategic Assault and Asset Retention Enterprises"
 #define FACTION_CORPORATE       "Expeditionary Corps Organisation"
 #define FACTION_DAIS           "Deimos Advanced Information Systems"
 #define FACTION_OTHER          "Other Faction"
 #define FACTION_TEST_SUBJECTS  "Test Subjects"
+#define FACTION_SPACECOPS  "Sol Federal Police"
 
 #define HOME_SYSTEM_EARTH      "Earth"
 #define HOME_SYSTEM_LUNA       "Luna"
@@ -152,6 +154,8 @@
 #define CULTURE_UNATHI              "Moghes Hegemony"
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
+#define HOME_SYSTEM_OUERE			"Ouere"
+#define HOME_SYSTEM_OFFWORLD		"Off World"
 
 #define FACTION_UNATHI_POLAR        "Polar Clans"
 #define FACTION_UNATHI_DESERT       "Desert Clans"

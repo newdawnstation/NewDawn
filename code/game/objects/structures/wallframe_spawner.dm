@@ -43,13 +43,6 @@
 	if(locate(win_path) in loc)
 		warning("Frame Spawner: A window structure already exists at [loc.x]-[loc.y]-[loc.z]")
 
-	if(grille_path)
-		if(locate(grille_path) in loc)
-			warning("Frame Spawner: A grille already exists at [loc.x]-[loc.y]-[loc.z]")
-		else
-			var/obj/structure/grille/G = new grille_path (loc)
-			handle_grille_spawn(G)
-
 	var/list/neighbours = list()
 	if(fulltile)
 		var/obj/structure/window/new_win = new win_path(loc)
@@ -71,6 +64,14 @@
 					handle_window_spawn(new_win)
 			else
 				neighbours |= other
+
+	if(grille_path)
+		if(locate(grille_path) in loc)
+			warning("Frame Spawner: A grille already exists at [loc.x]-[loc.y]-[loc.z]")
+		else
+			var/obj/structure/grille/G = new grille_path (loc)
+			handle_grille_spawn(G)
+
 	activated = 1
 	for(var/obj/effect/wallframe_spawn/other in neighbours)
 		if(!other.activated) other.activate()
@@ -110,6 +111,10 @@
 /obj/effect/wallframe_spawn/reinforced/hull
 	name = "reinforced hull wall frame window spawner"
 	frame_path = /obj/structure/wall_frame/hull
+
+/obj/effect/wallframe_spawn/reinforced/hull/vox
+	name = "reinforced vox hull wall frame window spawner"
+	frame_path = /obj/structure/wall_frame/hull/vox
 
 /obj/effect/wallframe_spawn/reinforced/bare //standard type is used most often so its in the master type, this one is for away sites etc with unpainted walls
 	name = "bare metal reinforced wall frame window spawner"

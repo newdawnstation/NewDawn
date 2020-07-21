@@ -4,6 +4,12 @@
 /datum/uplink_item/item/tools
 	category = /datum/uplink_category/tools
 
+/datum/uplink_item/item/tools/personal_shield
+	name = "Personal Shield"
+	desc = "A very expensive device that uses energy to block bullets and lasers from tearing you a new hole."
+	item_cost = 60
+	path = /obj/item/device/personal_shield
+
 /datum/uplink_item/item/tools/toolbox
 	name = "Fully Loaded Toolbox"
 	desc = "A hefty toolbox filled with all the equipment you need to get past any construction or electrical issues. \
@@ -21,7 +27,9 @@
 	name = "Operations Funding"
 	item_cost = 8
 	path = /obj/item/weapon/storage/secure/briefcase/money
-	desc = "A briefcase with 10,000 untraceable thalers. Makes a great bribe if they're willing to take you up on your offer."
+/datum/uplink_item/item/tools/money/New()
+	. = ..()
+	desc = "A briefcase with 10,000 untraceable [GLOB.using_map.local_currency_name]. Makes a great bribe if they're willing to take you up on your offer."
 
 /datum/uplink_item/item/tools/clerical
 	name = "Morphic Clerical Kit"
@@ -159,3 +167,11 @@
 	path = /obj/effect/spawner/newbomb/traitor
 	desc = "A remote-activated phoron-oxygen bomb assembly with an included signaler. \
 			A flashing disclaimer begins with the warning 'SOME DISASSEMBLY/REASSEMBLY REQUIRED.'"
+
+/datum/uplink_item/item/tools/polychromic_dye_bottle
+	name = "Extra-Strength Polychromic Dye"
+	item_cost = 10
+	path = /obj/item/weapon/reagent_containers/glass/bottle/dye/polychromic/strong
+	desc = "15 units of a tasteless dye that causes chemical mixtures to take on the color of the dye itself. \
+			Very useful for disguising poisons to the untrained eye; even large amounts of reagents can be fully recolored with only a few drops of dye. \
+			Like the mundane variety of polychromic dye, you can use the bottle in your hand to change the dye's color to suit your needs."

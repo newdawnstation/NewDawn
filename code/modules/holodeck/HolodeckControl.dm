@@ -53,13 +53,13 @@
 
 	if(!linkedholodeck)
 		dat += "<span class='danger'>Warning: Unable to locate holodeck.<br></span>"
-		user << browse(dat, "window=computer;size=400x500")
+		show_browser(user, dat, "window=computer;size=400x500")
 		onclose(user, "computer")
 		return
 
 	if(!supported_programs.len)
 		dat += "<span class='danger'>Warning: No supported holo-programs loaded.<br></span>"
-		user << browse(dat, "window=computer;size=400x500")
+		show_browser(user, dat, "window=computer;size=400x500")
 		onclose(user, "computer")
 		return
 
@@ -97,7 +97,7 @@
 		dat += "Gravity is <A href='?src=\ref[src];gravity=1'><font color=green>(ON)</font></A><BR>"
 	else
 		dat += "Gravity is <A href='?src=\ref[src];gravity=1'><font color=blue>(OFF)</font></A><BR>"
-	user << browse(dat, "window=computer;size=400x500")
+	show_browser(user, dat, "window=computer;size=400x500")
 	onclose(user, "computer")
 	return
 
@@ -146,8 +146,8 @@
 		to_chat(user, "<span class='notice'>You vastly increase projector power and override the safety and security protocols.</span>")
 		to_chat(user, "Warning.  Automatic shutoff and derezing protocols have been corrupted.  Please call [GLOB.using_map.company_name] maintenance and do not use the simulator.")
 		log_game("[key_name(usr)] emagged the Holodeck Control Computer")
-		return 1
 		src.updateUsrDialog()
+		return 1
 	else
 		..()
 

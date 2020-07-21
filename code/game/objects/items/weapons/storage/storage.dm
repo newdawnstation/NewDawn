@@ -39,6 +39,7 @@
 
 	if ((ishuman(usr) || isrobot(usr) || issmall(usr)) && !usr.incapacitated())
 		if(over_object == usr && Adjacent(usr)) // this must come before the screen objects only block
+			src.add_fingerprint(usr)
 			src.open(usr)
 			return TRUE
 
@@ -57,6 +58,15 @@
 				if(BP_L_HAND)
 					usr.put_in_l_hand(src)
 
+/obj/item/weapon/storage/AltClick(var/mob/usr)
+
+	if(!canremove)
+		return
+
+	if ((ishuman(usr) || isrobot(usr) || issmall(usr)) && !usr.incapacitated() && Adjacent(usr))
+		src.add_fingerprint(usr)
+		src.open(usr)
+		return TRUE
 
 /obj/item/weapon/storage/proc/return_inv()
 
@@ -243,9 +253,13 @@
 	return 1
 
 // Only do ui functions for now; the obj is responsible for anything else.
-/obj/item/weapon/storage/proc/on_item_deletion(obj/item/W)
+/obj/item/weapon/storage/proc/on_item_pre_deletion(obj/item/W)
 	if(storage_ui)
 		storage_ui.on_pre_remove(null, W) // Supposed to be able to handle null user.
+
+// Only do ui functions for now; the obj is responsible for anything else.
+/obj/item/weapon/storage/proc/on_item_post_deletion(obj/item/W)
+	if(storage_ui)
 		update_ui_after_item_removal()
 	queue_icon_update()
 

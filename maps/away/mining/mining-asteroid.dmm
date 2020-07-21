@@ -267,8 +267,7 @@
 /turf/simulated/floor/airless,
 /area/djstation)
 "mb" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1379;
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
 	id_tag = "lp_north_pump"
 	},
 /turf/simulated/floor/airless,
@@ -325,8 +324,8 @@
 /area/djstation)
 "tb" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/airless,
 /area/djstation)
@@ -410,15 +409,14 @@
 	locked = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/airless,
 /area/djstation)
 "Cb" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/airlock{
 	dir = 8;
-	frequency = 1379;
 	id_tag = "lp_east_pump"
 	},
 /turf/simulated/floor/airless,

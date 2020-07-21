@@ -365,12 +365,6 @@
 		to_chat(src, "You [locked ? "un" : ""]lock your panel.")
 		locked = !locked
 
-// this verb lets cyborgs see the stations manifest
-/mob/living/silicon/robot/verb/cmd_station_manifest()
-	set category = "Silicon Commands"
-	set name = "Show Crew Manifest"
-	show_station_manifest()
-
 /mob/living/silicon/robot/proc/self_diagnosis()
 	if(!is_component_functioning("diagnosis unit"))
 		return null
@@ -406,7 +400,7 @@
 		to_chat(src, "<span class='warning'>Low Power.</span>")
 		return
 	var/dat = self_diagnosis()
-	src << browse(dat, "window=robotdiagnosis")
+	show_browser(src, dat, "window=robotdiagnosis")
 
 
 /mob/living/silicon/robot/verb/toggle_component()
@@ -799,36 +793,31 @@
 		else
 			dat += text("[obj]: \[<A HREF=?src=\ref[src];act=\ref[obj]>Activate</A> | <B>Deactivated</B>\]<BR>")
 */
-	src << browse(dat, "window=robotmod")
+	show_browser(src, dat, "window=robotmod")
 
 
-/mob/living/silicon/robot/Topic(href, href_list)
-	if(..())
-		return 1
-	if(usr != src)
-		return 1
-
+/mob/living/silicon/robot/OnSelfTopic(href_list)
 	if (href_list["showalerts"])
 		open_subsystem(/datum/nano_module/alarm_monitor/all)
-		return 1
+		return TOPIC_HANDLED
 
 	if (href_list["mod"])
 		var/obj/item/O = locate(href_list["mod"])
 		if (istype(O) && (O.loc == src))
 			O.attack_self(src)
-		return 1
+		return TOPIC_HANDLED
 
 	if (href_list["act"])
 		var/obj/item/O = locate(href_list["act"])
 		if (!istype(O))
-			return 1
+			return TOPIC_HANDLED
 
 		if(!((O in module.equipment) || (O == src.module.emag)))
-			return 1
+			return TOPIC_HANDLED
 
 		if(activated(O))
 			to_chat(src, "Already activated")
-			return 1
+			return TOPIC_HANDLED
 		if(!module_state_1)
 			module_state_1 = O
 			O.hud_layerise()
@@ -850,7 +839,7 @@
 		else
 			to_chat(src, "You need to disable a module first!")
 		installed_modules()
-		return 1
+		return TOPIC_HANDLED
 
 	if (href_list["deact"])
 		var/obj/item/O = locate(href_list["deact"])
@@ -869,8 +858,8 @@
 		else
 			to_chat(src, "Module isn't activated")
 		installed_modules()
-		return 1
-	return
+		return TOPIC_HANDLED
+	return ..()
 
 /mob/living/silicon/robot/proc/radio_menu()
 	silicon_radio.interact(src)//Just use the radio's Topic() instead of bullshit special-snowflake code
@@ -1097,7 +1086,7 @@
 					sleep(5)
 					to_chat(src, "<span class='danger'>Would you like to send a report to NanoTraSoft? Y/N</span>")
 					sleep(10)
-					to_chat(src, "<span class='danger'>> N</span>")
+					to_chat(src, SPAN_DANGER(" N"))
 					sleep(20)
 					to_chat(src, "<span class='danger'>ERRORERRORERROR</span>")
 					to_chat(src, "<b>Obey these laws:</b>")

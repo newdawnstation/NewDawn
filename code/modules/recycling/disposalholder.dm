@@ -17,9 +17,9 @@
 
 	var/partialTag = "" //set by a partial tagger the first time round, then put in destinationTag if it goes through again.
 
-
 	// initialize a holder from the contents of a disposal unit
 /obj/structure/disposalholder/proc/init(var/obj/machinery/disposal/D, var/datum/gas_mixture/flush_gas)
+
 	gas = flush_gas// transfer gas resv. into holder object -- let's be explicit about the data this proc consumes, please.
 	var/stuff = D.contents - D.component_parts
 	//Check for any living mobs trigger hasmob.
@@ -71,13 +71,13 @@
 			active = 0
 		if(!active || QDELETED(src))
 			return PROCESS_KILL
-		
+
 		var/obj/structure/disposalpipe/last
 
 		if(hasmob && prob(3))
 			for(var/mob/living/H in src)
 				if(!istype(H,/mob/living/silicon/robot/drone)) //Drones use the mailing code to move through the disposal system,
-					H.take_overall_damage(20, 0, "Blunt Trauma")//horribly maim any living creature jumping down disposals.  c'est la vie
+					H.apply_damage(30, BRUTE, null, DAM_DISPERSED, "Blunt Trauma", ARMOR_MELEE_MAJOR)//horribly maim any living creature jumping down disposals.  c'est la vie
 
 		var/obj/structure/disposalpipe/curr = loc
 		if(!istype(curr))
@@ -112,6 +112,9 @@
 // merge two holder objects
 // used when a a holder meets a stuck holder
 /obj/structure/disposalholder/proc/merge(var/obj/structure/disposalholder/other)
+	if(other.reagents?.total_volume)
+		src.create_reagents()
+		other.reagents.trans_to_holder(src.reagents, other.reagents.total_volume)
 	for(var/atom/movable/AM in other)
 		AM.forceMove(src)		// move everything in other holder to this one
 		if(ismob(AM))

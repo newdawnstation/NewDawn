@@ -165,8 +165,10 @@
 
 	if(is_train_head() && istype(load, /mob/living/carbon/human))
 		var/mob/living/carbon/human/D = load
-		to_chat(D, "<span class='danger'>You ran over [H]!</span>")
-		visible_message("<span class='danger'>>\The [src] ran over [H]!</span>")
+		D.visible_message(
+			SPAN_DANGER("\The [src] ran over [H]!"),
+			SPAN_DANGER("You ran over [H]!")
+		)
 		attack_log += text("\[[time_stamp()]\] <font color='red'>ran over [H.name] ([H.ckey]), driven by [D.name] ([D.ckey])</font>")
 		msg_admin_attack("[D.name] ([D.ckey]) ran over [H.name] ([H.ckey]). (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[src.x];Y=[src.y];Z=[src.z]'>JMP</a>)")
 	else
@@ -361,7 +363,7 @@
 	if(!is_train_head() || !on)
 		move_delay = initial(move_delay)		//so that engines that have been turned off don't lag behind
 	else
-		move_delay = max(0, (-car_limit * active_engines) + train_length - active_engines)	//limits base overweight so you cant overspeed trains
+		move_delay = max(0, (-car_limit * active_engines) + train_length - active_engines)	//limits base overweight so you can't overspeed trains
 		move_delay *= (1 / max(1, active_engines)) * 2 										//overweight penalty (scaled by the number of engines)
 		move_delay += config.run_delay 														//base reference speed
 		move_delay *= 1.1																	//makes cargo trains 10% slower than running when not overweight

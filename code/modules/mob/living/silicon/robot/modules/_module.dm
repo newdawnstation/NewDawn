@@ -13,7 +13,6 @@
 		LANGUAGE_HUMAN_EURO = 1,
 		LANGUAGE_UNATHI_SINTA = 0,
 		LANGUAGE_SKRELLIAN = 0,
-		LANGUAGE_GUTTER = 1,
 		LANGUAGE_SIGN = 0,
 		LANGUAGE_HUMAN_RUSSIAN = 1
 		)
@@ -177,7 +176,8 @@
 
 	// Then add back all the original languages, and the relevant synthezising ability
 	for(var/original_language in original_languages)
-		R.add_language(original_language, original_languages[original_language])
+		var/datum/language/language_datum = original_language
+		R.add_language(language_datum.name, original_languages[original_language])
 	original_languages.Cut()
 
 /obj/item/weapon/robot_module/proc/add_camera_networks(var/mob/living/silicon/robot/R)
