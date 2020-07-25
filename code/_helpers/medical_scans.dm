@@ -104,7 +104,7 @@
 	var/dat = list()
 
 	if(!scan["name"])
-		return "display_medical_data<center><span class='bad'><strong>SCAN READOUT ERROR.</strong></span></center>"
+		return "<meta charset='UTF-8'><center><span class='bad'><strong>SCAN READOUT ERROR.</strong></span></center>"
 
 	//Table definition and starting data block.
 	/*
@@ -113,7 +113,7 @@
 		<tr><td><strong>Scan Results For:</strong></td><td>Name</td></tr>
 		<tr><td><strong>Scan Performed At:</strong></td><td>00:00</td></tr>
 	*/
-	dat += "display_medical_data<table class='block' width='95%'>"
+	dat += "<meta charset='UTF-8'><table class='block' width='95%'>"
 	dat += "<tr><td><strong>Scan Results For:</strong></td><td>[scan["name"]]</td></tr>"
 	dat += "<tr><td><strong>Scan performed at:</strong></td><td>[scan["time"]]</td></tr>"
 
