@@ -4,6 +4,7 @@
 	#include "new_dawn_antagonism.dm"
 	#include "new_dawn_areas.dm"
 //	#include "new_dawn_elevator.dm"
+	#include "new_dawn_events.dm"
 	#include "new_dawn_holodecks.dm"
 	#include "new_dawn_lobby.dm"
 	#include "new_dawn_machinery.dm"
@@ -23,6 +24,11 @@
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
 	#include "datums/uniforms_fleet.dm"
+	#include "datums/game_modes/new_dawn_traitor.dm"
+	#include "datums/game_modes/new_dawn_revolution.dm"
+	#include "datums/game_modes/new_dawn_siege.dm"
+	#include "datums/game_modes/new_dawn_meteor.dm"
+	#include "datums/game_modes/new_dawn_uprising.dm"
 	#include "datums/reports/command.dm"
 	#include "datums/reports/corporate.dm"
 	#include "datums/reports/exploration.dm"
@@ -103,6 +109,7 @@
 	#include "language/human/misc/spacer.dm"
 
 	#include "machinery/apc_shuttle.dm"
+	#include "machinery/faxmachine.dm"
 	#include "machinery/keycard authentication.dm"
 	#include "machinery/suit_storage.dm"
 
@@ -128,6 +135,7 @@
 	#include "loadout/loadout_gloves.dm"
 	#include "loadout/loadout_head.dm"
 	#include "loadout/loadout_shoes.dm"
+	#include "loadout/loadout_storage.dm"
 	#include "loadout/loadout_suit.dm"
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_xeno.dm"
@@ -157,6 +165,8 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
+	#include "../away/meatstation/meatstation.dm"
+	#include "../away/miningstation/miningstation.dm"
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 

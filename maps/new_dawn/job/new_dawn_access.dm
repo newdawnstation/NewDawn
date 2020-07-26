@@ -135,6 +135,12 @@
 	desc = "Commissary"
 	region = ACCESS_REGION_GENERAL
 
+/var/const/access_torch_fax = "ACCESS_TORCH_FAX" //97
+/datum/access/torch_fax
+	id = access_torch_fax
+	desc = "Fax Machines"
+	region = ACCESS_REGION_COMMAND
+
 /datum/access/psychiatrist
 	desc = "Mental Health"
 
@@ -146,10 +152,6 @@
 
 /datum/access/qm
 	desc = "Deck Chief"
-
-/************
-* SEV NEW_DAWN *
-************/
 
 /datum/access/robotics
 	region = ACCESS_REGION_RESEARCH

@@ -10,26 +10,26 @@
 		/area/engineering/atmos/storage = NO_SCRUBBER|NO_VENT,
 		/area/engineering/auxpower = NO_SCRUBBER|NO_VENT,
 		/area/engineering/engine_smes = NO_SCRUBBER|NO_VENT,
-		/area/engineering/fuelbay = NO_SCRUBBER,
-		/area/engineering/wastetank = NO_SCRUBBER,
-		/area/engineering/shieldbay = NO_SCRUBBER|NO_VENT,
+		/area/engineering/fuelbay = NO_SCRUBBER|NO_VENT,
+		/area/engineering/wastetank = NO_SCRUBBER|NO_VENT,
 		/area/holodeck = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarbridge = NO_SCRUBBER,
-		/area/maintenance/auxsolarport = NO_SCRUBBER,
-		/area/maintenance/auxsolarstarboard = NO_SCRUBBER,
+		/area/maintenance/auxsolarbridge = NO_SCRUBBER|NO_VENT,
+		/area/maintenance/auxsolarport = NO_SCRUBBER|NO_VENT,
+		/area/maintenance/auxsolarstarboard = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/exterior = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance/incinerator = NO_SCRUBBER,
+		/area/maintenance/disposal = NO_SCRUBBER,
 		/area/maintenance/waterstore = 0,
 		/area/shield = NO_SCRUBBER|NO_VENT,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/shuttle/merchant = NO_SCRUBBER|NO_APC,
 		/area/shuttle/petrov = 0,
-		/area/shuttle/petrov/maint = NO_SCRUBBER,
-		/area/shuttle/escape_pod1/station = NO_SCRUBBER|NO_APC,
-		/area/shuttle/escape_pod2/station = NO_SCRUBBER|NO_APC,
-		/area/shuttle/escape_pod3/station = NO_SCRUBBER|NO_APC,
-		/area/shuttle/escape_shuttle/station = NO_SCRUBBER|NO_APC,
+		/area/shuttle/petrov/maint = NO_SCRUBBER|NO_VENT,
+		/area/shuttle/escape_pod1/station = NO_SCRUBBER|NO_APC|NO_VENT,
+		/area/shuttle/escape_pod2/station = NO_SCRUBBER|NO_APC|NO_VENT,
+		/area/shuttle/escape_pod3/station = NO_SCRUBBER|NO_APC|NO_VENT,
+		/area/shuttle/escape_shuttle/station = NO_SCRUBBER|NO_APC|NO_VENT,
 		/area/solar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/storage = NO_SCRUBBER|NO_VENT,
 		/area/storage/primary = 0,
@@ -81,10 +81,6 @@
 datum/unit_test/zas_area_test/supply_centcomm
 	name = "ZAS: Supply Shuttle (CentComm)"
 	area_path = /area/supply/dock
-
-datum/unit_test/zas_area_test/virology
-	name = "ZAS: Virology"
-	area_path = /area/medical/virology
 
 datum/unit_test/zas_area_test/xenobio
 	name = "ZAS: Xenobiology"

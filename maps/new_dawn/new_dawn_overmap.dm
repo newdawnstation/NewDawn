@@ -72,7 +72,7 @@
 
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle
 	name = "Charon"
-	desc = "A medium-sized long-range shuttle. It bears markings of the SCG Expeditionary Corps."
+	desc = "An SSE-U11 long range shuttle, broadcasting SCGEC codes and the callsign \"Torch-2 Charon\"."
 	shuttle = "Charon"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
@@ -93,7 +93,7 @@
 */
 /obj/effect/overmap/visitable/ship/landable/guppy
 	name = "Guppy"
-	desc = "A small general utility pod. It's capable of limited independant space travel. It's marked as TORCH GUP #1"
+	desc = "An SSE-U3 utility pod, broadcasting SCGEC codes and the callsign \"Torch-1 Guppy\"."
 	shuttle = "Guppy"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
