@@ -13,6 +13,11 @@ proc/Intoxicated(phrase)
 			if(lowertext(newletter)=="s")	newletter="ch"
 			if(lowertext(newletter)=="a")	newletter="ah"
 			if(lowertext(newletter)=="c")	newletter="k"
+			// Russian
+			if(lowertext(newletter)=="о")	newletter="у"
+			if(lowertext(newletter)=="с")	newletter="ч"
+			if(lowertext(newletter)=="а")	newletter="ах"
+			if(lowertext(newletter)=="ц")	newletter="к"
 		switch(rand(1,7))
 			if(1,3,5,8)	newletter="[lowertext(newletter)]"
 			if(2,4,6,15)	newletter="[uppertext(newletter)]"
@@ -42,7 +47,7 @@ proc/NewStutter(phrase,stunned)
 		//Search for dipthongs (two letters that make one sound.)
 		var/first_sound = copytext_char(word,1,3)
 		var/first_letter = copytext_char(word,1,2)
-		if(lowertext(first_sound) in list("ch","th","sh"))
+		if(lowertext(first_sound) in list("ch","th","sh","т","п","ш"))
 			first_letter = first_sound
 
 		//Repeat the first letter to create a stutter.
@@ -107,7 +112,7 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 			continue
 		if(newletter != " ")
 			if(prob(0.08 * distortion)) // Major cutout
-				newletter = "*zzzt*"
+				newletter = "*бззт*"//"*zzzt*"
 				length += rand(1, (length_char(message) - length)) // Skip some characters
 				distortion += 1 * distortion_speed
 			else if(prob(0.8 * distortion)) // Minor cut out
@@ -122,7 +127,7 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 				if(language && language.syllables && prob(50))
 					newletter = pick(language.syllables)
 				else
-					newletter =	pick("a","e","i","o","u")
+					newletter =	pick("а","е","и","о","у")
 				distortion += 0.25 * distortion_speed
 			else if(prob(1.5 * distortion)) // Mishearing
 				if(language && prob(50))
@@ -141,9 +146,9 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 				distortion += 0.75 * distortion_speed
 			else if(prob(0.05 * distortion)) // Total cut out
 				if(!english_only)
-					newletter = "�w��b�%> -BZZT-"
+					newletter = "�w��b�%> -БЗЗТ-"
 				else
-					newletter = "srgt%$hjc< -BZZT-"
+					newletter = "srgt%$hjc< -БЗЗТ-"
 				new_message += newletter
 				break
 			else if(prob(2.5 * distortion)) // Sound distortion. Still recognisable, mostly.
@@ -162,7 +167,7 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 						newletter = "�"
 		else
 			if(prob(0.2 * distortion))
-				newletter = " *crackle* "
+				newletter = " *треск* "
 				distortion += 0.25 * distortion_speed
 		if(prob(20))
 			capitalize(newletter)

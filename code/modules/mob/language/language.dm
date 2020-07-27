@@ -7,11 +7,11 @@
 /datum/language
 	var/name = "base language"  // Fluff name of language if any.
 	var/desc = "You should not have this language." // Short description for 'Check Languages'.
-	var/speech_verb = "says"          // 'says', 'hisses', 'farts'.
-	var/ask_verb = "asks"             // Used when sentence ends in a ?
-	var/exclaim_verb = "exclaims"     // Used when sentence ends in a !
+	var/speech_verb = "говорит"          // 'says', 'hisses', 'farts'.
+	var/ask_verb = "спрашивает"             // Used when sentence ends in a ?
+	var/exclaim_verb = "восклицает"     // Used when sentence ends in a !
 	var/whisper_verb                  // Optional. When not specified speech_verb + quietly/softly is used instead.
-	var/signlang_verb = list("signs", "gestures") // list of emotes that might be displayed if this language has NONVERBAL or SIGNLANG flags
+	var/signlang_verb = list("сигнализирует", "жестикулирует") // list of emotes that might be displayed if this language has NONVERBAL or SIGNLANG flags
 	var/colour = "body"               // CSS style to use for strings in this language.
 	var/key = ""                     // Character used to speak in language eg. :o for Unathi.
 	var/flags = 0                     // Various language flags.
@@ -209,11 +209,11 @@
 
 //TBD
 /mob/verb/check_languages()
-	set name = "Check Known Languages"
+	set name = "Проверить Известные Языки"
 	set category = "IC"
 	set src = usr
 
-	var/dat = "<meta charset='UTF-8'><b><font size = 5>Known Languages</font></b><br/><br/>"
+	var/dat = "<meta charset='UTF-8'><b><font size = 5>Известные Языки</font></b><br/><br/>"
 
 	for(var/datum/language/L in languages)
 		if(!(L.flags & NONGLOBAL))
@@ -223,10 +223,10 @@
 	return
 
 /mob/living/check_languages()
-	var/dat = "<meta charset='UTF-8'><b><font size = 5>Known Languages</font></b><br/><br/>"
+	var/dat = "<meta charset='UTF-8'><b><font size = 5>Известные языки</font></b><br/><br/>"
 
 	if(default_language)
-		dat += "Current default language: [default_language] - <a href='byond://?src=\ref[src];default_lang=reset'>reset</a><br/><br/>"
+		dat += "Выбранный основной язык: [default_language] - <a href='byond://?src=\ref[src];default_lang=reset'>reset</a><br/><br/>"
 
 	for(var/datum/language/L in languages)
 		if(!(L.flags & NONGLOBAL))

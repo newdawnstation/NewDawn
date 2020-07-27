@@ -1,7 +1,7 @@
 /datum/language/gutter
 	name = LANGUAGE_GUTTER
-	desc = "This crude pidgin tongue developed on Pluto during its busier days. It is common among the lower classes of Pluto. It is a common language among Plutonians. It is considered a crude language by many that are 'upper class'."
-	speech_verb = "growls"
+	desc = "Этот грубый упрощённый язык появился на Плутоне в неспокойное для него время. Чаще всего он встречается среди низжих классов его населения."
+	speech_verb = "рявкает"
 	colour = "rough"
 	key = "t"
 	space_chance = 70
@@ -17,6 +17,6 @@
 		LANGUAGE_LEGALESE = 25
 	)
 	syllables = list (
-		"yayo", "aiya", "chiksa", "tikat", "bazar","oi", "yo", "meit", "grok", "ken", "berk", "cohon", "pendeo"
+		"йайо", "айяа", "чикса", "тикать", "базар","ой", "йо", "мэйт", "грок", "кен", "бёрк", "кахан", "пендело", "ёп", "потраха"
 	)
-	shorthand = "GT"
+	shorthand = "ГТ"

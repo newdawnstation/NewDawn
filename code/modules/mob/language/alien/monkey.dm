@@ -1,10 +1,10 @@
 /datum/language/human/monkey
 	name = LANGUAGE_PRIMITIVE
-	desc = "Ook ook ook."
-	speech_verb = "chimpers"
-	ask_verb = "chimpers"
-	exclaim_verb = "screeches"
+	desc = "У Уа иии уа'а'а'аааааа."
+	speech_verb = "визжит"
+	ask_verb = "вопросительно укает"
+	exclaim_verb = "орёт"
 	key = ""
-	syllables = list("ook", "eek", "hiss", "gronk")
-	shorthand = "Ook"
+	syllables = list("а'уу", "у'а'ааа'ааа", "у'иии", "а")
+	shorthand = "Уук"
 	hidden_from_codex = 1

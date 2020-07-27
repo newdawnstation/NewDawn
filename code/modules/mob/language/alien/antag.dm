@@ -1,7 +1,7 @@
 /datum/language/ling
 	name = LANGUAGE_CHANGELING_GLOBAL
-	desc = "Although they are normally wary and suspicious of each other, changelings can commune over a distance."
-	speech_verb = "says"
+	desc = "Несмотря на то, что они крайне настороженно и с подозрением относятся друг к другу чейнджлинги имеют возможность коммуникации друг с другом на расстоянии."
+	speech_verb = "говорит"
 	colour = "changeling"
 	key = "g"
 	flags = RESTRICTED | HIVEMIND
@@ -17,10 +17,10 @@
 
 /datum/language/corticalborer
 	name = LANGUAGE_BORER_GLOBAL
-	desc = "Cortical borers possess a strange link between their tiny minds."
-	speech_verb = "sings"
-	ask_verb = "sings"
-	exclaim_verb = "sings"
+	desc = "Кортиковые паразиты имеют странную связь между собой."
+	speech_verb = "поёт"
+	ask_verb = "поёт"
+	exclaim_verb = "поёт"
 	colour = "alien"
 	key = "z"
 	flags = RESTRICTED | HIVEMIND
@@ -40,7 +40,7 @@
 	if(B)
 		if(B.host)
 			if(B.host.nutrition < 50 || B.host.stat)
-				to_chat(speaker, SPAN_WARNING("Your host is too weak to relay your broadcast."))
+				to_chat(speaker, SPAN_WARNING("Ваш носитель слишком слаб, чтобы передать ваше сообщение."))
 				return FALSE
 			B.host.nutrition -= rand(1, 3)
 		speaker_mask = B.truename
@@ -48,10 +48,10 @@
 
 /datum/language/vox
 	name = LANGUAGE_VOX
-	desc = "The common tongue of the various Vox ships making up the Shoal. It sounds like chaotic shrieking to everyone else."
-	speech_verb = "shrieks"
-	ask_verb = "creels"
-	exclaim_verb = "SHRIEKS"
+	desc = "Общий язык различных кораблей воксов, которые составляют Стаю. Для всех остальных этот язык подобен хотичным крикам."
+	speech_verb = "вопит"
+	ask_verb = "скрипит"
+	exclaim_verb = "орёт"
 	colour = "vox"
 	key = "x"
 	flags = WHITELISTED
@@ -75,52 +75,52 @@
 
 /datum/language/cultcommon
 	name = LANGUAGE_CULT
-	desc = "The chants of the occult, the incomprehensible."
-	speech_verb = "intones"
-	ask_verb = "intones"
-	exclaim_verb = "chants"
+	desc = "Непостежимые оккультные пения."
+	speech_verb = "читает"
+	ask_verb = "читает"
+	exclaim_verb = "скандирует"
 	colour = "cult"
 	key = "f"
 	flags = RESTRICTED
 	space_chance = 100
-	syllables = list("ire","ego","nahlizet","certum","veri","jatkaa","mgar","balaq", "karazet", "geeri", \
-		"orkan", "allaq", "sas'so", "c'arta", "forbici", "tarem", "n'ath", "reth", "sh'yro", "eth", "d'raggathnor", \
-		"mah'weyh", "pleggh", "at", "e'ntrath", "tok-lyr", "rqa'nap", "g'lt-ulotf", "ta'gh", "fara'qha", "fel", "d'amar det", \
-		"yu'gular", "faras", "desdae", "havas", "mithum", "javara", "umathar", "uf'kal", "thenar", "rash'tla", \
-		"sektath", "mal'zua", "zasan", "therium", "viortia", "kla'atu", "barada", "nikt'o", "fwe'sh", "mah", "erl", "nyag", "r'ya", \
-		"gal'h'rfikk", "harfrandid", "mud'gib", "fuu", "ma'jin", "dedo", "ol'btoh", "n'ath", "reth", "sh'yro", "eth", \
-		"d'rekkathnor", "khari'd", "gual'te", "nikka", "nikt'o", "barada", "kla'atu", "barhah", "hra" ,"zar'garis")
+	syllables = list("ира","эго","нахлизет","цертум","вери","джаактаа","мгар","балак", "каразет", "гиреи", \
+		"оркан", "аллак", "сас'со", "с'артэ", "форбици", "тарем", "н'атх", "рет", "ш'иро", "эт", "д'раггхатноор", \
+		"ма'вэй", "пдегх", "ат", "э'нтратх", "ток-лир", "рка'нар", "г'лт-улотф", "та'гх", "фара'гха", "фел", "д'амар дет", \
+		"ю'кулар", "фарас", "десдае", "хавас", "митхум", "джавара", "уматар", "уф'кал", "тенар", "раш'тла", \
+		"сектатх", "мал'зуа", "засса", "териум", "виортиа", "кла'ату", "барада", "никт'о", "фве'ш", "мах", "эрл", "ниаг", "р'иа", \
+		"гал'х'рфикк", "харфрандит", "муд'гиб", "фуу", "ма'джин", "дедо", "ол'бтох", "н'атхз", "ретх", "щ'ииро", "етх", \
+		"д'реккатхнор", "кхари'д", "гуал'те", "никка", "нект'о", "барарда", "кла'ату", "барх", "хара" ,"зар'гар")
 	machine_understands = 0
-	shorthand = "CT"
+	shorthand = "КТ"
 	hidden_from_codex = TRUE
 
 /datum/language/cult
 	name = LANGUAGE_CULT_GLOBAL
-	desc = "The initiated can share their thoughts by means defying all reason."
-	speech_verb = "intones"
-	ask_verb = "intones"
-	exclaim_verb = "chants"
+	desc = "Посвящённые могут делиться своими мыслями способоми, не поддающимися никаким законам."
+	speech_verb = "читает"
+	ask_verb = "читает"
+	exclaim_verb = "скандирует"
 	colour = "cult"
 	key = "y"
 	flags = RESTRICTED | HIVEMIND
-	shorthand = "N/A"
+	shorthand = "ОКТ"
 	hidden_from_codex = TRUE
 
 /datum/language/alium
 	name = LANGUAGE_ALIUM
 	colour = "cult"
-	speech_verb = "hisses"
+	speech_verb = "шипит"
 	key = "c"
 	flags = RESTRICTED
-	syllables = list("qy","bok","mok","yok","dy","gly","ryl","byl","dok","forbici", "tarem", "n'ath", "reth", "sh'yro", "eth", "d'raggathnor","niii",
-	"d'rekkathnor", "khari'd", "gual'te", "ki","ki","ki","ki","ya","ta","wej","nym","assah","qwssa","nieasl","qyno","shaffar",
-	"eg","bog","voijs","nekks","bollos","qoulsan","borrksakja","neemen","aka","nikka","qyegno","shafra","beolas","Byno")
+	syllables = list("ки","бок","мок","йок","ди","гли","рил","бил","док","форбици", "тарем", "н'атх", "ретх", "ш'иро", "этх", "д'раггхатноор","ниии",
+	"д'раггхатноор", "кхари'д", "гуал'те", "ки","ки","ки","ки","йа","та","вэй","ним","ассах","квсса","ниесл","кина","шаффар",
+	"эг","бог","войджс","неккс","болллос","коулсан","боррксаккья","кееман","ака","никка","куиго","шшафра","беолас","Бино")
 	machine_understands = 0
-	shorthand = "AL"
+	shorthand = "АЛ"
 	hidden_from_codex = TRUE
 
 /datum/language/alium/New()
-	speech_verb = pick("hisses","growls","whistles","blubbers","chirps","skreeches","rumbles","clicks")
+	speech_verb = pick("шипит","рычит","свистит","ревёт","чирикает","визжит","грохочет","щёлкает")
 	..()
 
 /datum/language/alium/get_random_name()

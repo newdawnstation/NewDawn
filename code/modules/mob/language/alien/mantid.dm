@@ -1,15 +1,15 @@
 /datum/language/mantid
 	name = LANGUAGE_MANTID_VOCAL
-	desc = "A curt, sharp language developed by the insectoid Ascent for use over comms."
-	speech_verb = "clicks"
-	ask_verb = "chirps"
-	exclaim_verb = "rasps"
+	desc = "Прерывестый и односложный язык, разработанный и используемый инсектоидами Восхождения."
+	speech_verb = "щёлкает"
+	ask_verb = "чирикает"
+	exclaim_verb = "скрежещет"
 	colour = "alien"
 	syllables = list("-","=","+","_","|","/")
 	space_chance = 0
 	key = "|"
 	flags = RESTRICTED
-	shorthand = "KV"
+	shorthand = "ВЗ"
 	machine_understands = FALSE
 	var/list/correct_mouthbits = list(
 		SPECIES_NABBER,
@@ -50,13 +50,13 @@
 /datum/language/mantid/nonvocal
 	key = "]"
 	name = LANGUAGE_MANTID_NONVOCAL
-	desc = "A complex visual language of bright bio-luminescent flashes, 'spoken' natively by the Kharmaani of the Ascent."
+	desc = "Комплексный визуальный язык, использующий яркие вспишки био-люминисцентного света в качестве метода передачи информации. Используется Кхармаани из Восхождения."
 	colour = "alien"
-	speech_verb = "flashes"
-	ask_verb = "gleams"
-	exclaim_verb = "flares"
+	speech_verb = "сигналит"
+	ask_verb = "моргает"
+	exclaim_verb = "интенсивно сигналит"
 	flags = RESTRICTED | NO_STUTTER | SIGNLANG
-	shorthand = "KNV"
+	shorthand = "ВС"
 
 #define MANTID_SCRAMBLE_CACHE_LEN 20
 /datum/language/mantid/nonvocal/scramble(var/input)
@@ -87,13 +87,13 @@
 /datum/language/mantid/worldnet
 	key = "\["
 	name = LANGUAGE_MANTID_BROADCAST
-	desc = "The mantid aliens of the Ascent maintain an extensive self-supporting broadcast network for use in team communications."
+	desc = "Инопланетяне Восхождения имеют самоподдерживающаюся сеть под названием 'Ворлднет' для поддержания связи между собой."
 	colour = "alien"
-	speech_verb = "flashes"
-	ask_verb = "gleams"
-	exclaim_verb = "flares"
+	speech_verb = "сигналит"
+	ask_verb = "моргает"
+	exclaim_verb = "интенсивно сигналит"
 	flags = RESTRICTED | NO_STUTTER | NONVERBAL | HIVEMIND 
-	shorthand = "KB"
+	shorthand = "ВВН"
 
 /datum/language/mantid/worldnet/check_special_condition(var/mob/living/carbon/other)
 	if(istype(other, /mob/living/silicon/robot/flying/ascent))

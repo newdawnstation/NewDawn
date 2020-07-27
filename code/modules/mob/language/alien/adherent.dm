@@ -1,16 +1,16 @@
 /datum/language/adherent
 	name = LANGUAGE_ADHERENT
-	desc = "The mellifluous wind chime tones of the Vigil's formal shared language."
-	speech_verb = "chimes"
-	ask_verb = "rings"
-	exclaim_verb = "peals"
+	desc = "Мелодичные тона ветряного звона формального языка Вигил"
+	speech_verb = "звенит"
+	ask_verb = "звонит"
+	exclaim_verb = "трезвонит"
 	colour = "adherent"
 	key = "p"
 	flags = WHITELISTED
 	syllables = list("\[Ab\]", "\[Bb\]", "\[Cb\]", "\[Db\]", "\[Eb\]", "\[Fb\]",
 		"\[Gb\]", "\[A#\]", "\[B#\]", "\[C#\]", "\[D#\]", "\[E#\]", "\[F#\]",
 		"\[G#\]", "\[A\]", "\[B\]", "\[C\]", "\[D\]", "\[E\]", "\[F\]", "\[G\]",
-		"\[harmonic\]", "\[disharmonic\]", "\[choral\]"
+		"\[гармоничный\]", "\[негармоничный\]", "\[хоровой\]"
 	)
-	shorthand = "VP"
+	shorthand = "ВП"
 	space_chance = 0

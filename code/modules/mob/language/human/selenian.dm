@@ -1,9 +1,9 @@
 /datum/language/human/selenian
 	name = LANGUAGE_HUMAN_SELENIAN
-	desc = "An informal dialect of Zurich Common that arose from the close confines, mixed population, and technical focus of the moon's first city."
+	desc = "Неформальный диалект Цюрихского Всеобщего, повившийся из-за близкого сотрудничества, смешанного населения и технологического фокуса на оснавании первого города на Луне."
 	colour = "selenian"
 	key = "7"
-	shorthand = "Sel"
+	shorthand = "Сел"
 	space_chance = 100
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 85,

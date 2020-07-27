@@ -1,10 +1,10 @@
 /datum/language/human/arabic
 	name = LANGUAGE_HUMAN_ARABIC
-	desc = "'Prototype Standard Arabic', as it was known during its development as a world-wide replacement for the myriad regional dialects of Modern Standard, \
-			 was mostly ignored on Earth until co-operative Pan-Arab space exploration made its use attractive. Its use as a liturgical language remains limited."
+	desc = "'Прототип Стандартизированного Арабского', известен в качестве всемирной замены мириаде диалектов Современного Стандарта, \
+			 долгое время игнорировался на Земле, пока Пан-Арабская кооперация в изучении космоса не сделала его привлекательным. Его литургическое использование до сих пор остаётся весьма ограниченным."
 	colour = "arabic"
 	key = "4"
-	shorthand = "PSA"
+	shorthand = "ПСА"
 	space_chance = 35
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,

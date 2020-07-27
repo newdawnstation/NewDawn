@@ -1,14 +1,14 @@
 /datum/language/diona
 	name = LANGUAGE_ROOTLOCAL
-	desc = "A complex language known instinctively by Dionaea, 'spoken' by emitting modulated radio waves. This version uses high frequency waves for quick communication at short ranges."
-	speech_verb = "creaks and rustles"
-	ask_verb = "creaks"
-	exclaim_verb = "rustles"
+	desc = "Сложный инстинктивный язык дион, ег основной принцип заключается в испускании смодулированных радиоволн. Данная его версия использует высокочастотные волны для ускорения коммуникации на коротких расстояниях."
+	speech_verb = "скрипит и шелестит"
+	ask_verb = "скрипит"
+	exclaim_verb = "шелестит"
 	colour = "soghun"
 	key = "q"
 	flags = RESTRICTED
-	syllables = list("hs","zt","kr","st","sh")
-	shorthand = "RT"
+	syllables = list("хс","зт","кр","ст","шш")
+	shorthand = "РТ"
 	machine_understands = FALSE
 
 /datum/language/diona/get_random_name()
@@ -18,7 +18,7 @@
 
 /datum/language/diona/global
 	name = LANGUAGE_ROOTGLOBAL
-	desc = "A complex language known instinctively by Dionaea, 'spoken' by emitting modulated radio waves. This version uses low frequency waves for slow communication at long ranges."
+	desc = "Сложный инстинктивный язык дион, ег основной принцип заключается в испускании смодулированных радиоволн. Данная версия использует низкочастотные волны для коммуникации на дальние расстояния за счёт скорости передачи информации."
 	key = "w"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"

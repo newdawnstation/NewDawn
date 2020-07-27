@@ -5,11 +5,11 @@
 
 /datum/language/human/indian
 	name = LANGUAGE_HUMAN_INDIAN
-	desc = "Billed as a reunification of the Hindustani languages of Hindi and Urdu in the Latin script, New Dehlavi enjoyed very rapid adoption rates among the common populace, \
-			compared to the other great Earth commons."
+	desc = "Объявленный, как реунификация Индостанских языков Хинди и Урду с использованием латинских символов, Новый Дехлавийский Язык стал быстро набирать популярность среди обычного населения, \
+			по сравнению с другими общими языками Земли."
 	colour = "indian"
 	key = "3"
-	shorthand = "Dehv"
+	shorthand = "НДехл"
 	space_chance = 30
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,

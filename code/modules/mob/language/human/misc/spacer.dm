@@ -1,9 +1,9 @@
 /datum/language/spacer
 	name = LANGUAGE_SPACER
-	desc = "A rough, informal language used infrequently by humans as a last resort when attempts to establish dialogue in more proper languages fail and no autotranslators are available."
-	warning = "Automatically given if spawning with no languages."
+	desc = "Грубый, неформальный язык рекдко используемый людьми в случае невозможности установления контакта с использованием более подходящего языка при полном отстутствии возможности использования автопереводчика."
+	warning = "Автоматически выдаётся в случае отсутствия выбранного языка."
 	key = "j"
-	shorthand = "Spc"
+	shorthand = "Спс"
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 25,
 		LANGUAGE_HUMAN_CHINESE = 25,
@@ -15,6 +15,6 @@
 		LANGUAGE_GUTTER = 35
 	)
 	syllables = list(
-		"ada", "zir", "bian", "ach", "usk", "ado", "ich", "cuan", "iga", "qing", "le", "que", "ki", "qaf", "dei", "eta"
+		"ада", "зир", "бьян", "ач", "уск", "аду", "ихь", "куан", "ига", "кинг", "ла", "куэ", "ки", "каф", "дэй", "эта", "ту", "паланчик"
 	)
 	colour = "spacer"

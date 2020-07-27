@@ -5,10 +5,10 @@
 
 /datum/language/human/chinese
 	name = LANGUAGE_HUMAN_CHINESE
-	desc = "A simplified version of Mandarin written in the Latin script, Yangyu steadily rose to prominence as a trade language in the continent, Japan, Korea, as well as parts of Africa."
+	desc = "Упрощённая версия Мандарина написанная латинскими символами, Янгю постепенно развивался в качестве торового языка в Азии, Японии, Корее и даже в некоторых частях Африки."
 	colour = "chinese"
 	key = "2"
-	shorthand = "YngYu"
+	shorthand = "Янгю"
 	space_chance = 30
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,

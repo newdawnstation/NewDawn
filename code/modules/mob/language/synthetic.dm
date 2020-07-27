@@ -1,10 +1,10 @@
 /datum/language/binary
 	name = LANGUAGE_ROBOT_GLOBAL
-	desc = "Most human facilities support free-use communications protocols and routing hubs for synthetic use."
+	desc = "Большинство учереждений людей поддерживает свободное использование протоколов коммуникации и маршрутизаторов для синтетиков."
 	colour = "say_quote"
-	speech_verb = "states"
-	ask_verb = "queries"
-	exclaim_verb = "declares"
+	speech_verb = "утверждает"
+	ask_verb = "вопрашает"
+	exclaim_verb = "восклицает"
 	key = "b"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"
@@ -44,7 +44,7 @@
 	for (var/mob/living/M in listening)
 		if(istype(M, /mob/living/silicon) || M.binarycheck())
 			continue
-		M.show_message("<i><span class='game say'><span class='name'>synthesised voice</span> <span class='message'>beeps, \"beep beep beep\"</span></span></i>",2)
+		M.show_message("<i><span class='game say'><span class='name'>синтезированный голос</span> <span class='message'>пищит, \"бип бип бип\"</span></span></i>",2)
 
 	//robot binary xmitter component power usage
 	if (isrobot(speaker))
@@ -54,10 +54,10 @@
 
 /datum/language/binary/drone
 	name = LANGUAGE_DRONE_GLOBAL
-	desc = "A heavily encoded damage control coordination stream."
-	speech_verb = "transmits"
-	ask_verb = "transmits"
-	exclaim_verb = "transmits"
+	desc = "Крайне зашифрованный поток данных для координации ремонтных работ."
+	speech_verb = "передаёт"
+	ask_verb = "передаёт"
+	exclaim_verb = "передаёт"
 	colour = "say_quote"
 	key = "d"
 	flags = RESTRICTED | HIVEMIND
@@ -66,22 +66,22 @@
 
 /datum/language/machine
 	name = LANGUAGE_EAL
-	desc = "An efficient language of encoded tones developed by synthetics and cyborgs."
-	speech_verb = "whistles"
-	ask_verb = "chirps"
-	exclaim_verb = "whistles loudly"
+	desc = "Эффективный зашифрованный язык разработаный синтетиками и киборгами."
+	speech_verb = "свистит"
+	ask_verb = "щебечет"
+	exclaim_verb = "нромко свистит"
 	colour = "changeling"
 	key = "6"
 	flags = NO_STUTTER
-	syllables = list("beep","beep","beep","beep","beep","boop","boop","boop","bop","bop","dee","dee","doo","doo","hiss","hss","buzz","buzz","bzz","ksssh","keey","wurr","wahh","tzzz")
+	syllables = list("бип","бип","бип","бип","бип","буп","буп","буп","буп","биип","биип","боп","бибуп","туу","тууу","шшш","сс","бззт","пшш","вшиу","пип","пуп")
 	space_chance = 10
-	shorthand = "EAL"
+	shorthand = "ЗАЯ"
 
 /datum/language/machine/can_speak_special(var/mob/living/speaker)
 	return speaker.isSynthetic()
 
 /datum/language/machine/get_random_name()
 	if(prob(70))
-		return "[pick(list("PBU","HIU","SINA","ARMA","OSI"))]-[rand(100, 999)]"
+		return "[pick(list("АРМА","НИУ","АРЕ","ИИО","ОССЗ"))] - [rand(100, 999)]"
 	return pick(GLOB.ai_names)
 

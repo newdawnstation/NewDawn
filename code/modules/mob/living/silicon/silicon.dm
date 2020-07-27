@@ -198,14 +198,14 @@
 	speech_synthesizer_langs -= removed_language
 
 /mob/living/silicon/check_languages()
-	set name = "Check Known Languages"
+	set name = "Проверить Известные Языки"
 	set category = "IC"
 	set src = usr
 
-	var/dat = "<meta charset='UTF-8'><b><font size = 5>Known Languages</font></b><br/><br/>"
+	var/dat = "<meta charset='UTF-8'><b><font size = 5>Известные языки</font></b><br/><br/>"
 
 	if(default_language)
-		dat += "Current default language: [default_language] - <a href='byond://?src=\ref[src];default_lang=reset'>reset</a><br/><br/>"
+		dat += "Выбранный основной язык: [default_language] - <a href='byond://?src=\ref[src];default_lang=reset'>reset</a><br/><br/>"
 
 	for(var/datum/language/L in languages)
 		if(!(L.flags & NONGLOBAL))

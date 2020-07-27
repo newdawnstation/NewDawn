@@ -7,14 +7,14 @@
 
 /datum/language/human/euro
 	name = LANGUAGE_HUMAN_EURO
-	desc = "A constructed language established by a conference of European and African research universities convening in Zurich, Switzerland starting in 2119, \
-			later adopted with little controversy as the lingua franca of the entirety of Sol space following the establishment of the SCG."
-	speech_verb = "says"
-	whisper_verb = "whispers"
+	desc = "Искусственно созданный язык, разработанный европейскими и африканскими исследовательскими институтами и представленный во время Цюрихской конференции в Швейцарии в 2119 году, \
+			после небольших разногласий был принят в качестве 'lingua franca' ( всеобщего языка ) всего космического пространства Сола после основания ЦПСС"
+	speech_verb = "говорит"
+	whisper_verb = "шепчет"
 	colour = ""
 	key = "1"
 	flags = WHITELISTED
-	shorthand = "ZAC"
+	shorthand = "ВЯЦС"
 	partial_understanding = list(
 		LANGUAGE_HUMAN_CHINESE = 5,
 		LANGUAGE_HUMAN_ARABIC = 5,
