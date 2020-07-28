@@ -5,7 +5,7 @@
 	ask_verb = "звонит"
 	exclaim_verb = "трезвонит"
 	colour = "adherent"
-	key = "p"
+	key = "а"
 	flags = WHITELISTED
 	syllables = list("\[Ab\]", "\[Bb\]", "\[Cb\]", "\[Db\]", "\[Eb\]", "\[Fb\]",
 		"\[Gb\]", "\[A#\]", "\[B#\]", "\[C#\]", "\[D#\]", "\[E#\]", "\[F#\]",

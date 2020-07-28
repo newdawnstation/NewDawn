@@ -2,18 +2,18 @@
 	return
 
 /mob/verb/whisper()
-	set name = "Whisper"
+	set name = "Прошептать"
 	set category = "IC"
 	return
 
 /mob/verb/say_verb(message as text)
-	set name = "Say"
+	set name = "Сказать"
 	set category = "IC"
 	remove_typing_indicator()
 	usr.say(message)
 
 /mob/verb/me_verb(message as text)
-	set name = "Me"
+	set name = "Я"
 	set category = "IC"
 
 	message = sanitize(message)
@@ -66,7 +66,7 @@
 	var/verb = pick(speak_emote)
 	if(verb == "says") //a little bit of a hack, but we can't let speak_emote default to an empty list without breaking other things
 		if(ending == "!")
-			verb = pick("exclaims","shouts","yells")
+			verb = pick("восклицает","кричит","орёт")
 		else if(ending == "?")
 			verb ="asks"
 	return verb
@@ -91,11 +91,11 @@
 //returns the message mode string or null for no message mode.
 //standard mode is the mode returned for the special ';' radio code.
 /mob/proc/parse_message_mode(var/message, var/standard_mode="headset")
-	if(length(message) >= 1 && copytext(message,1,2) == get_prefix_key(/decl/prefix/radio_main_channel))
+	if(length(message) >= 1 && copytext_char(message,1,2) == get_prefix_key(/decl/prefix/radio_main_channel))
 		return standard_mode
 
 	if(length(message) >= 2)
-		var/channel_prefix = copytext(message, 1 ,3)
+		var/channel_prefix = copytext_char(message, 1 ,3)
 		return department_radio_keys[channel_prefix]
 
 	return null

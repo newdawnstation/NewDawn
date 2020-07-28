@@ -23,7 +23,8 @@
 		)
 	autohiss_extra_map = list(
 			"x" = list("ks", "kss", "ksss"),
-			"ч" = list("чш", "чшш", "чшшш")
+			"ч" = list("чщ", "чшщ", "чшшщ"),
+			"ж" = list("ш")
 		)
 	autohiss_exempt = list(
 					LANGUAGE_UNATHI_SINTA,

@@ -5,7 +5,7 @@
 	ask_verb = "шипит"
 	exclaim_verb = "ревёт"
 	colour = "soghun"
-	key = "o"
+	key = "у"
 	flags = WHITELISTED
 	space_chance = 40
 	partial_understanding = list(
@@ -31,7 +31,7 @@
 	ask_verb = "потрескивает"
 	exclaim_verb = "лает"
 	colour = "yeosa"
-	key = "h"
+	key = "й"
 	flags = WHITELISTED
 	space_chance = 40
 	partial_understanding = list(

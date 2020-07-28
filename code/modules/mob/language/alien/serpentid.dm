@@ -2,7 +2,7 @@
 	name = LANGUAGE_NABBER
 	desc = "Странный язык, который использует как речевые звуки, так и движения, воспроизводящие определённые дополнительные звуки для передачи информации."
 	signlang_verb = list("стрекочет", "стучит жвалами", "стрекочет и стучит жвалами")
-	key = "n"
+	key = "н"
 	flags = WHITELISTED | SIGNLANG | NO_STUTTER | NONVERBAL
 	colour = ".nabber_lang"
 	shorthand = "СД"

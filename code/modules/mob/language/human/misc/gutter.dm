@@ -3,7 +3,7 @@
 	desc = "Этот грубый упрощённый язык появился на Плутоне в неспокойное для него время. Чаще всего он встречается среди низжих классов его населения."
 	speech_verb = "рявкает"
 	colour = "rough"
-	key = "t"
+	key = "т"
 	space_chance = 70
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 75,

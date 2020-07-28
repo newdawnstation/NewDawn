@@ -5,7 +5,7 @@
 	ask_verb = "скрипит"
 	exclaim_verb = "шелестит"
 	colour = "soghun"
-	key = "q"
+	key = "р"
 	flags = RESTRICTED
 	syllables = list("хс","зт","кр","ст","шш")
 	shorthand = "РТ"
@@ -19,6 +19,6 @@
 /datum/language/diona/global
 	name = LANGUAGE_ROOTGLOBAL
 	desc = "Сложный инстинктивный язык дион, ег основной принцип заключается в испускании смодулированных радиоволн. Данная версия использует низкочастотные волны для коммуникации на дальние расстояния за счёт скорости передачи информации."
-	key = "w"
+	key = "г"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"

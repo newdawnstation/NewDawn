@@ -5,7 +5,7 @@
 	ask_verb = "трещит"
 	exclaim_verb = "громко трещит"
 	colour = "skrell"
-	key = "k"
+	key = "с"
 	flags = WHITELISTED
 	syllables = list("кр","крр","ксук","кил","куум","кукм","вол","крим","заоо","ку-уу","кикс","коо","зикс","*","!")
 	shorthand = "СК"

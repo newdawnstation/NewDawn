@@ -1468,17 +1468,17 @@ var/global/floorIsLava = 0
 
 /client/proc/check_fax_history()
 	set category = "Special Verbs"
-	set name = "Check Fax History"
-	set desc = "Look up the faxes sent this round."
+	set name = "Проверить Историю Факсов"
+	set desc = "Просмотреть все пересланные факсы за данный раунд."
 
-	var/data = "<center><b>Fax History:</b></center><br>"
+	var/data = "<center><b>История факсов:</b></center><br>"
 
 	if(GLOB.adminfaxes)
 		for(var/obj/item/item in GLOB.adminfaxes)
 			data += "[item.name] - <a href='?_src_=holder;AdminFaxView=\ref[item]'>view message</a><br>"
 	else
 		data += "<center>No faxes yet.</center>"
-	show_browser(usr, "<HTML><HEAD><TITLE>Fax History</TITLE></HEAD><BODY>[data]</BODY></HTML>", "window=FaxHistory;size=450x400")
+	show_browser(usr, "<HTML><meta charset='UTF-8'><HEAD><TITLE>История факсов</TITLE></HEAD><BODY>[data]</BODY></HTML>", "window=FaxHistory;size=450x400")
 
 datum/admins/var/obj/item/weapon/paper/admin/faxreply // var to hold fax replies in
 

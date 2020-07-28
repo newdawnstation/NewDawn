@@ -5,7 +5,7 @@
 	exclaim_verb = "протестует"
 	ask_verb = "воспрашает"
 	space_chance = 100
-	key = "u"
+	key = "л"
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 10,
 		LANGUAGE_HUMAN_SELENIAN = 25,

@@ -2,7 +2,7 @@
 	name = LANGUAGE_HUMAN_RUSSIAN
 	desc = "Официальный язык Независимой Колониальной Конфедерации Гильгамеша, изначально представленный в 2122 году в недолго просуществовашей Объединённой Конфедерации Славян на Земле."
 	colour = "russian"
-	key = "r"
+	key = "8"
 	shorthand = "Слав"
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,

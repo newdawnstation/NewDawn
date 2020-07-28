@@ -165,6 +165,18 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 						newletter = "�"
 					if("u")
 						newletter = "�"
+					if("с")
+						newletter = "$"
+					if("е")
+						newletter = "�"
+					if("в")
+						newletter = "�"
+					if("и")
+						newletter = "�"
+					if("кс")
+						newletter = "�"
+					if("у")
+						newletter = "�"
 		else
 			if(prob(0.2 * distortion))
 				newletter = " *треск* "

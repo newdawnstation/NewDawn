@@ -3,7 +3,7 @@
 	desc = "Несмотря на то, что они крайне настороженно и с подозрением относятся друг к другу чейнджлинги имеют возможность коммуникации друг с другом на расстоянии."
 	speech_verb = "говорит"
 	colour = "changeling"
-	key = "g"
+	key = "ч"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"
 	hidden_from_codex = TRUE
@@ -22,7 +22,7 @@
 	ask_verb = "поёт"
 	exclaim_verb = "поёт"
 	colour = "alien"
-	key = "z"
+	key = "к"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"
 	hidden_from_codex = TRUE
@@ -53,7 +53,7 @@
 	ask_verb = "скрипит"
 	exclaim_verb = "орёт"
 	colour = "vox"
-	key = "x"
+	key = "в"
 	flags = WHITELISTED
 	syllables = list("ti","ti","ti","hi","hi","ki","ki","ki","ki","ya","ta","ha","ka","ya","chi","cha","kah", \
 	"SKRE","AHK","EHK","RAWK","KRA","AAA","EEE","KI","II","KRI","KA")
@@ -80,7 +80,7 @@
 	ask_verb = "читает"
 	exclaim_verb = "скандирует"
 	colour = "cult"
-	key = "f"
+	key = "ф"
 	flags = RESTRICTED
 	space_chance = 100
 	syllables = list("ира","эго","нахлизет","цертум","вери","джаактаа","мгар","балак", "каразет", "гиреи", \
@@ -101,7 +101,7 @@
 	ask_verb = "читает"
 	exclaim_verb = "скандирует"
 	colour = "cult"
-	key = "y"
+	key = "и"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "ОКТ"
 	hidden_from_codex = TRUE
@@ -110,7 +110,7 @@
 	name = LANGUAGE_ALIUM
 	colour = "cult"
 	speech_verb = "шипит"
-	key = "c"
+	key = "а"
 	flags = RESTRICTED
 	syllables = list("ки","бок","мок","йок","ди","гли","рил","бил","док","форбици", "тарем", "н'атх", "ретх", "ш'иро", "этх", "д'раггхатноор","ниии",
 	"д'раггхатноор", "кхари'д", "гуал'те", "ки","ки","ки","ки","йа","та","вэй","ним","ассах","квсса","ниесл","кина","шаффар",

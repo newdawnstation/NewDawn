@@ -39,18 +39,23 @@ var/list/department_radio_keys = list(
 
 	  //kinda localization -- rastaf0
 	  //same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.
-	  ":ê" = "right ear",	".ê" = "right ear",
-	  ":ä" = "left ear",	".ä" = "left ear",
-	  ":ø" = "intercom",	".ø" = "intercom",
-	  ":ð" = "department",	".ð" = "department",
-	  ":ñ" = "Command",		".ñ" = "Command",
-	  ":ò" = "Science",		".ò" = "Science",
-	  ":ü" = "Medical",		".ü" = "Medical",
-	  ":ó" = "Engineering",	".ó" = "Engineering",
-	  ":û" = "Security",	".û" = "Security",
-	  ":ö" = "whisper",		".ö" = "whisper",
-	  ":å" = "Mercenary",	".å" = "Mercenary",
-	  ":é" = "Supply",		".é" = "Supply",
+	  ":п" = "right ear",	 ".п" = "right ear",
+	  ":л" = "left ear",	 ".л" = "left ear",
+	  ":и" = "intercom",	 ".и" = "intercom",
+	  ":д" = "department",	 ".д" = "department",
+	  ":к" = "Command",		 ".к" = "Command",
+	  ":у" = "Science",		 ".у" = "Science",
+	  ":м" = "Medical",		 ".м" = "Medical",
+	  ":и" = "Engineering",	 ".и" = "Engineering",
+	  ":б" = "Security",	 ".б" = "Security",
+	  ":ш" = "whisper",		 ".ш" = "whisper",
+	  ":н" = "Mercenary",	 ".н" = "Mercenary",
+	  ":т" = "Supply",		 ".т" = "Supply",
+	  ":с" = "Service",		 ".с" = "Service",
+	  ":в" = "AI Private",	 ".в" = "AI Private",
+	  ":э" = "Entertainment",".э" = "Entertainment",
+	  ":о" = "Exploration",	 ".о" = "Exploration",
+	  ":з" = "Recon",		 ".з" = "Recon",	//Skrell Recon ship
 )
 
 
@@ -156,7 +161,7 @@ proc/get_radio_key_from_channel(var/channel)
 /mob/living/say(var/message, var/datum/language/speaking = null, var/verb="says", var/alt_name="", whispering)
 	if(client)
 		if(client.prefs.muted & MUTE_IC)
-			to_chat(src, "<span class='warning'>You cannot speak in IC (Muted).</span>")
+			to_chat(src, "<span class='warning'>Вы не можете коворить в IC (Muted).</span>")
 			return
 
 	if(stat)
@@ -195,7 +200,7 @@ proc/get_radio_key_from_channel(var/channel)
 		return 1
 
 	if((is_muzzled()) && !(speaking && (speaking.flags & SIGNLANG)))
-		to_chat(src, "<span class='danger'>You're muzzled and cannot speak!</span>")
+		to_chat(src, "<span class='danger'>На вас кляп, вы не можете говорить!</span>")
 		return
 
 	if (speaking)
@@ -242,7 +247,7 @@ proc/get_radio_key_from_channel(var/channel)
 		if(speaking)
 			message_range = speaking.get_talkinto_msg_range(message)
 		if(!speaking || !(speaking.flags & NO_TALK_MSG))
-			src.visible_message(SPAN_NOTICE("\The [src] talks into \the [used_radios[1]]."), SPAN_NOTICE("You hear someone talk into their headset."), 5, exclude_mobs = list(src))
+			src.visible_message(SPAN_NOTICE(" [src] говорит в [used_radios[1]]."), SPAN_NOTICE("Вы слышите, как кто-то говорит в свой наушник."), 5, exclude_mobs = list(src))
 			if (speech_sound)
 				sound_vol *= 0.5
 

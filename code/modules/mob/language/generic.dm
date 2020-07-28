@@ -24,6 +24,6 @@
 	desc = "Язык жестов, который обычно используется глухими или немыми."
 	signlang_verb = list("жестикулирует")
 	colour = "say_quote"
-	key = "s"
+	key = "ж"
 	flags = SIGNLANG | NO_STUTTER | NONVERBAL
 	shorthand = "ЯЖ"

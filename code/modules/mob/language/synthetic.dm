@@ -5,7 +5,7 @@
 	speech_verb = "утверждает"
 	ask_verb = "вопрашает"
 	exclaim_verb = "восклицает"
-	key = "b"
+	key = "б"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"
 	var/drone_only
@@ -59,7 +59,7 @@
 	ask_verb = "передаёт"
 	exclaim_verb = "передаёт"
 	colour = "say_quote"
-	key = "d"
+	key = "д"
 	flags = RESTRICTED | HIVEMIND
 	drone_only = 1
 	shorthand = "N/A"
@@ -69,11 +69,11 @@
 	desc = "Эффективный зашифрованный язык разработаный синтетиками и киборгами."
 	speech_verb = "свистит"
 	ask_verb = "щебечет"
-	exclaim_verb = "нромко свистит"
+	exclaim_verb = "громко свистит"
 	colour = "changeling"
 	key = "6"
 	flags = NO_STUTTER
-	syllables = list("бип","бип","бип","бип","бип","буп","буп","буп","буп","биип","биип","боп","бибуп","туу","тууу","шшш","сс","бззт","пшш","вшиу","пип","пуп")
+	syllables = list("бип","бип","бип","бип","бип","буп","буп","буп","буп","биип","биип","боп","бибуп","туу","тууу","шшш","сс","бззт","вшиу","пип","пуп")
 	space_chance = 10
 	shorthand = "ЗАЯ"
 

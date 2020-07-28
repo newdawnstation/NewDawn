@@ -11,8 +11,8 @@
 		else
 			speaking = get_any_good_language(set_default=TRUE)
 			if (!speaking)
-				to_chat(src, SPAN_WARNING("You don't know a language and cannot speak."))
-				emote("custom", AUDIBLE_MESSAGE, "[pick("grunts", "babbles", "gibbers", "jabbers", "burbles")] aimlessly.")
+				to_chat(src, SPAN_WARNING("Вы не знаете язык и не можете говорить."))
+				emote("custom", AUDIBLE_MESSAGE, "бессмысленно [pick("хрюкает", "лепечет", "тараторит", "бормочет")].")
 				return
 
 	if(has_chem_effect(CE_VOICELOSS, 1))
@@ -25,11 +25,11 @@
 		var/obj/item/organ/internal/lungs/L = internal_organs_by_name[species.breathing_organ]
 		if(!L || L.breath_fail_ratio > 0.9)
 			if(L && world.time < L.last_successful_breath + 2 MINUTES) //if we're in grace suffocation period, give it up for last words
-				to_chat(src, "<span class='warning'>You use your remaining air to say something!</span>")
+				to_chat(src, "<span class='warning'>Вы используете оставшийся воздух, чтобы что-то сказать!</span>")
 				L.last_successful_breath = world.time - 2 MINUTES
 				return ..(message, speaking = speaking)
 
-			to_chat(src, "<span class='warning'>You don't have enough air[L ? " in [L]" : ""] to make a sound!</span>")
+			to_chat(src, "<span class='warning'>У вас недостаточно воздуха[L ? " in [L]" : ""] чтобы что-то сказать!</span>")
 			return
 		else if(L.breath_fail_ratio > 0.7)
 			whisper_say(length_char(message) > 5 ? stars(message) : message, speaking)
@@ -132,16 +132,16 @@
 	return real_name
 
 /mob/living/carbon/human/say_quote(var/message, var/datum/language/speaking = null)
-	var/verb = "says"
+	var/verb = "говорит"
 	var/ending = copytext(message, length(message))
 
 	if(speaking)
 		verb = speaking.get_spoken_verb(ending)
 	else
 		if(ending == "!")
-			verb=pick("exclaims","shouts","yells")
+			verb=pick("восклицает","кричит","орёт")
 		else if(ending == "?")
-			verb="asks"
+			verb="спрашивает"
 
 	return verb
 
