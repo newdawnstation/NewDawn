@@ -15,6 +15,7 @@ var/datum/evacuation_controller/evacuation_controller
 	var/recall
 	var/auto_recall_time
 	var/emergency_evacuation
+	var/pods_were_launched = FALSE // this checks if pods were already launched, in order not to launch them until the end of the game
 
 	var/evac_prep_delay =   10 MINUTES
 	var/evac_launch_delay =  3 MINUTES
@@ -150,6 +151,9 @@ var/datum/evacuation_controller/evacuation_controller
 
 	return 1
 
+/datum/evacuation_controller/proc/launch_escpods()
+	return 1
+
 /datum/evacuation_controller/proc/finish_evacuation()
 	state = EVAC_COMPLETE
 
@@ -166,6 +170,9 @@ var/datum/evacuation_controller/evacuation_controller
 		if(world.time >= evac_launch_time)
 			launch_evacuation()
 	else if(state == EVAC_IN_TRANSIT)
+		if((world.time >= evac_launch_time + 10) && !pods_were_launched) // pods are launched after the shuttle
+			launch_escpods()
+			pods_were_launched = TRUE // We don't need to launch them again and pods don't deserve their own define, so here is what I came up with.
 		if(world.time >= evac_arrival_time)
 			finish_evacuation()
 	else if(state == EVAC_COOLDOWN)

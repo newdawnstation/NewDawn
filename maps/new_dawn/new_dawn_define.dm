@@ -1,7 +1,7 @@
 /datum/map/new_dawn
 	name = "New Dawn"
 	full_name = "NSS New Dawn"
-	path = "New Dawn"
+	path = "new_dawn"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/new_dawn_config.txt"
 
@@ -11,13 +11,13 @@
 	accessible_z_levels = list("1"=1,"2"=1,"9"=30)
 	overmap_size = 35
 	overmap_event_areas = 34
-	usable_email_tlds = list("New Dawn.ec.scg", "New Dawn.fleet.mil", "freemail.net", "New Dawn.scg")
+	usable_email_tlds = list("new_dawn.ec.scg", "new_dawn.fleet.mil", "freemail.net", "new_dawn.scg")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "NSS New_Dawn"
-	station_short = "New Dawn"
+	station_name  = "Новый рассвет"
+	station_short = "Рассвет"
 	dock_name     = "NDW"
 	boss_name     = "Expeditionary Command"
 	boss_short    = "Command"

@@ -11,7 +11,7 @@
 	license = decls_repository.get_decl(license)
 
 /music_track/proc/play_to(var/listener)
-	to_chat(listener, "<span class='good'>Now Playing:</span>")
+	to_chat(listener, "<span class='good'>Сейчас играет:</span>")
 	to_chat(listener, "<span class='good'>[title][artist ? " by [artist]" : ""][album ? " ([album])" : ""]</span>")
 	if(url)
 		to_chat(listener, "<span class='message linkify'>[url]</span>")
