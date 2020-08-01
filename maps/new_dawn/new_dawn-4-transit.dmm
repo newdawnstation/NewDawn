@@ -72,11 +72,11 @@
 /turf/space/transit/north,
 /area/space)
 "i" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod3,
+/obj/effect/shuttle_landmark/escape_pod/out/pod3,
 /turf/space/transit/north,
 /area/space)
 "j" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod1,
+/obj/effect/shuttle_landmark/escape_pod/out/pod1,
 /turf/space/transit/north,
 /area/space)
 "k" = (
@@ -98,15 +98,15 @@
 /turf/space/bluespace,
 /area/space)
 "m" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
+/obj/effect/shuttle_landmark/escape_pod/out/pod9,
 /turf/space/transit/north,
 /area/space)
 "n" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod4,
+/obj/effect/shuttle_landmark/escape_pod/out/pod4,
 /turf/space/transit/north,
 /area/space)
 "o" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod5,
+/obj/effect/shuttle_landmark/escape_pod/out/pod5,
 /turf/space/transit/north,
 /area/space)
 "p" = (
@@ -143,15 +143,15 @@
 /turf/space/transit/north,
 /area/space)
 "u" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod6,
+/obj/effect/shuttle_landmark/escape_pod/out/pod6,
 /turf/space/transit/north,
 /area/space)
 "v" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod7,
+/obj/effect/shuttle_landmark/escape_pod/out/pod7,
 /turf/space/transit/north,
 /area/space)
 "w" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod8,
+/obj/effect/shuttle_landmark/escape_pod/out/pod8,
 /turf/space/transit/north,
 /area/space)
 "x" = (
@@ -165,7 +165,7 @@
 /turf/space/bluespace,
 /area/space)
 "y" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod2,
+/obj/effect/shuttle_landmark/escape_pod/out/pod2,
 /turf/space/transit/north,
 /area/space)
 "A" = (
@@ -187,7 +187,7 @@
 /turf/space/transit/east,
 /area/space)
 "D" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/shuttle,
+/obj/effect/shuttle_landmark/escape_pod/out/shuttle,
 /turf/space,
 /area/space)
 "E" = (
@@ -208,43 +208,39 @@
 /turf/space/bluespace,
 /area/space)
 "I" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod1,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod1,
 /turf/space,
 /area/space)
 "J" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod9,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
 /turf/space,
 /area/space)
 "K" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod3,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod3,
 /turf/space,
 /area/space)
 "L" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod7,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod7,
 /turf/space,
 /area/space)
 "M" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod6,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod6,
 /turf/space,
 /area/space)
 "O" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod8,
-/turf/space,
-/area/space)
-"Q" = (
-/obj/effect/shuttle_landmark/escape_pod/out/shuttle,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod8,
 /turf/space,
 /area/space)
 "R" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod5,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod5,
 /turf/space,
 /area/space)
 "T" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod4,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod4,
 /turf/space,
 /area/space)
 "U" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod2,
+/obj/effect/shuttle_landmark/escape_pod/transit/pod2,
 /turf/space,
 /area/space)
 "W" = (
@@ -9688,7 +9684,7 @@ d
 d
 d
 d
-Q
+d
 d
 d
 d
@@ -10307,7 +10303,7 @@ d
 d
 d
 d
-d
+D
 d
 d
 d
@@ -22605,7 +22601,7 @@ d
 d
 d
 d
-D
+d
 d
 d
 d

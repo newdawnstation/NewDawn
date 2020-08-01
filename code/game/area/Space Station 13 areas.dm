@@ -183,6 +183,16 @@ area/space/atmosalert()
 	icon_state = "syndie-elite"
 	req_access = list(access_syndicate)
 
+/area/remains
+	name = "Old Station Remains"
+	sound_env = TUNNEL_ENCLOSED
+	forced_ambience = list('sound/ambience/maintambience.ogg')
+/area/remains/secure
+	name = "Secure remains"
+/area/remains/insecure
+	name = "Insecure remains"
+	turf_initializer = /decl/turf_initializer/maintenance
+
 ////////////
 //SHUTTLES//
 ////////////

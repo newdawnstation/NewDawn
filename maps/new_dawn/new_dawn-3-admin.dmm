@@ -12052,6 +12052,10 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"taZ" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/shuttle,
+/turf/space,
+/area/space)
 "tcf" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert3"
@@ -31722,7 +31726,7 @@ aab
 aab
 aab
 aab
-aab
+taZ
 aab
 aab
 aab

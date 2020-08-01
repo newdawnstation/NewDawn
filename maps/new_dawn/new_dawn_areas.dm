@@ -1484,3 +1484,413 @@
 /area/tdome/tdomeobserve
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
+
+/***************************************/
+/* UNDERGROUND ( Old Station Remains ) */
+/***************************************/
+
+// BRIG REMAINS 
+
+//insecure brig
+
+/area/remains/insecure/brig
+	name = "\improper Insecure Brig"
+	icon_state = "security"
+
+/area/remains/insecure/brig/primary_hall
+	name = "\improper Old Brig Primary Hall"
+	icon_state = "security"
+
+/area/remains/insecure/brig/rooms
+	name = "\improper Insecure Brig Rooms"
+	icon_state = "security"
+
+/area/remains/insecure/brig/rooms/north
+	name = "\improper Insecure North Brig Rooms"
+	icon_state = "Warden"
+
+/area/remains/insecure/brig/rooms/centre
+	name = "\improper Insecure Central Brig Rooms"
+	icon_state = "security"
+
+/area/remains/insecure/brig/rooms/east
+	name = "\improper Insecure East Brig Rooms"
+	icon_state = "security"
+
+/area/remains/insecure/brig/rooms/south
+	name = "\improper Insecure South Brig Rooms"
+	icon_state = "detective"
+
+//secure brig
+
+/area/remains/secure/brig
+	name = "\improper Secure Brig"
+	icon_state = "security"
+
+/area/remains/secure/brig/court
+	name = "\improper Secure Brig Court"
+	icon_state = "security"
+
+//* EVA, GATEWAY, NUKE, CARGO *//
+
+/area/remains/secure/nuke
+	name = "\improper Secure Vault Remains"
+	icon_state = "nuke_storage"
+
+/area/remains/insecure/eva
+	name = "\improper Insecure EVA Remains"
+	icon_state = "eva"
+
+/area/remains/insecure/gateway
+	name = "\improper Insecure Gateway"
+	icon_state = "eva"
+
+/area/remains/insecure/cargo
+	name = "\improper Insecure Cargo"
+	icon_state = "quart"
+
+//* CENTER *//
+
+//insecure center
+
+/area/remains/insecure/center
+	name = "\improper Insecure Center"
+	icon_state = "centhall"
+
+/area/remains/insecure/center/central_hall
+	name = "\improper Insecure Centrall Hall"
+	icon_state = "centhall"
+
+/area/remains/insecure/center/teleporter
+	name = "\improper Insecure Teleporter"
+	icon_state = "teleporter"
+
+/area/remains/insecure/center/ai
+	name = "\improper Insecure AI"
+	icon_state = "ai_foyer"
+
+//secure center
+
+/area/remains/secure/center
+	name = "\improper Secure Center"
+	icon_state = "bridge"
+
+/area/remains/secure/center/bridge
+	name = "\improper Secure Bridge"
+	icon_state = "bridge"
+
+/area/remains/secure/center/hop
+	name = "\improper Secure HOP"
+	icon_state = "heads_hop"
+
+/area/remains/secure/center/captain
+	name = "\improper Secure Captain room"
+	icon_state = "heads_cap"
+
+//* ARRIVAL *//
+
+//insecure arrival
+
+/area/remains/insecure/arrival
+	name = "\improper Insecure Arrival"
+	icon_state = "entry"
+
+/area/remains/insecure/arrival/primaty_hall
+	name = "\improper Insecure Arrival Primary Hall"
+	icon_state = "westhall"
+
+/area/remains/insecure/arrival/rooms
+	name = "\improper Insecure Arrival Rooms"
+	icon_state = "entry"
+
+/area/remains/insecure/arrival/rooms/north
+	name = "\improper Insecure Arrival North Rooms"
+	icon_state = "ashall"
+
+/area/remains/insecure/arrival/rooms/south
+	name = "\improper Insecure Arrival South Rooms"
+	icon_state = "ashall"
+
+//secure arrival
+
+/area/remains/secure/arrival
+	name = "\improper Secure Arrival"
+	icon_state = "entry"
+
+/area/remains/secure/arrival/shuttle
+	name = "\improper Secure Arrival Shuttle"
+	icon_state = "entry"
+
+/area/remains/secure/arrival/ladder
+	name = "\improper Secure Arrival Ladder"
+	icon_state = "entry"
+
+/area/remains/secure/arrival/checkpoint
+	name = "\improper Secure Arrival Checkpoint"
+	icon_state = "security"
+
+//* ENGINEERING *//
+
+// insecure engineering
+
+/area/remains/insecure/engineering
+	name = "\improper Insecure Engineering"
+	icon_state = "engine"
+
+/area/remains/insecure/engineering/west
+	name = "\improper Insecure West Engineering"
+	icon_state = "atmos_storage"
+
+/area/remains/insecure/engineering/east
+	name = "\improper Insecure East Engineering"
+	icon_state = "engine"
+
+//secure engineering
+
+/area/remains/secure/engineering
+	name = "\improper Secure Engineering"
+	icon_state = "engine"
+
+/area/remains/secure/engineering/ladder
+	name = "\improper Secure Engineering Ladder"
+	icon_state = "engineering_foyer"
+
+/area/remains/secure/engineering/south
+	name = "\improper Secure South Engineering"
+	icon_state = "engineering_storage"
+
+//* DORMS *//
+
+//insecure dorms
+
+/area/remains/insecure/dorms
+	name = "\improper Insecure Dormitories"
+	icon_state = "construction"
+
+/area/remains/insecure/dorms/primary_hall
+	name = "\improper Insecure Dormitories Primary Hall"
+	icon_state = "easthall"
+
+/area/remains/insecure/dorms/kitchen
+	name = "\improper Insecure Kitchen"
+	icon_state = "kitchen"
+
+/area/remains/insecure/dorms/kitchen/storage
+	name = "\improper Insecure Kitchen Storage"
+	icon_state = "kitchen"
+
+/area/remains/insecure/dorms/hidroponics
+	name = "\improper Insecure Hydroponics"
+	icon_state = "hydro"
+
+//secure dorms
+
+/area/remains/secure/dorms
+	name = "\improper Secure Dormitories"
+	icon_state = "crew_quarters"
+
+/area/remains/secure/dorms/bar
+	name = "\improper Secure Bar"
+	icon_state = "bar"
+
+//* DEPARTURE *//
+
+//insecure departure
+
+/area/remains/insecure/departure
+	name = "\improper Insecure Departure"
+	icon_state = "escape"
+
+/area/remains/insecure/departure/lounge
+	name = "\improper Insecure Departure Lounge"
+	icon_state = "escape"
+
+/area/remains/insecure/departure/library
+	name = "\improper Insecure Library"
+	icon_state = "crew_quarters"
+
+/area/remains/insecure/departure/chapel
+	name = "\improper Insecure Chapel"
+	icon_state = "chapel"
+
+//secure departure
+
+/area/remains/secure/departure
+	name = "\improper Secure Departure"
+	icon_state = "escape"
+
+/area/remains/secure/departure/lounge
+	name = "\improper Secure Departure Lounge"
+	icon_state = "security"
+
+//* RESEARCH & DEVELOPMENT *//
+
+//insecure rnd
+
+/area/remains/insecure/rnd
+	name = "\improper Insecure Research"
+	icon_state = "research"
+
+/area/remains/insecure/rnd/rooms
+	name = "\improper Insecure Research Rooms"
+	icon_state = "research"
+
+/area/remains/insecure/rnd/rooms/north
+	name = "\improper Insecure Research North Rooms"
+	icon_state = "research"
+
+/area/remains/insecure/rnd/rooms/west
+	name = "\improper Insecure Research West Rooms"
+	icon_state = "researchbreak"
+
+/area/remains/insecure/rnd/rooms/east
+	name = "\improper Insecure Research East Rooms"
+	icon_state = "toxstorage"
+
+//secure rnd
+
+/area/remains/secure/rnd
+	name = "\improper Secure Research"
+	icon_state = "research"
+
+/area/remains/secure/rnd/ladder
+	name = "\improper Secure Research Ladder"
+	icon_state = "misclab"
+
+/area/remains/secure/rnd/rd
+	name = "\improper Secure RD office"
+	icon_state = "heads_rd"
+
+//* MEDICAL *//
+
+//insecure med
+
+/area/remains/insecure/med
+	name = "\improper Insecure Medical Department"
+	icon_state = "medbay"
+
+/area/remains/insecure/med/morgue
+	name = "\improper Insecure Morgue"
+	icon_state = "morgue"
+
+/area/remains/insecure/med/rooms
+	name = "\improper Insecure Medical Department Rooms"
+	icon_state = "medbay"
+
+/area/remains/insecure/med/rooms/south
+	name = "\improper Insecure Medical Department South Rooms"
+	icon_state = "medbay"
+
+/area/remains/insecure/med/rooms/north
+	name = "\improper Insecure Medical Department North Rooms"
+	icon_state = "medbay2"
+
+/area/remains/insecure/med/rooms/center
+	name = "\improper Insecure Medical Department Central Rooms"
+	icon_state = "surgery"
+
+//secure med
+
+/area/remains/secure/med
+	name = "\improper Secure Medical Department"
+	icon_state = "medbay"
+
+/area/remains/secure/med/ladder
+	name = "\improper Secure Medical Department Ladder"
+	icon_state = "patients"
+
+/area/remains/secure/med/toxlab_entry
+	name = "\improper Secure Toxic Lab Entry"
+	icon_state = "chem"
+
+/area/remains/secure/med/room
+	name = "\improper Secure Medical Department Room"
+	icon_state = "medbay"
+
+/area/remains/secure/med/room/north
+	name = "\improper Secure Medical Department North Room"
+	icon_state = "medbay3"
+
+/area/remains/secure/med/room/centeral
+	name = "\improper Secure Medical Department Central Room"
+	icon_state = "medbay4"
+
+//* MAINTENANCE REMAINS *//
+
+//insecure maintenance
+
+/area/remains/insecure/maintenance
+	name = "\improper Insecure Maintenance"
+	icon_state = "maintcentral"
+
+/area/remains/insecure/maintenance/brig
+	name = "\improper Insecure Brig Maintenance"
+	icon_state = "maint_security"
+
+/area/remains/insecure/maintenance/brig/west
+	name = "\improper Insecure West Brig Maintenance"
+	icon_state = "maint_security"
+
+/area/remains/insecure/maintenance/brig/east
+	name = "\improper Insecure East Brig Maintenance"
+	icon_state = "maint_security"
+
+/area/remains/insecure/maintenance/cargo
+	name = "\improper Insecure Cargo Maintenance"
+	icon_state = "maint_cargo"
+
+/area/remains/insecure/maintenance/eng
+	name = "\improper Insecure Engineering Maintenance"
+	icon_state = "maint_engineering"
+
+/area/remains/insecure/maintenance/library
+	name = "\improper Insecure Library Maintenance"
+	icon_state = "maint_library"
+
+/area/remains/insecure/maintenance/departure
+	name = "\improper Insecure Departure Maintenance"
+	icon_state = "maintcentral"
+
+/area/remains/insecure/maintenance/med
+	name = "\improper Insecure Medical Maintenance"
+	icon_state = "maint_research"
+
+//secure maintenance
+
+/area/remains/secure/maintenance
+	name = "\improper Secure Maintenance"
+	icon_state = "maintcentral"
+
+/area/remains/secure/maintenance/brig
+	name = "\improper Secure Brig Maintenance"
+	icon_state = "maint_security"
+
+/area/remains/secure/maintenance/brig/west
+	name = "\improper Secure West Brig Maintenance"
+	icon_state = "maint_security"
+
+/area/remains/secure/maintenance/brig/east
+	name = "\improper Secure East Brig Maintenance"
+	icon_state = "maint_security"
+
+/area/remains/secure/maintenance/rnd
+	name = "\improper Secure Research Maintenance"
+	icon_state = "maint_research"
+
+//* USED AREAS* //
+
+/area/remains/secure/used
+	name = "\improper Secure Used Area"
+	icon_state = "storage"
+
+/area/remains/secure/used/bunker
+	name = "\improper Heads Bunker"
+	icon_state = "heads"
+
+/area/remains/secure/used/bartender
+	name = "\improper Bartender's Storage"
+	icon_state = "storage"
+
+/area/remains/secure/used/kitchen_storage
+	name = "\improper Lower Kitchen Storage"
+	icon_state = "storage"
