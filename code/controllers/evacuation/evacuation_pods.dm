@@ -8,13 +8,13 @@
 /datum/evacuation_controller/starship
 	name = "escape pod controller"
 
-	evac_prep_delay    = 1 MINUTES //5
-	evac_launch_delay  = 1 MINUTES //3
-	evac_transit_delay = 1 MINUTES //2
+	evac_prep_delay    = 4 MINUTES //5
+	evac_launch_delay  = 4 MINUTES //3
+	evac_transit_delay = 5 MINUTES //2
 
-	transfer_prep_additional_delay     = 15 MINUTES
-	autotransfer_prep_additional_delay = 5 MINUTES
-	emergency_prep_additional_delay    = 0 MINUTES
+	transfer_prep_additional_delay     = 15 MINUTES //15
+	autotransfer_prep_additional_delay = 3 MINUTES  //5
+	emergency_prep_additional_delay    = 0 MINUTES  //0
 
 	evacuation_options = list(
 		EVAC_OPT_ABANDON_SHIP = new /datum/evacuation_option/abandon_ship(),
@@ -38,20 +38,23 @@
 		if (!shuttle.arming_controller || shuttle.arming_controller.armed)
 			shuttle.move_time = (evac_transit_delay/10) // Launching shuttle
 			shuttle.launch(src)
-		priority_announcement.Announce(replacetext(replacetext(GLOB.using_map.emergency_shuttle_leaving_dock, "%dock_name%", "[GLOB.using_map.dock_name]"),  "%ETA%", "[round(get_eta()/60,1)] minute\s"))
+		priority_announcement.Announce(replacetext(replacetext(GLOB.using_map.emergency_shuttle_leaving_dock, "%dock_name%", "[GLOB.using_map.dock_name]"),  "%ETA%", "[round(get_eta()/60,1)] минут"))
 	else
 		// Bluespace Jump
-		priority_announcement.Announce(replacetext(replacetext(GLOB.using_map.shuttle_leaving_dock, "%dock_name%", "[GLOB.using_map.dock_name]"),  "%ETA%", "[round(get_eta()/60,1)] minute\s"))
+		priority_announcement.Announce(replacetext(replacetext(GLOB.using_map.shuttle_leaving_dock, "%dock_name%", "[GLOB.using_map.dock_name]"),  "%ETA%", "[round(get_eta()/60,1)] минут"))
 		SetUniversalState(/datum/universal_state/bluespace_jump, arguments=list(GLOB.using_map.station_levels))
 
 
 /datum/evacuation_controller/starship/launch_escpods()
 	// Pods Abondon Station
-	for (var/datum/shuttle/autodock/ferry/escape_pod/pod in escape_pods) // Launch the pods!
-		if ((!pod.arming_controller || pod.arming_controller.armed ) && pod != escape_pods_by_name["Escape Shuttle"])
-			pod.move_time = (evac_transit_delay/10)
-			pod.launch(src)
-	priority_announcement.Announce("Внимание всем постам: Малые спасательные челноки покидают станцию.")
+	if(emergency_evacuation) // we don't want to launch pods while performing bluespace jump
+		for (var/datum/shuttle/autodock/ferry/escape_pod/pod in escape_pods) // Launch the pods!
+			if ((!pod.arming_controller || pod.arming_controller.armed ) && pod != escape_pods_by_name["Escape Shuttle"])
+				pod.move_time = (evac_transit_delay/10)
+				pod.launch(src)
+		priority_announcement.Announce("Внимание всем постам: Малые спасательные челноки покидают станцию.")
+	else
+		return 1
 
 /datum/evacuation_controller/starship/finish_evacuation()
 	..()
