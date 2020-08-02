@@ -40,6 +40,10 @@
 	name = "\improper North Hallway"
 	icon_state = "northhall"
 
+/area/hallway/north/dorms
+	name = "\improper North Dormitories Hallway"
+	icon_state = "northhall"
+
 /area/hallway/east
 	name = "\improper East Hallway"
 	icon_state = "easthall"
@@ -735,6 +739,22 @@
 	name = "\improper Laundry Room"
 	icon_state = "Sleep"
 
+/area/crew_quarters/dorms
+	name = "\improper Dormitories"
+	icon_state = "Sleep"
+
+/area/crew_quarters/relax
+	name = "\improper Dormitories Room"
+	icon_state = "Sleep"
+
+/area/crew_quarters/concert
+	name = "\improper Concert Room"
+	icon_state = "Sleep"
+
+/area/crew_quarters/library
+	name = "\improper Library"
+	icon_state = "Sleep"
+
 /area/crew_quarters/bar
 	name = "\improper Bar"
 	icon_state = "bar"
@@ -819,6 +839,21 @@
 
 // Security
 
+/area/security/prison
+	name = "\improper Security - Prison"
+	icon_state = "sec_prison"
+	req_access = list(access_brig)
+
+/area/security/prison/detention
+	name = "\improper Security - Prison Detention Rooms"
+	icon_state = "sec_prison"
+	req_access = list(access_brig)
+
+/area/security/prison/punishment
+	name = "\improper Security - Prison Punishment Rooms"
+	icon_state = "sec_prison"
+	req_access = list(access_brig)
+
 /area/security/bo
 	name = "\improper Security - Brig Chief"
 	icon_state = "Warden"
@@ -843,22 +878,46 @@
 /area/security/locker
 	name = "\improper Security - Locker Room"
 	icon_state = "security"
+	req_access = list(access_brig)
 
 /area/security/evidence
 	name = "\improper Security - Evidence Storage"
 	icon_state = "security"
+	req_access = list(access_brig)
 
 /area/security/processing
 	name = "\improper Security - Processing"
 	icon_state = "security"
+	req_access = list(access_brig)
 
 /area/security/questioning
 	name = "\improper Security - Interview Room"
 	icon_state = "security"
+	req_access = list(access_brig)
 
 /area/security/wing
 	name = "\improper Security Wing"
 	icon_state = "security"
+
+/area/security/court
+	name = "\improper Court Room"
+	icon_state = "security"
+
+/area/security/torture
+	name = "\improper Torture Chamber"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/interrogation
+	name = "\improper Interrogation Room"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/meeting
+	name = "\improper Meeting Room"
+	icon_state = "security"
+	req_access = list(access_brig)
+
 /*
 /area/security/bridgecheck
 	name = "\improper Bridge Deck Security Checkpoint"
@@ -1105,6 +1164,10 @@
 /area/storage/primary
 	name = "Primary Tool Storage"
 	icon_state = "primarystorage"
+
+/area/storage/misc
+	name = "Primary Tool Storage"
+	icon_state = "storage"
 
 /area/storage/tech
 	name = "Technical Storage"
