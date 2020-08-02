@@ -16,6 +16,7 @@ SUBSYSTEM_DEF(mapping)
 	for(var/atype in subtypesof(/decl/submap_archetype))
 		submap_archetypes[atype] = new atype
 	GLOB.using_map.build_away_sites()
+	handle_mob_spawn_lowerlevel(config.lowerlevel_mob_count , config.lowerlevel_mob_multiplier , /area/remains/insecure)
 	. = ..()
 
 /datum/controller/subsystem/mapping/Recover()
@@ -68,3 +69,29 @@ SUBSYSTEM_DEF(mapping)
 			space_ruins_templates[MT.name] = MT
 		else if(istype(MT, /datum/map_template/ruin/away_site))
 			away_sites_templates[MT.name] = MT
+
+/datum/controller/subsystem/mapping/proc/handle_mob_spawn_lowerlevel(lowerlevel_mob_count = 20 , lowerlevel_mob_multiplier = 1 , insecure_areas = /area/remains/insecure)
+	//This proc spawns mobs under the main station ( 1st z level ), won't work on other maps rather than new_dawn ( uses specific areas )
+	if(lowerlevel_mob_multiplier == 0 || lowerlevel_mob_count == 0) // We shouldn't spawn nobody
+		return
+	if(!insecure_areas)
+		log_debug("There is no area to spawn mobs in lowerlevel")
+		return
+	var/list/mob_turfs = get_subarea_turfs( insecure_areas, list(/proc/not_turf_contains_dense_objects, /proc/IsTurfAtmosSafe) )
+	if(!mob_turfs)
+		log_debug("Failed to find any spawn turfs for mobs in lowerlevel")
+		return
+
+	// list of mobs, who can spawn in the stations lower level
+	var/list/all_lowerlevel_mobs = list( /mob/living/simple_animal/hostile/giant_spider/hunter, /mob/living/simple_animal/hostile/giant_spider/guard,
+	/mob/living/simple_animal/hostile/giant_spider, /mob/living/simple_animal/hostile/giant_spider/nurse, /mob/living/simple_animal/hostile/giant_spider/spitter )
+
+	var/mobs_spawned = 0 // counter for debug
+	for( var/i = 1 to ( lowerlevel_mob_count * lowerlevel_mob_multiplier) ) // The main fun
+		if(!mob_turfs.len) // If we are out of turfs - stop spawning mobs
+			break
+		var/spot = pick_n_take(mob_turfs)
+		var/M = pick(all_lowerlevel_mobs)
+		new M(spot)
+		mobs_spawned += 1
+	log_debug("Managed to spawn [mobs_spawned] mobs in lowerlevel. [mob_turfs.len] spare turfs left.")

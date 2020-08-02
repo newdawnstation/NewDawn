@@ -221,6 +221,9 @@ var/list/gamemode_cache = list()
 	var/radiation_material_resistance_divisor = 2 //A turf's possible radiation resistance is divided by this number, to get the real value.
 	var/radiation_lower_limit = 0.15 //If the radiation level for a turf would be below this, ignore it.
 
+	var/lowerlevel_mob_count = 20
+	var/lowerlevel_mob_multiplier = 1
+
 	var/autostealth = 0 // Staff get automatic stealth after this many minutes
 
 	var/error_cooldown = 600 // The "cooldown" time for each occurrence of a unique error
@@ -726,6 +729,14 @@ var/list/gamemode_cache = list()
 
 				if("radiation_lower_limit")
 					radiation_lower_limit = text2num(value)
+
+
+				if("lowerlevel_mob_count")
+					config.lowerlevel_mob_count = text2num(value)
+
+				if("lowerlevel_mob_multiplier")
+					config.lowerlevel_mob_multiplier = text2num(value)
+
 
 
 				if("error_cooldown")

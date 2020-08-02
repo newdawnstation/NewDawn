@@ -30,6 +30,12 @@ JOBS_HAVE_MINIMAL_ACCESS
 ## Radiation weakens with distance from the source; stop calculating when the strength falls below this value.   Lower values mean radiation reaches smaller (with increasingly trivial damage) at the cost of more CPU usage.  Max range =  DISTANCE^2 * POWER / RADIATION_LOWER_LIMIT
 # RADIATION_LOWER_LIMIT	0.35
 
+## How many mobs should be spawned under the main station? Defalts to 20
+# LOWERLEVEL_MOB_COUNT 20
+
+## Should they be multiplied? Set it to 0 in order to disable spawn.
+# LOWERLEVEL_MOB_MULTIPLIER 1
+
 ## log OOC channel
 LOG_OOC
 
