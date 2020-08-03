@@ -16161,8 +16161,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/remains/insecure/arrival/primaty_hall)
 "iHj" = (
@@ -16834,8 +16834,8 @@
 /turf/simulated/floor/plating,
 /area/remains/insecure/maintenance/med)
 "jcH" = (
-/obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/remains/insecure/arrival/primaty_hall)
 "jcX" = (
@@ -36789,6 +36789,11 @@
 /area/space)
 "tSc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor{
+	id_tag = "Special Emergency Shutter";
+	name = "Special Emergency Shutter";
+	use_power = 0
+	},
 /turf/simulated/floor/plating,
 /area/remains/insecure/center/central_hall)
 "tSo" = (
@@ -38775,8 +38780,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor{
+	idle_power_usage = 0;
+	power_channel = 0
+	},
 /turf/simulated/floor/tiled,
 /area/remains/insecure/arrival/primaty_hall)
 "vav" = (
@@ -39217,6 +39225,20 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/remains/insecure/med/rooms/center)
+"vke" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor{
+	id_tag = "Special Emergency Shutter";
+	name = "Special Emergency Shutter";
+	use_power = 0
+	},
+/turf/simulated/floor/plating,
+/area/remains/insecure/center/central_hall)
 "vkC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -41865,6 +41887,17 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/remains/insecure/med/rooms/center)
+"wFz" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	id_tag = "Special Emergency Shutter";
+	name = "Special Emergency Shutter";
+	use_power = 0
+	},
+/turf/simulated/floor/plating,
+/area/remains/insecure/center/central_hall)
 "wGo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/effect/wingrille_spawn/reinforced,
@@ -42773,6 +42806,21 @@
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/plating,
 /area/remains/insecure/arrival/primaty_hall)
+"xar" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor{
+	id_tag = "Special Emergency Shutter";
+	name = "Special Emergency Shutter";
+	use_power = 0
+	},
+/turf/simulated/floor/tiled,
+/area/remains/insecure/center/central_hall)
 "xaD" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -68849,9 +68897,9 @@ lbg
 kZt
 mVA
 mau
-ney
-ufy
-ufy
+xar
+vke
+vke
 tSc
 wzA
 nMf
@@ -69076,10 +69124,10 @@ uzq
 rQy
 lVq
 wNx
+wFz
 hox
 hox
-hox
-hox
+wFz
 pAd
 bzR
 dFA
