@@ -26,7 +26,12 @@ PaikFest - HeadAdmin
 zigamus - HeadAdmin
 Rv666 - Host
 Hrober - HeadAdmin
-
+Matveyb03 - HeadAdmin
+Vinegar_for_bee - HeadAdmin
+Yug0 - HeadAdmin
+MioDeMio - HeadAdmin
+zabubenchik - HeadAdmin
+Bruhsyster371 - HeadAdmin
 # jediofgood - GameAdmin
 # Bumer5117 - TrialAdmin
 
