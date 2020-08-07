@@ -5,8 +5,8 @@
 		/datum/nano_module/supply
 	)
 	channels = list(
-		"Supply" = TRUE,
-		"Science" = TRUE
+		"Снабжение" = TRUE,
+		"Научный" = TRUE
 	)
 	networks = list(
 		NETWORK_MINE

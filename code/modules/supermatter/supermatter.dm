@@ -300,7 +300,7 @@
 	else
 		alert_msg = null
 	if(alert_msg)
-		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Engineering")
+		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Инженерный")
 		//Public alerts
 		if((damage > emergency_point) && !public_alert)
 			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Supermatter Monitor")

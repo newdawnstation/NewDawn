@@ -147,7 +147,7 @@
 /obj/machinery/telecomms/allinone/skrellscoutship
 	listening_freqs = list(SKRELL_FREQ)
 	channel_color = COMMS_COLOR_SKRELL
-	channel_name = "Recon"
+	channel_name = "Разведка"
 	circuitboard = /obj/item/weapon/stock_parts/circuitboard/telecomms/allinone/skrellscoutship
 
 /obj/item/device/radio/headset/skrellian
@@ -162,7 +162,7 @@
 /obj/item/device/encryptionkey/skrellian
 	name = "recon radio encryption key"
 	icon_state = "medsci_cypherkey"
-	channels = list("Recon" = 1)
+	channels = list("Разведка" = 1)
 
 /obj/item/weapon/reagent_containers/food/condiment/psilocybin
 	label_text = "Psilocybin"

@@ -770,7 +770,7 @@
 	anchored = 1
 	simulated = 0
 	power_usage = 0
-	channels=list("Engineering" = 1, "Security" = 1, "Medical" = 1, "Command" = 1, "Common" = 1, "Science" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
+	channels=list("Инженерный" = 1, "Сб" = 1, "Медицинский" = 1, "Командный" = 1, "Общий" = 1, "Научный" = 1, "Снабжение" = 1, "Сервис" = 1, "Экспедиция" = 1)
 	cell = null
 
 /obj/item/device/radio/announcer/Destroy()

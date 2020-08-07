@@ -2,8 +2,8 @@
 	name = "filing drone module"
 	display_name = "Filing"
 	channels = list(
-		"Service" = TRUE,
-		"Supply" = TRUE
+		"Сервис" = TRUE,
+		"Снабжение" = TRUE
 		)
 	sprites = list("Drone" = "drone-service")
 	equipment = list(

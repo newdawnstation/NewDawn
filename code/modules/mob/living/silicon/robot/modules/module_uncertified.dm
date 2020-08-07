@@ -12,8 +12,8 @@
 	name = "Madhouse Productions Official Party Module"
 	display_name = "Party"
 	channels = list(
-		"Service" = TRUE,
-		"Entertainment" = TRUE
+		"Сервис" = TRUE,
+		"Развлекательный" = TRUE
 	)
 	networks = list(
 		NETWORK_THUNDER

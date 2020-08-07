@@ -1,7 +1,7 @@
 /obj/item/weapon/robot_module/medical
 	name = "medical robot module"
 	channels = list(
-		"Medical" = TRUE
+		"Медицинский" = TRUE
 	)
 	networks = list(
 		NETWORK_MEDICAL

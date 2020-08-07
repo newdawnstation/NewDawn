@@ -2,8 +2,8 @@
 	name = "survey drone module"
 	display_name = "Surveyor"
 	channels = list(
-		"Science" = TRUE,
-		"Exploration" = TRUE
+		"Научный" = TRUE,
+		"Экспедиция" = TRUE
 	)
 	networks = list(NETWORK_EXPEDITION)
 	sprites = list(

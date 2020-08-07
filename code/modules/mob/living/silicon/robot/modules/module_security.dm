@@ -1,6 +1,6 @@
 /obj/item/weapon/robot_module/security
 	channels = list(
-		"Security" = TRUE
+		"Сб" = TRUE
 	)
 	networks = list(
 		NETWORK_SECURITY

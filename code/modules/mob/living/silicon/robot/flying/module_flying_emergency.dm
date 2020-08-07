@@ -1,7 +1,7 @@
 /obj/item/weapon/robot_module/flying/emergency
 	name = "emergency response drone module"
 	display_name = "Emergency Response"
-	channels = list("Medical" = TRUE)
+	channels = list("Медицинский" = TRUE)
 	networks = list(NETWORK_MEDICAL)
 	subsystems = list(/datum/nano_module/crew_monitor)
 	sprites = list(

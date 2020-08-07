@@ -1,7 +1,7 @@
 /obj/item/weapon/robot_module/flying/forensics
 	name = "forensic drone module"
 	display_name = "Forensics"
-	channels = list("Security" = TRUE)
+	channels = list("Сб" = TRUE)
 	networks = list(NETWORK_SECURITY)
 	subsystems = list(
 		/datum/nano_module/crew_monitor,

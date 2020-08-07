@@ -2,7 +2,7 @@
 	name = "janitorial robot module"
 	display_name = "Janitor"
 	channels = list(
-		"Service" = TRUE
+		"Сервис" = TRUE
 	)
 	sprites = list(
 		"Basic" = "JanBot2",

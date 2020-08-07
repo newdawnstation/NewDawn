@@ -1,7 +1,7 @@
 /obj/item/weapon/robot_module/flying/repair
 	name = "repair drone module"
 	display_name = "Repair"
-	channels = list ("Engineering" = TRUE)
+	channels = list ("Инженерный" = TRUE)
 	networks = list(NETWORK_ENGINEERING)
 	subsystems = list(
 		/datum/nano_module/power_monitor, 

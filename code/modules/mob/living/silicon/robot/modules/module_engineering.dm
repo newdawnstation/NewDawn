@@ -2,7 +2,7 @@
 	name = "engineering robot module"
 	display_name = "Engineering"
 	channels = list(
-		"Engineering" = 1
+		"Инженерный" = 1
 	)
 	networks = list(
 		NETWORK_ENGINEERING

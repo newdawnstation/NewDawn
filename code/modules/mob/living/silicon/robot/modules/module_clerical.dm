@@ -1,6 +1,6 @@
 /obj/item/weapon/robot_module/clerical
 	channels = list(
-		"Service" = TRUE
+		"Сервис" = TRUE
 	)
 	skills = list(
 		SKILL_BUREAUCRACY         = SKILL_PROF,
@@ -74,8 +74,8 @@
 	name = "clerical robot module"
 	display_name = "Clerical"
 	channels = list(
-		"Service" = TRUE,
-		"Supply" =  TRUE
+		"Сервис" = TRUE,
+		"Снабжение" =  TRUE
 	)
 	sprites = list(
 		"Waitress" = "Service",
