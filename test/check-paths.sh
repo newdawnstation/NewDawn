@@ -50,8 +50,8 @@ while read -r file; do
 		ASCII)
 			continue;;
 		UTF-8)
-			if diff -d "$file" <(<"$file" iconv -c -f utf8 -t iso8859-1 2>/dev/null | tr -d $'\x7F-\x9F' | iconv -c -f iso8859-1 -t utf8 2>/dev/null); then
-				continue
+#			if diff -d "$file" <(<"$file" iconv -c -f utf8 -t iso8859-1 2>/dev/null | tr -d $'\x7F-\x9F' | iconv -c -f iso8859-1 -t utf8 2>/dev/null); then
+#				continue
 #			else
 #				echo "$file contains Unicode characters outside the ISO 8859-1 character set"
 #				(( broken_files = broken_files + 1 ))

@@ -49,13 +49,25 @@
 		/area/vacant/infirmary = NO_SCRUBBER|NO_VENT,
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/insecure = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/brig = NO_SCRUBBER|NO_VENT|NO_APC, // There is one way to make it easier, but it will compicate other part of the code.
+		/area/remains/secure/nuke = NO_SCRUBBER|NO_VENT|NO_APC, // So here we have a bunch of secure areas
+		/area/remains/secure/center = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/arrival = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/engineering = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/dorms = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/departure = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/rnd = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/med = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/maintenance = NO_SCRUBBER|NO_VENT|NO_APC,
 	)
 
 	area_coherency_test_exempt_areas = list(
 	//	/area/aquila/airlock,
 		/area/centcom/control,
 		/area/maintenance/exterior,
-		/area/space
+		/area/space,
+		/area/remains/insecure
 	)
 
 	area_usage_test_exempted_areas = list(
@@ -67,7 +79,9 @@
 		/area/shuttle/escape/centcom,
 		/area/rnd/xenobiology/xenoflora_storage,
 		/area/turbolift,
-		/area/template_noop
+		/area/template_noop,
+		/area/remains/insecure,
+		/area/remains/secure
 	)
 
 /datum/unit_test/zas_area_test/ai_chamber

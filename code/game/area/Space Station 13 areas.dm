@@ -192,6 +192,7 @@ area/space/atmosalert()
 /area/remains/insecure
 	name = "Insecure remains"
 	turf_initializer = /decl/turf_initializer/maintenance
+	area_flags = AREA_FLAG_IS_NOT_PERSISTENT
 
 ////////////
 //SHUTTLES//
