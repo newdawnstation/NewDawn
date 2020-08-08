@@ -14097,6 +14097,7 @@
 	},
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
+/obj/item/weapon/defibrillator/loaded,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
 "eSs" = (
@@ -19318,10 +19319,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/hygiene/sink{
-	dir = 8;
-	pixel_x = -12
-	},
+/obj/machinery/organ_printer/flesh/mapped,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "gPH" = (
@@ -21557,7 +21555,11 @@
 /obj/item/weapon/reagent_containers/spray/cleaner{
 	pixel_x = -5
 	},
-/obj/machinery/alarm,
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/obj/item/device/mmi,
+/obj/item/weapon/defibrillator/loaded,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "hGD" = (
@@ -23495,13 +23497,13 @@
 /area/bridge)
 "imv" = (
 /obj/structure/table/steel,
-/obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
 /obj/machinery/body_scan_display{
 	pixel_y = -32;
 	tag = "surgery2"
 	},
 /obj/machinery/light,
+/obj/item/weapon/storage/firstaid/adv,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "imx" = (
@@ -28538,6 +28540,7 @@
 "kkT" = (
 /obj/structure/table/glass,
 /obj/effect/floor_decal/corner/lightgrey/diagonal,
+/obj/item/weapon/material/ashtray,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/medical{
 	name = "\improper Medical Break Room"
@@ -32384,11 +32387,15 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "lGE" = (
-/obj/structure/iv_drip,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/hygiene/sink{
+	dir = 1;
+	pixel_x = -4;
+	pixel_y = 26
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -38292,6 +38299,7 @@
 	},
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
+/obj/item/weapon/defibrillator/loaded,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
 "nYY" = (
@@ -38671,7 +38679,7 @@
 /area/crew_quarters/concert)
 "ohm" = (
 /obj/structure/table/steel,
-/obj/item/weapon/storage/firstaid/adv,
+/obj/item/weapon/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "ohr" = (
@@ -44365,7 +44373,8 @@
 	dir = 9
 	},
 /obj/machinery/alarm{
-	dir = 8
+	dir = 8;
+	pixel_x = 27
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -46174,7 +46183,9 @@
 	dir = 1;
 	pixel_y = 21
 	},
-/obj/machinery/alarm,
+/obj/machinery/alarm{
+	pixel_y = 16
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "rjt" = (
@@ -46948,7 +46959,6 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/chapel/office)
 "rAy" = (
-/obj/machinery/optable,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -48968,6 +48978,7 @@
 "sua" = (
 /obj/structure/closet/crate/med_crate/oxyloss,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/device/mmi,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "sux" = (
@@ -50617,6 +50628,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/machinery/optable,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "tdx" = (
@@ -61870,7 +61882,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/aux_eva)
 "xaz" = (
-/obj/machinery/organ_printer/flesh/mapped,
+/obj/structure/iv_drip,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
 "xaY" = (
