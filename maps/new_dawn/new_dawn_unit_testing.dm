@@ -79,9 +79,7 @@
 		/area/shuttle/escape/centcom,
 		/area/rnd/xenobiology/xenoflora_storage,
 		/area/turbolift,
-		/area/template_noop,
-		/area/remains/insecure,
-		/area/remains/secure
+		/area/template_noop
 	)
 
 /datum/unit_test/zas_area_test/ai_chamber
