@@ -918,6 +918,41 @@
 	icon_state = "security"
 	req_access = list(access_brig)
 
+/area/security/rest
+	name = "\improper Rest"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/latrine
+	name = "\improper Latrine"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/teleport
+	name = "\improper Teleport"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/gym
+	name = "\improper GYM"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/special_armory
+	name = "\improper Special Armory"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/bosnian_artillery
+	name = "\improper Bosnian Artillery"
+	icon_state = "security"
+	req_access = list(access_brig)
+
+/area/security/artillery_front
+	name = "\improper Artillery Front"
+	icon_state = "security"
+	req_access = list(access_brig)
+
 /*
 /area/security/bridgecheck
 	name = "\improper Bridge Deck Security Checkpoint"

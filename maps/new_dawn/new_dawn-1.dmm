@@ -164,6 +164,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/remains/insecure/brig/rooms/north)
+"adz" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/blackgrid,
+/area/security/nuke_storage)
 "adA" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -1468,6 +1478,16 @@
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/tiled,
 /area/remains/insecure/brig/rooms/south)
+"aIX" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light,
+/obj/machinery/keycard_auth/torch{
+	pixel_y = -24
+	},
+/turf/simulated/floor/blackgrid,
+/area/security/nuke_storage)
 "aJe" = (
 /obj/machinery/space_heater,
 /turf/simulated/floor/plating,
@@ -2171,6 +2191,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/remains/insecure/med/rooms/center)
+"bfj" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/camera/network/security,
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "bfl" = (
 /turf/simulated/wall/r_wall,
 /area/remains/secure/rnd/ladder)
@@ -2432,6 +2459,10 @@
 /obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/remains/insecure/med/rooms/center)
+"bmN" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "bmT" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/vending/coffee,
@@ -2655,6 +2686,16 @@
 "bwc" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/toolbox/electrical,
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "Vault_02";
+	name = "Vault";
+	pixel_x = -6;
+	pixel_y = 25;
+	req_access = list("ACCESS_BRIDGE")
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "bwl" = (
@@ -3739,6 +3780,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/remains/secure/med/room/north)
+"caW" = (
+/obj/structure/bed/chair/comfy/blue{
+	dir = 1;
+	icon_state = "comfychair_preview"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "cbg" = (
 /obj/item/weapon/material/shard,
 /turf/simulated/floor/plating,
@@ -5455,6 +5508,13 @@
 /obj/item/device/camera_film,
 /turf/simulated/floor/tiled,
 /area/remains/insecure/departure/library)
+"dao" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/blackgrid,
+/area/security/nuke_storage)
 "dax" = (
 /turf/simulated/floor/tiled,
 /area/remains/secure/brig/court)
@@ -7051,6 +7111,18 @@
 "dPn" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/mre/menu2,
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "selfddoor";
+	name = "Selfdestruction";
+	pixel_x = 7;
+	pixel_y = -25;
+	req_access = list("ACCESS_BRIDGE")
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "dPx" = (
@@ -8391,9 +8463,16 @@
 /turf/simulated/floor/plating,
 /area/remains/insecure/brig/primary_hall)
 "eyK" = (
-/obj/structure/ladder/up,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
 /turf/simulated/floor/tiled,
-/area/remains/secure/used/bunker)
+/area/remains/secure/center/bridge)
 "ezm" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -9801,6 +9880,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/remains/insecure/arrival/primaty_hall)
+"fkz" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/blackgrid,
+/area/security/nuke_storage)
 "fkU" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -10371,6 +10459,12 @@
 /turf/simulated/floor/plating,
 /area/remains/insecure/rnd/rooms/east)
 "fDk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/plating,
 /area/remains/secure/center/captain)
@@ -13905,6 +13999,7 @@
 	id_tag = "Shelter";
 	name = "Shelter"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/remains/secure/used/bunker)
 "hyX" = (
@@ -18755,6 +18850,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/remains/insecure/engineering/west)
+"kbr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "kbu" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -19546,6 +19647,11 @@
 	id_tag = "selfddoor";
 	name = "Self Destruct Access"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "kxD" = (
@@ -19740,6 +19846,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/remains/secure/maintenance/brig/east)
+"kEJ" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/shot,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "kFe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /obj/structure/cable{
@@ -19771,6 +19887,12 @@
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/tiled,
 /area/remains/insecure/brig/primary_hall)
+"kFt" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "kFJ" = (
 /obj/machinery/light_switch{
 	pixel_y = 28
@@ -21445,6 +21567,9 @@
 /area/remains/secure/center/bridge)
 "lup" = (
 /obj/machinery/light/small,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
 /turf/simulated/floor/plating,
 /area/remains/secure/used/bunker)
 "lux" = (
@@ -21495,10 +21620,8 @@
 /turf/simulated/floor/tiled,
 /area/remains/insecure/engineering/west)
 "lvI" = (
-/obj/machinery/power/port_gen/pacman{
-	sheets = 25
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/power/port_gen/pacman,
+/turf/simulated/floor/plating,
 /area/remains/secure/used/bunker)
 "lvL" = (
 /obj/structure/sign/redcross{
@@ -21623,6 +21746,14 @@
 /mob/living/simple_animal/mouse,
 /turf/simulated/floor/plating,
 /area/space)
+"lzy" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/shot,
+/obj/item/modular_computer/laptop/preset/custom_loadout/advanced{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "lzC" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
@@ -21943,6 +22074,15 @@
 /obj/item/weapon/book/manual/atmospipes,
 /turf/simulated/floor/plating,
 /area/remains/insecure/engineering/east)
+"lJR" = (
+/obj/structure/bed/chair/comfy/blue{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "lKc" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -22327,9 +22467,10 @@
 "lWY" = (
 /obj/structure/table/standard,
 /obj/item/stack/material/phoron{
-	amount = 5
+	amount = 25
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/item/weapon/wrench,
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "lXP" = (
@@ -23466,6 +23607,11 @@
 /obj/structure/table/woodentable/walnut,
 /obj/random/drinkbottle,
 /obj/item/weapon/reagent_containers/food/drinks/glass2/shot,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "mBL" = (
@@ -24207,6 +24353,7 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/remains/secure/center/bridge)
 "mVA" = (
@@ -24241,6 +24388,7 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
+/obj/machinery/disposal,
 /turf/simulated/floor/plating,
 /area/remains/secure/center/captain)
 "mWV" = (
@@ -24743,6 +24891,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/remains/insecure/maintenance/med)
+"nlZ" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/self_destruct,
+/obj/machinery/camera/network/security{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/nuke_storage)
 "nmf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -25206,6 +25362,10 @@
 /obj/structure/inflatable/wall,
 /turf/simulated/floor/plating,
 /area/remains/insecure/rnd/rooms/west)
+"nyj" = (
+/obj/structure/ladder/up,
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "nyl" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 5
@@ -27270,6 +27430,14 @@
 /obj/item/weapon/material/shard,
 /turf/simulated/floor/plating,
 /area/remains/insecure/arrival/primaty_hall)
+"oFD" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "oGg" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -27726,6 +27894,9 @@
 	pixel_x = -5;
 	pixel_y = 25;
 	req_access = list("ACCESS_SECURITY")
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
 	},
 /turf/simulated/floor/plating,
 /area/remains/secure/used/bunker)
@@ -28610,7 +28781,10 @@
 /turf/simulated/floor/tiled/white,
 /area/remains/insecure/rnd/rooms/north)
 "psp" = (
-/obj/machinery/door/airlock/vault/bolted,
+/obj/machinery/door/airlock/vault/bolted{
+	id_tag = "Vault_02"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/remains/secure/used/bunker)
 "psv" = (
@@ -30192,6 +30366,14 @@
 /obj/item/device/flashlight/pen,
 /turf/simulated/floor/tiled/white,
 /area/remains/insecure/med/rooms/center)
+"qjf" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "qjs" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -30768,6 +30950,7 @@
 /area/remains/secure/brig/court)
 "qzP" = (
 /obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "qzY" = (
@@ -31784,7 +31967,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/plating,
 /area/remains/secure/used/bunker)
 "rbp" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -33125,12 +33308,11 @@
 /turf/simulated/floor/tiled,
 /area/remains/insecure/dorms/hidroponics)
 "rMj" = (
-/obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
+/obj/machinery/keycard_auth/torch{
+	pixel_x = 26
 	},
-/turf/simulated/floor/plating,
-/area/remains/secure/center/captain)
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "rMr" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/industrial/warning{
@@ -34295,6 +34477,14 @@
 /obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/remains/insecure/maintenance/brig/east)
+"sve" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "svB" = (
 /obj/structure/disposalpipe/broken{
 	dir = 4
@@ -35636,6 +35826,15 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/remains/insecure/departure/chapel)
+"tjJ" = (
+/obj/structure/bed/chair/comfy/blue,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "tjX" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -37520,6 +37719,16 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24;
+	req_access = list("ACCESS_ENGINEERING")
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "uny" = (
@@ -39338,6 +39547,9 @@
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
+	},
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "vnW" = (
@@ -40457,6 +40669,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/camera/network/security,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "vXq" = (
@@ -40556,6 +40769,9 @@
 "wal" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/mre,
+/obj/machinery/camera/network/security{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/remains/secure/used/bunker)
 "wam" = (
@@ -43013,6 +43229,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/remains/insecure/med/rooms/north)
+"xhG" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/remains/secure/used/bunker)
 "xid" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/folder/yellow,
@@ -43939,6 +44162,11 @@
 "xDs" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/floor_decal/industrial/warning,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "xDz" = (
@@ -71788,8 +72016,8 @@ gWY
 iGc
 lWY
 rbo
-bKX
-bKX
+xhG
+xhG
 dkF
 oIP
 wal
@@ -72014,16 +72242,16 @@ bkm
 idX
 iGc
 lvI
-bKX
+sve
 vnU
-vnU
-bKX
-bKX
+lJR
+bmN
+kFt
 glC
 iGc
+fkz
 sEn
-sEn
-sEn
+aIX
 rtj
 oub
 gTB
@@ -72241,11 +72469,11 @@ iGc
 kGg
 iGc
 bKX
-gda
-hsb
+tjJ
+kEJ
 mBE
-sIs
-bKX
+caW
+qjf
 dPn
 iGc
 vXk
@@ -72462,7 +72690,7 @@ wAS
 nSJ
 oXQ
 msS
-msS
+eyK
 mVi
 hyF
 lup
@@ -72470,10 +72698,10 @@ iGc
 aIf
 gda
 hsb
-hsb
+lzy
 sIs
 bKX
-bKX
+oFD
 kwU
 xDs
 oin
@@ -72694,7 +72922,7 @@ sIu
 iGc
 oRo
 psp
-bKX
+kbr
 bKX
 cll
 cll
@@ -72923,15 +73151,15 @@ kGg
 iGc
 bwc
 bKX
-eyK
+bKX
 bKX
 qzP
-bKX
+nyj
 ltX
 iGc
+adz
 tSI
-tSI
-tSI
+dao
 rtj
 oub
 gTB
@@ -73148,17 +73376,17 @@ tXy
 bkm
 idX
 iGc
+bfj
 bKX
 bKX
 bKX
-bKX
-bKX
+rMj
 lpe
 hna
 iGc
 hbs
 hbs
-hbs
+nlZ
 rtj
 oub
 gTB
@@ -73829,10 +74057,10 @@ fFj
 iqE
 eqc
 vuS
-rMj
-llp
-gOk
-fDk
+vuS
+vuS
+vuS
+vuS
 vuS
 vuS
 vuS
@@ -74513,7 +74741,7 @@ vuS
 cpf
 vjD
 llp
-ptB
+fDk
 piS
 fdI
 llp
