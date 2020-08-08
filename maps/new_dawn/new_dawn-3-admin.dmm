@@ -9761,8 +9761,7 @@
 	pixel_y = -28
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/carpet/blue,
 /area/shuttle/merchant/home)
@@ -9932,8 +9931,7 @@
 /area/shuttle/merchant/home)
 "aTB" = (
 /obj/structure/bed/chair/office/comfy/black{
-	dir = 4;
-	tag = "icon-comfyofficechair_preview (EAST)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/home)

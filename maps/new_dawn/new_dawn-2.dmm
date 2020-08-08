@@ -237,8 +237,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 4;
@@ -248,8 +247,7 @@
 /area/shuttle/escape_pod2/station)
 "aeT" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "escape_pod_1_shutters";
@@ -1665,8 +1663,7 @@
 /area/shuttle/petrov/cell2)
 "aCj" = (
 /obj/structure/railing/mapped{
-	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	dir = 8
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8
@@ -2053,8 +2050,7 @@
 	dir = 8
 	},
 /obj/structure/railing/mapped{
-	dir = 8;
-	tag = "icon-railing0 (EAST)"
+	dir = 8
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8
@@ -2163,8 +2159,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -2503,8 +2498,7 @@
 /obj/structure/table/marble,
 /obj/item/weapon/storage/box/freezer,
 /obj/machinery/body_scan_display{
-	pixel_x = 32;
-	tag = "surgery2"
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/interrogation)
@@ -2670,8 +2664,7 @@
 	pixel_x = -23
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -5322,8 +5315,7 @@
 	pixel_x = -22
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -8329,8 +8321,7 @@
 /area/assembly/robotics)
 "cPr" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
@@ -9043,8 +9034,7 @@
 /area/tcommsat/chamber)
 "daD" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -9192,8 +9182,7 @@
 "ddP" = (
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "bottom-center";
-	tag = "icon-center-left"
+	icon_state = "bottom-center"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -9907,8 +9896,7 @@
 /area/aux_eva)
 "dqj" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -10042,8 +10030,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
@@ -10094,8 +10081,7 @@
 "drZ" = (
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "top-center";
-	tag = "icon-center-left"
+	icon_state = "top-center"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -10310,8 +10296,7 @@
 /area/engineering/hardstorage)
 "dwQ" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_shuttle/station)
@@ -10753,8 +10738,7 @@
 /area/crew_quarters/heads/office/cmo)
 "dFp" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/light/small{
 	dir = 8
@@ -11391,8 +11375,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 4;
-	tag = "icon-corner_white (EAST)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -11412,8 +11395,7 @@
 	pixel_y = 25
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -11896,8 +11878,7 @@
 /area/turret_protected/ai)
 "dUZ" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/tiled/monotile,
@@ -13968,8 +13949,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -14092,8 +14072,7 @@
 "eSj" = (
 /obj/structure/table/steel,
 /obj/machinery/body_scan_display{
-	pixel_x = 32;
-	tag = "med_or2_display"
+	pixel_x = 32
 	},
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
@@ -14475,8 +14454,7 @@
 /area/security/wing)
 "eZl" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
@@ -15482,8 +15460,7 @@
 /area/hydroponics)
 "fsT" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -16585,8 +16562,7 @@
 /area/hydroponics)
 "fKa" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /obj/machinery/light{
 	dir = 8
@@ -16899,8 +16875,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 4;
@@ -17330,8 +17305,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 8;
@@ -17566,8 +17540,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -17605,8 +17578,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -17756,8 +17728,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -19081,8 +19052,7 @@
 /area/aux_eva)
 "gLZ" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -19238,8 +19208,7 @@
 /area/hallway/south)
 "gOK" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -19259,15 +19228,13 @@
 	pixel_x = -32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod3/station)
 "gPa" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 8;
-	tag = "icon-corner_white (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -20268,8 +20235,7 @@
 /area/crew_quarters/sleep/cryo)
 "hgD" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -20835,8 +20801,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 1;
-	tag = "icon-corner_white (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -21674,8 +21639,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -21729,8 +21693,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -22423,8 +22386,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -22771,8 +22733,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -23499,8 +23460,7 @@
 /obj/structure/table/steel,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
 /obj/machinery/body_scan_display{
-	pixel_y = -32;
-	tag = "surgery2"
+	pixel_y = -32
 	},
 /obj/machinery/light,
 /obj/item/weapon/storage/firstaid/adv,
@@ -24195,8 +24155,7 @@
 	},
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "bottom-right";
-	tag = "icon-center-left"
+	icon_state = "bottom-right"
 	},
 /obj/machinery/camera/network/command{
 	c_tag = "Bridge";
@@ -24587,8 +24546,7 @@
 /area/assembly/robotics)
 "iIF" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -25860,8 +25818,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -26678,8 +26635,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -27988,8 +27944,7 @@
 /area/security/questioning)
 "kbO" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod3/station)
@@ -28024,8 +27979,7 @@
 /area/security/wing)
 "kcq" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 4;
@@ -28851,8 +28805,7 @@
 /area/engineering/locker_room)
 "krp" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_shuttle/station)
@@ -29188,8 +29141,7 @@
 /area/hallway/east)
 "kyB" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 8;
-	tag = "icon-corner_white (WEST)"
+	dir = 8
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
@@ -29629,8 +29581,7 @@
 /area/crew_quarters/relax)
 "kGb" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -29643,8 +29594,7 @@
 "kGd" = (
 /obj/structure/table/standard,
 /obj/machinery/body_scan_display{
-	pixel_x = 32;
-	tag = "med_shuttle"
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/escape_shuttle/station)
@@ -30657,8 +30607,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -30905,8 +30854,7 @@
 /area/hallway/west/entry)
 "lfY" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 8;
@@ -31279,8 +31227,7 @@
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -32983,8 +32930,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/body_scan_display{
-	pixel_y = -32;
-	tag = "med_display"
+	pixel_y = -32
 	},
 /obj/machinery/button/blast_door{
 	desc = "A remote control-switch for shutters.";
@@ -33531,8 +33477,7 @@
 	},
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "center-left";
-	tag = "icon-center-left"
+	icon_state = "center-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -34208,8 +34153,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -34341,8 +34285,7 @@
 /area/engineering/atmos)
 "mpJ" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 8;
@@ -34494,8 +34437,7 @@
 /area/security/prison/detention)
 "msB" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -35903,8 +35845,7 @@
 /area/medical/exam_room)
 "mZd" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/escape_shuttle/station)
@@ -36108,8 +36049,7 @@
 /area/shuttle/petrov/security)
 "ndL" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -38294,8 +38234,7 @@
 "nYJ" = (
 /obj/structure/table/steel,
 /obj/machinery/body_scan_display{
-	pixel_x = -32;
-	tag = "med_or1_display"
+	pixel_x = -32
 	},
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
@@ -38537,8 +38476,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -38577,8 +38515,7 @@
 	},
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "top-right";
-	tag = "icon-center-left"
+	icon_state = "top-right"
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
@@ -38875,8 +38812,7 @@
 	pixel_x = -25
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -39648,8 +39584,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /obj/machinery/firealarm{
 	dir = 8;
@@ -39966,8 +39901,7 @@
 /area/crew_quarters/galley)
 "oHE" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
@@ -40768,8 +40702,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -43032,8 +42965,7 @@
 "pUF" = (
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "top-left";
-	tag = "icon-center-left"
+	icon_state = "top-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -43861,8 +43793,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -43984,8 +43915,7 @@
 /area/shuttle/petrov/isolation)
 "qqI" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 8;
@@ -44745,8 +44675,7 @@
 /area/bridge)
 "qGV" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 6;
-	tag = "icon-corner_white (SOUTHEAST)"
+	dir = 6
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -45536,8 +45465,7 @@
 	pixel_x = -32
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -45546,8 +45474,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 4;
-	tag = "icon-corner_white (EAST)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -45557,8 +45484,7 @@
 	pixel_x = -25
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -46895,8 +46821,7 @@
 "ryQ" = (
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "bottom-left";
-	tag = "icon-center-left"
+	icon_state = "bottom-left"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
@@ -47430,8 +47355,7 @@
 /area/storage/medical)
 "rMM" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
@@ -48073,8 +47997,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light/small{
 	dir = 8
@@ -49735,8 +49658,7 @@
 	},
 /obj/effect/floor_decal/scglogo{
 	dir = 8;
-	icon_state = "center-right";
-	tag = "icon-center-left"
+	icon_state = "center-right"
 	},
 /obj/structure/cable/green{
 	d1 = 2;
@@ -49915,8 +49837,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light/small{
 	dir = 8
@@ -52000,8 +51921,7 @@
 /area/security/prison)
 "tzw" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light{
 	dir = 4
@@ -52049,8 +51969,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light/small{
 	dir = 8
@@ -52236,8 +52155,7 @@
 /area/shuttle/petrov/toxins)
 "tFm" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/light{
 	dir = 8
@@ -53336,8 +53254,7 @@
 /area/quartermaster/sorting)
 "ufo" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
@@ -53508,8 +53425,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 8;
@@ -53778,8 +53694,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/tiled/white,
@@ -54335,8 +54250,7 @@
 /area/hallway/central/north)
 "uwD" = (
 /obj/effect/floor_decal/corner/research{
-	dir = 10;
-	tag = "icon-corner_white (SOUTHWEST)"
+	dir = 10
 	},
 /obj/machinery/light,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -54373,8 +54287,7 @@
 /area/medical/counselor)
 "uxr" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
@@ -55702,8 +55615,7 @@
 /area/maintenance/east/med)
 "uRn" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 8;
-	tag = "icon-shuttle_chair_preview (WEST)"
+	dir = 8
 	},
 /obj/machinery/status_display{
 	pixel_x = 32
@@ -56935,8 +56847,7 @@
 /area/medical/morgue)
 "vpz" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -57049,8 +56960,7 @@
 	tag_door = "escape_pod_9_hatch"
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod9/station)
@@ -57404,8 +57314,7 @@
 	tag_door = "escape_pod_4_hatch"
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod4/station)
@@ -57975,8 +57884,7 @@
 	dir = 6
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 5;
-	tag = "icon-corner_white (NORTHEAST)"
+	dir = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -60055,8 +59963,7 @@
 	tag_door = "escape_pod_5_hatch"
 	},
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod5/station)
@@ -60691,8 +60598,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
-	dir = 9;
-	tag = "icon-corner_white (NORTHWEST)"
+	dir = 9
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -64531,8 +64437,7 @@
 /area/security/prison)
 "xZA" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 4;
@@ -64736,8 +64641,7 @@
 /area/maintenance/substation/medical)
 "ydz" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 1;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -64864,8 +64768,7 @@
 /area/quartermaster/deckchief)
 "ygj" = (
 /obj/structure/bed/chair/shuttle{
-	dir = 4;
-	tag = "icon-shuttle_chair_preview (NORTH)"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 4;
