@@ -48,7 +48,8 @@
 		/area/syndicate_elite_squad,
 		/area/template_noop,
 		/area/remains/insecure,
-		/area/remains/secure
+		/area/remains/secure,
+		/area/remains
 	)
 
 	var/list/area_usage_test_exempted_root_areas = list(

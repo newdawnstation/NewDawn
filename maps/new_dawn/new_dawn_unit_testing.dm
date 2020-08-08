@@ -50,8 +50,8 @@
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/remains/insecure = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/remains/secure/brig = NO_SCRUBBER|NO_VENT|NO_APC, // There is one way to make it easier, but it will compicate other part of the code.
-		/area/remains/secure/nuke = NO_SCRUBBER|NO_VENT|NO_APC, // So here we have a bunch of secure areas
+		/area/remains/secure/brig = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/remains/secure/nuke = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/remains/secure/center = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/remains/secure/arrival = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/remains/secure/engineering = NO_SCRUBBER|NO_VENT|NO_APC,
@@ -79,7 +79,11 @@
 		/area/shuttle/escape/centcom,
 		/area/rnd/xenobiology/xenoflora_storage,
 		/area/turbolift,
-		/area/template_noop
+		/area/template_noop,
+		/area/remains,
+		/area/remains/insecure,
+		/area/remains/secure
+
 	)
 
 /datum/unit_test/zas_area_test/ai_chamber
