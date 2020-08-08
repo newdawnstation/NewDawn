@@ -1,49 +1,49 @@
-language: generic
-os: false
-dist: xenial
-jdk: openjdk8
-
-env:
-  global:
-    BYOND_MAJOR="512"
-    BYOND_MINOR="1485"
-
-# ALL MAPS MUST BE PRESENT HERE
-# IF THEY ARE NOT, YOUR BUILD WILL FAIL
-matrix:
-    include:
-    - name: "Code"
-      env: TEST=CODE
-    - name: "Map - New Dawn"
-      env: TEST=MAP MAP_PATH=new_dawn
-    - name: "Map - Away Sites"
-      env: TEST=MAP MAP_PATH=away_sites_testing
-
-cache:
-  directories:
-    - $HOME/BYOND-${BYOND_MAJOR}.${BYOND_MINOR}
-
-addons:
-  apt:
-    packages:
-      - libc6-i386
-      - libgcc1:i386
-      - libstdc++6:i386
-      - python
-      - python-pip
-      - uchardet
-
-script:
-  - test/run-test.sh
-
-after_success:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
-  - chmod +x send.sh
-  - ./send.sh success $WEBHOOK_URL
-  - bash <(curl -s https://codecov.io/bash)
-
-after_failure:
-  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
-  - chmod +x send.sh
-  - ./send.sh failure $WEBHOOK_URL
-  - bash <(curl -s https://codecov.io/bash)#
+#language: generic
+#os: false
+#dist: xenial
+#jdk: openjdk8
+#
+#env:
+#  global:
+#    BYOND_MAJOR="512"
+#    BYOND_MINOR="1485"
+#
+## ALL MAPS MUST BE PRESENT HERE
+## IF THEY ARE NOT, YOUR BUILD WILL FAIL
+#matrix:
+#    include:
+#    - name: "Code"
+#      env: TEST=CODE
+#    - name: "Map - New Dawn"
+#      env: TEST=MAP MAP_PATH=new_dawn
+#    - name: "Map - Away Sites"
+#      env: TEST=MAP MAP_PATH=away_sites_testing
+#
+#cache:
+#  directories:
+#    - $HOME/BYOND-${BYOND_MAJOR}.${BYOND_MINOR}
+#
+#addons:
+#  apt:
+#    packages:
+#      - libc6-i386
+#      - libgcc1:i386
+#      - libstdc++6:i386
+#      - python
+#      - python-pip
+#      - uchardet
+#
+#script:
+#  - test/run-test.sh
+#
+#after_success:
+#  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+#  - chmod +x send.sh
+#  - ./send.sh success $WEBHOOK_URL
+#  - bash <(curl -s https://codecov.io/bash)
+#
+#after_failure:
+#  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+#  - chmod +x send.sh
+#  - ./send.sh failure $WEBHOOK_URL
+#  - bash <(curl -s https://codecov.io/bash)#
