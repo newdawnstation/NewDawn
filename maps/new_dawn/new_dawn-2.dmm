@@ -450,6 +450,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/east/research)
 "agw" = (
@@ -11207,6 +11208,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/assembly/chargebay)
 "dxE" = (
@@ -14528,6 +14530,7 @@
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theater 2"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery2)
 "eEn" = (
@@ -14679,6 +14682,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
 "eHh" = (
@@ -21093,7 +21097,8 @@
 /area/engineering/atmos)
 "gPk" = (
 /obj/machinery/power/apc{
-	name = "south bump"
+	name = "south bump";
+	pixel_y = -24
 	},
 /obj/machinery/light{
 	dir = 8;
@@ -22608,10 +22613,11 @@
 /area/hydroponics)
 "hnz" = (
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 4
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "hnP" = (
 /obj/structure/cable/green{
@@ -25031,7 +25037,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/corner/paleblue,
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "icF" = (
 /obj/structure/cable/green{
@@ -26206,10 +26213,11 @@
 /area/crew_quarters/heads/office/co)
 "ivw" = (
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 1
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "ivD" = (
 /obj/structure/cable{
@@ -27333,9 +27341,6 @@
 	id_tag = "medtoilet";
 	name = "Infirmary Washroom"
 	},
-/obj/machinery/door/firedoor{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -27343,6 +27348,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/washroom)
 "iRr" = (
@@ -31234,10 +31241,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 4
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "kkG" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -31794,7 +31802,8 @@
 /area/medical/morgue)
 "kvj" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "kvl" = (
 /obj/machinery/door/airlock/maintenance,
@@ -37780,10 +37789,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 8
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "mrd" = (
 /obj/structure/cable/green{
@@ -38303,6 +38313,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "mDC" = (
@@ -38476,6 +38487,7 @@
 	name = "Fabricator Laboratory";
 	req_access = list(access_research)
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "mIx" = (
@@ -39225,6 +39237,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled,
 /area/rnd/research)
 "mVL" = (
@@ -40488,6 +40501,7 @@
 "ntk" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/east/research)
 "ntx" = (
@@ -40838,8 +40852,11 @@
 /area/quartermaster/hangar/smlvessels)
 "nzK" = (
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/paleblue/half,
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "nzP" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -40947,6 +40964,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 1
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/subacute)
 "nBh" = (
@@ -40992,6 +41010,7 @@
 /obj/machinery/door/firedoor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/surgery)
 "nBV" = (
@@ -42568,6 +42587,7 @@
 /obj/machinery/door/firedoor{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/surgery)
 "ohx" = (
@@ -51603,10 +51623,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 8
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "rzr" = (
 /obj/effect/floor_decal/corner/yellow/mono,
@@ -52742,6 +52763,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/rd)
 "rXw" = (
@@ -54595,6 +54617,7 @@
 	name = "Research Division";
 	req_access = list(access_research)
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "sJf" = (
@@ -56120,6 +56143,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery2)
 "tjS" = (
@@ -58328,6 +58352,7 @@
 	name = "autolathe acces";
 	req_access = list(access_research)
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
 "tZk" = (
@@ -60162,6 +60187,7 @@
 	name = "Robotics Lab";
 	req_access = list(access_robotics)
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics)
 "uEZ" = (
@@ -62409,6 +62435,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/exam_room)
 "vlj" = (
@@ -67387,6 +67414,7 @@
 	pixel_x = 6;
 	pixel_y = 24
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/infirmary)
 "wQy" = (
@@ -68502,10 +68530,11 @@
 /area/maintenance/substation/dormitories)
 "xkw" = (
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 4
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "xkG" = (
 /obj/machinery/door/airlock/glass/security,
@@ -68829,6 +68858,7 @@
 /area/security/court)
 "xrc" = (
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/infirmary)
 "xri" = (
@@ -69596,10 +69626,11 @@
 /area/chapel/main)
 "xEi" = (
 /obj/machinery/door/firedoor,
-/obj/effect/floor_decal/corner/paleblue/half{
-	dir = 8
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "xFb" = (
 /obj/structure/window/reinforced{
@@ -70449,6 +70480,7 @@
 	name = "Infirmary Emergency Quarantine Shutters";
 	opacity = 0
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/exam_room)
 "xRQ" = (
