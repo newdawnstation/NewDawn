@@ -14455,7 +14455,7 @@
 "eCP" = (
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
-	frequency = 1431;
+	frequency = 1331;
 	id_tag = "guppy_shuttle_outer";
 	name = "Guppy External Access"
 	},
@@ -26936,7 +26936,7 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 8;
 	id_tag = "guppy_shuttle_pump"
 	},
@@ -27266,14 +27266,14 @@
 /area/quartermaster/exploration)
 "iPh" = (
 /obj/effect/floor_decal/techfloor,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
-	dir = 8;
-	id_tag = "guppy_shuttle_pump"
-	},
 /obj/machinery/airlock_sensor{
-	frequency = 1431;
+	frequency = 1331;
 	id_tag = "guppy_shuttle_sensor";
 	pixel_x = 24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	dir = 8;
+	id_tag = "guppy_shuttle_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
@@ -42683,7 +42683,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 8;
 	id_tag = "guppy_shuttle_pump"
 	},
@@ -47688,7 +47688,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 1;
 	id_tag = "guppy_shuttle_pump_out_external"
 	},
@@ -49452,7 +49452,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
-	frequency = 1431;
+	frequency = 1331;
 	id_tag = "guppy_shuttle_inner";
 	name = "Guppy External Access"
 	},
@@ -54667,7 +54667,7 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	id_tag = "guppy_shuttle_pump_out_internal"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -57476,7 +57476,7 @@
 /area/storage/tools)
 "tFW" = (
 /obj/machinery/access_button/airlock_exterior{
-	frequency = 1431;
+	frequency = 1331;
 	master_tag = "guppy_shuttle";
 	pixel_x = 10;
 	pixel_y = 24
@@ -57485,13 +57485,13 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
-	id_tag = "guppy_shuttle_pump_out_external"
-	},
 /obj/machinery/airlock_sensor{
-	frequency = 1431;
+	frequency = 1331;
 	id_tag = "guppy_shuttle_exterior_sensor";
 	pixel_y = 24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+	id_tag = "guppy_shuttle_pump_out_external"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
@@ -58809,19 +58809,20 @@
 /area/security/special_armory)
 "uhE" = (
 /obj/effect/floor_decal/techfloor,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 1;
 	id_tag = "guppy_shuttle_pump_out_internal"
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
 	dir = 1;
-	frequency = 1431;
+	frequency = 1331;
 	id_tag = "guppy_shuttle";
 	pixel_y = -24;
 	req_access = list("ACCESS_TORCH_GUP");
-	tag_exterior_sensor = "guppy_shuttle_exterior_sensor";
-	tag_interior_sensor = "guppy_shuttle_interior_sensor"
+	tag_airpump = null;
+	tag_chamber_sensor = null;
+	tag_exterior_sensor = "guppy_shuttle_sensor_exterior"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
@@ -65282,7 +65283,7 @@
 /obj/effect/shuttle_landmark/torch/hangar/guppy,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/access_button/airlock_interior{
-	frequency = 1431;
+	frequency = 1331;
 	master_tag = "guppy_shuttle";
 	pixel_x = -25;
 	pixel_y = 25
