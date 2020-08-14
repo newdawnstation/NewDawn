@@ -8111,11 +8111,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/remains/insecure/engineering/east)
-"eom" = (
-/obj/structure/railing/mapped,
-/obj/structure/stairs/east,
-/turf/simulated/floor/plating,
-/area/remains/secure/rnd/ladder)
 "eou" = (
 /obj/item/stack/material/rods,
 /obj/item/stack/material/rods,
@@ -27306,7 +27301,6 @@
 /area/remains/insecure/arrival/primaty_hall)
 "oDJ" = (
 /obj/effect/floor_decal/corner/purple,
-/obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/white,
 /area/remains/secure/rnd/ladder)
 "oDS" = (
@@ -88172,7 +88166,7 @@ nLL
 vvC
 quO
 quO
-eom
+uVb
 ydu
 bfl
 bfl
