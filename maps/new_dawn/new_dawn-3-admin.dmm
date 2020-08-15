@@ -4918,7 +4918,7 @@
 /area/centcom/specops)
 "aBA" = (
 /obj/effect/landmark{
-	name = "Commando"
+	name = "Response Team"
 	},
 /turf/unsimulated/floor{
 	dir = 1;
@@ -5786,7 +5786,7 @@
 	},
 /area/centcom/holding)
 "aFY" = (
-/obj/machinery/light/small/readylight{
+/obj/machinery/light/small{
 	dir = 4
 	},
 /turf/simulated/floor/shuttle/red,
@@ -11664,6 +11664,13 @@
 	icon_state = "wood_broken1"
 	},
 /area/holodeck/source_temple)
+"eVC" = (
+/obj/machinery/light/small,
+/turf/unsimulated/floor{
+	dir = 8;
+	icon_state = "vault"
+	},
+/area/centcom/specops)
 "fcv" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
@@ -11671,6 +11678,10 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"fnn" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
+/turf/space,
+/area/space)
 "fpW" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 8
@@ -11693,6 +11704,16 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"fMP" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod4,
+/turf/space,
+/area/space)
+"gdb" = (
+/turf/unsimulated/floor{
+	dir = 8;
+	icon_state = "vault"
+	},
+/area/space)
 "glo" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
@@ -11715,6 +11736,23 @@
 	icon_state = "wood_broken4"
 	},
 /area/holodeck/source_temple)
+"gJf" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod5,
+/turf/space,
+/area/space)
+"gVB" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod7,
+/turf/space,
+/area/space)
+"heB" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/unsimulated/floor{
+	dir = 8;
+	icon_state = "vault"
+	},
+/area/centcom/specops)
 "hzB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11740,6 +11778,10 @@
 	icon_state = "vault"
 	},
 /area/centcom/specops)
+"hXq" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod3,
+/turf/space,
+/area/space)
 "icO" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -12144,6 +12186,10 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
+"mUR" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod1,
+/turf/space,
+/area/space)
 "mXz" = (
 /obj/machinery/button/blast_door{
 	dir = 1;
@@ -12163,6 +12209,14 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"nls" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod2,
+/turf/space,
+/area/space)
+"nme" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/shuttle,
+/turf/space,
+/area/space)
 "ntZ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -12444,6 +12498,10 @@
 	icon_state = "wood_broken3"
 	},
 /area/holodeck/source_temple)
+"sOm" = (
+/obj/effect/fake_fire,
+/turf/space,
+/area/space)
 "sWJ" = (
 /obj/effect/floor_decal/beach{
 	dir = 8
@@ -12451,9 +12509,16 @@
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
 "taZ" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/shuttle,
-/turf/space,
-/area/space)
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/machinery/telecomms/allinone{
+	intercept = 1
+	},
+/turf/unsimulated/floor{
+	icon_state = "steel"
+	},
+/area/centcom/control)
 "tcf" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert3"
@@ -12554,6 +12619,10 @@
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"ugf" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod6,
+/turf/space,
+/area/space)
 "uly" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/wood,
@@ -12691,7 +12760,7 @@
 /area/holodeck/source_temple)
 "vZV" = (
 /obj/effect/landmark{
-	name = "Commando"
+	name = "Response Team"
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -12721,6 +12790,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/administration/centcom)
+"wra" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	dir = 4;
+	frequency = 1380;
+	id_tag = "specops_shuttle_centcomm_port";
+	name = "port docking centcomm hatch controller";
+	pixel_x = -24;
+	tag_door = "specops_centcom_dock_door"
+	},
+/turf/unsimulated/floor{
+	icon_state = "dark"
+	},
+/area/centcom/specops)
 "wtH" = (
 /obj/structure/table/rack,
 /obj/item/weapon/storage/box/handcuffs,
@@ -12866,6 +12948,10 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"yjO" = (
+/obj/effect/shuttle_landmark/escape_pod/transit/pod8,
+/turf/space,
+/area/space)
 
 (1,1,1) = {"
 ala
@@ -19635,19 +19721,19 @@ axH
 axH
 axt
 avY
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+avY
+avY
+avY
+avY
+avY
+avY
+avY
+avY
+avY
+avY
+avY
+avY
+avY
 aEE
 bhb
 aHD
@@ -19837,19 +19923,19 @@ aBc
 lTp
 axH
 avY
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+awp
+awp
+heB
+awp
+awp
+awp
+heB
+awp
+awp
+awp
+heB
+awp
+awp
 aEE
 bib
 aHD
@@ -20039,7 +20125,7 @@ aBc
 lTp
 axH
 avY
-aab
+awp
 aDy
 aDQ
 uFd
@@ -20050,8 +20136,8 @@ uFd
 uFd
 uFd
 uFd
-aab
-aab
+awp
+eVC
 aEE
 bib
 aHp
@@ -20241,7 +20327,7 @@ kGh
 lTp
 axH
 avY
-aab
+awp
 aDz
 aDR
 aEd
@@ -20253,7 +20339,7 @@ aEB
 aFK
 uFd
 uFd
-aab
+awp
 aEE
 aGd
 aHg
@@ -20443,7 +20529,7 @@ axH
 axH
 axt
 avY
-aab
+awp
 aDz
 aDR
 aEe
@@ -20455,7 +20541,7 @@ aEr
 aEr
 aFY
 aGq
-aab
+awp
 aEE
 aGd
 aHh
@@ -20645,7 +20731,7 @@ axH
 axH
 aCq
 avY
-aab
+awp
 aDz
 aDR
 aEf
@@ -20657,7 +20743,7 @@ aFz
 aFL
 uFd
 uFd
-aab
+eVC
 aEE
 aGd
 aHi
@@ -20847,7 +20933,7 @@ axH
 aBZ
 aCp
 avY
-aab
+awp
 aDA
 aDQ
 uFd
@@ -20858,8 +20944,8 @@ aEW
 uFd
 uFd
 uFd
-aab
-aab
+gdb
+awp
 aEE
 aGd
 aHj
@@ -21059,9 +21145,9 @@ aEX
 aEX
 avY
 avY
-aab
-aab
-aab
+avY
+avY
+avY
 aEE
 aHb
 aGd
@@ -21256,7 +21342,7 @@ avY
 axH
 axH
 axH
-axH
+wra
 awp
 awp
 aBc
@@ -24061,7 +24147,7 @@ avN
 avm
 avU
 awa
-awC
+taZ
 awG
 awG
 axy
@@ -26696,16 +26782,16 @@ axA
 ayt
 awU
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -26898,6 +26984,7 @@ axA
 ayu
 awU
 aab
+sOm
 aab
 aab
 aab
@@ -26906,8 +26993,7 @@ aab
 aab
 aab
 aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -27100,6 +27186,7 @@ axA
 ayv
 awU
 aab
+hXq
 aab
 aab
 aab
@@ -27108,8 +27195,7 @@ aab
 aab
 aab
 aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -27302,6 +27388,7 @@ axA
 axA
 awU
 aab
+sOm
 aab
 aab
 aab
@@ -27310,8 +27397,7 @@ aab
 aab
 aab
 aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -27504,16 +27590,16 @@ awU
 awU
 awU
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -28930,22 +29016,22 @@ aab
 aab
 aab
 aab
+sOm
+sOm
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
+sOm
+sOm
+sOm
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -29131,6 +29217,8 @@ aab
 aab
 aab
 aab
+sOm
+sOm
 aab
 aab
 aab
@@ -29145,9 +29233,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -29331,6 +29417,9 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -29346,10 +29435,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -29532,6 +29618,8 @@ aab
 aab
 aab
 aab
+sOm
+sOm
 aab
 aab
 aab
@@ -29549,9 +29637,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -29734,6 +29820,7 @@ aab
 aab
 aab
 aab
+sOm
 aab
 aab
 aab
@@ -29750,10 +29837,9 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -29923,6 +30009,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+aab
+aab
+aab
+sOm
 aab
 aab
 aab
@@ -29939,21 +30039,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -30125,6 +30211,20 @@ aab
 aab
 aab
 aab
+sOm
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+sOm
+aab
+aab
+aab
+nme
 aab
 aab
 aab
@@ -30141,21 +30241,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -30327,6 +30413,20 @@ aab
 aab
 aab
 aab
+mUR
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+sOm
+aab
+aab
+aab
+sOm
 aab
 aab
 aab
@@ -30343,21 +30443,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -30529,6 +30615,20 @@ aab
 aab
 aab
 aab
+sOm
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+sOm
+aab
+aab
+aab
+sOm
 aab
 aab
 aab
@@ -30545,23 +30645,9 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -30731,6 +30817,21 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
+aab
+sOm
+sOm
+sOm
+sOm
+aab
+aab
+aab
+sOm
+sOm
 aab
 aab
 aab
@@ -30748,22 +30849,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -30947,6 +31033,9 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -30962,10 +31051,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -31151,6 +31237,8 @@ aab
 aab
 aab
 aab
+sOm
+sOm
 aab
 aab
 aab
@@ -31165,9 +31253,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -31337,6 +31423,16 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -31344,32 +31440,22 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -31539,6 +31625,7 @@ aab
 aab
 aab
 aab
+sOm
 aab
 aab
 aab
@@ -31547,8 +31634,7 @@ aab
 aab
 aab
 aab
-aab
-aab
+sOm
 aab
 aab
 aab
@@ -31741,6 +31827,7 @@ aab
 aab
 aab
 aab
+nls
 aab
 aab
 aab
@@ -31749,6 +31836,7 @@ aab
 aab
 aab
 aab
+sOm
 aab
 aab
 aab
@@ -31756,22 +31844,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -31943,6 +32029,24 @@ aab
 aab
 aab
 aab
+sOm
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+sOm
+aab
+aab
+aab
+aab
+aab
+aab
+aab
+fnn
 aab
 aab
 aab
@@ -31955,25 +32059,7 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+ugf
 aab
 aab
 aab
@@ -32145,6 +32231,16 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -32152,30 +32248,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -32355,7 +32441,7 @@ aab
 aab
 aab
 aab
-taZ
+aab
 aab
 aab
 aab
@@ -33172,20 +33258,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -33374,6 +33460,7 @@ aab
 aab
 aab
 aab
+fMP
 aab
 aab
 aab
@@ -33386,8 +33473,7 @@ aab
 aab
 aab
 aab
-aab
-aab
+gVB
 aab
 aab
 aab
@@ -33576,20 +33662,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -34586,20 +34672,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
@@ -34788,6 +34874,7 @@ aab
 aab
 aab
 aab
+gJf
 aab
 aab
 aab
@@ -34800,8 +34887,7 @@ aab
 aab
 aab
 aab
-aab
-aab
+yjO
 aab
 aab
 aab
@@ -34990,20 +35076,20 @@ aab
 aab
 aab
 aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+sOm
+sOm
+sOm
+sOm
+sOm
 aab
 aab
 aab

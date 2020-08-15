@@ -336,7 +336,7 @@
 
 /area/shuttle/petrov/hallwaya
 	name = "\improper SRV Petrov - Lower Hallway"
-	icon_state = "hallA"
+	icon_state = "escape"
 
 /area/shuttle/petrov/security
 	name = "\improper SRV Petrov - Security Office"
@@ -1587,7 +1587,7 @@
 /* UNDERGROUND ( Old Station Remains ) */
 /***************************************/
 
-// BRIG REMAINS 
+// BRIG REMAINS
 
 //insecure brig
 

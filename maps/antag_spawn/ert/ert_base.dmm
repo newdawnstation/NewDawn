@@ -890,7 +890,7 @@
 /area/map_template/rescue_base/base)
 "bV" = (
 /obj/effect/landmark{
-	name = "Response Team"
+	name = "Commando"
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -2794,7 +2794,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/map_template/rescue_base/start)
 "fh" = (
-/obj/structure/bed/chair/shuttle,
+/obj/structure/bed/chair/shuttle{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/map_template/rescue_base/start)
 "fi" = (

@@ -263,13 +263,15 @@
 
 /obj/effect/shuttle_landmark/specops/start
 	name = "Centcom"
+	base_turf = /turf/unsimulated/floor
+	base_area = /area/centcom/specops
 	landmark_tag = "nav_specops_start"
 	docking_controller = "specops_shuttle_port"
 
 /obj/effect/shuttle_landmark/specops/out
 	name = "Docking Bay"
 	landmark_tag = "nav_specops_out"
-	docking_controller = "specops_dock_airlock"
+	docking_controller = "admin_shuttle_dock_airlock" //"specops_dock_airlock" - It needs his own airlock
 
 //Cargo drone
 

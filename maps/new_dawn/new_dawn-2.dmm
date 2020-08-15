@@ -1388,9 +1388,6 @@
 /obj/structure/bed/chair/sofa/sofa/black{
 	dir = 1
 	},
-/obj/effect/landmark/start{
-	name = "Pilot"
-	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration/ready_room)
@@ -1956,6 +1953,9 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/effect/landmark{
+	name = "JoinLateCyborg"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_upload_foyer)
@@ -4063,6 +4063,7 @@
 /area/command/pathfinder)
 "bqu" = (
 /obj/effect/shuttle_landmark/admin/out,
+/obj/effect/shuttle_landmark/specops/out,
 /turf/space,
 /area/space)
 "bqO" = (
@@ -10971,9 +10972,6 @@
 /obj/item/weapon/storage/secure/safe{
 	pixel_x = 32
 	},
-/obj/effect/landmark/start{
-	name = "Head of Security"
-	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/cos)
 "dqO" = (
@@ -11104,13 +11102,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"dsd" = (
-/obj/structure/bed/chair/padded/purple,
-/obj/effect/landmark/start{
-	name = "Pilot"
-	},
-/turf/simulated/floor/carpet/purple,
-/area/quartermaster/exploration/ready_room)
 "dsk" = (
 /obj/structure/cable/green,
 /obj/machinery/door/firedoor,
@@ -24841,7 +24832,8 @@
 "hOc" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/power/apc{
-	dir = 4
+	dir = 4;
+	pixel_x = 20
 	},
 /obj/structure/cable/green{
 	d2 = 8;
@@ -31145,7 +31137,8 @@
 	dir = 4
 	},
 /obj/machinery/firealarm{
-	dir = 4
+	dir = 4;
+	pixel_x = 20
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
@@ -33345,9 +33338,6 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/mess)
 "kLT" = (
-/obj/effect/landmark/start{
-	name = "Pathfinder"
-	},
 /obj/structure/bed/chair/office/comfy/purple{
 	dir = 8
 	},
@@ -36102,7 +36092,8 @@
 /area/exploration_shuttle/cargo)
 "lKg" = (
 /obj/machinery/alarm{
-	dir = 8
+	dir = 8;
+	pixel_x = 20
 	},
 /obj/effect/floor_decal/corner/mauve{
 	dir = 6
@@ -43611,6 +43602,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/landmark{
+	name = "JoinLateCyborg"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_upload_foyer)
 "oiG" = (
@@ -50038,9 +50032,6 @@
 /area/vacant/cargo)
 "qFH" = (
 /obj/structure/bed/chair/padded/purple,
-/obj/effect/landmark/start{
-	name = "Explorer"
-	},
 /turf/simulated/floor/carpet/purple,
 /area/quartermaster/exploration/ready_room)
 "qFW" = (
@@ -56689,9 +56680,6 @@
 /obj/structure/bed/chair/comfy/captain{
 	dir = 1
 	},
-/obj/effect/landmark/start{
-	name = "Captain"
-	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
 "tcm" = (
@@ -58072,9 +58060,6 @@
 /obj/structure/bed/chair/sofa/black/right{
 	dir = 1
 	},
-/obj/effect/landmark/start{
-	name = "Explorer"
-	},
 /obj/effect/floor_decal/corner/mauve{
 	dir = 10
 	},
@@ -59069,9 +59054,6 @@
 "tTL" = (
 /obj/structure/bed/chair/sofa/black/left{
 	dir = 1
-	},
-/obj/effect/landmark/start{
-	name = "Explorer"
 	},
 /obj/effect/floor_decal/corner/mauve{
 	dir = 10
@@ -87717,11 +87699,11 @@ oyt
 bmg
 nhC
 iST
-dsd
+qFH
 wyv
 pcc
 wyv
-dsd
+qFH
 qPV
 tTP
 skd
