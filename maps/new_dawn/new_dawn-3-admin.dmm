@@ -3597,6 +3597,8 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/centcom/specops)
 "axl" = (
+/obj/machinery/mech_recharger,
+/mob/living/exosuit/premade/firefighter,
 /turf/unsimulated/floor{
 	icon_state = "plating";
 	name = "plating"
@@ -11658,6 +11660,14 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"eDk" = (
+/obj/machinery/mech_recharger,
+/mob/living/exosuit/premade/heavy,
+/turf/unsimulated/floor{
+	icon_state = "plating";
+	name = "plating"
+	},
+/area/centcom/specops)
 "eRk" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
@@ -12395,6 +12405,14 @@
 /obj/machinery/door/unpowered/simple/sandstone,
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
+"qJc" = (
+/obj/machinery/mech_recharger,
+/mob/living/exosuit/premade/heavy/merc,
+/turf/unsimulated/floor{
+	icon_state = "plating";
+	name = "plating"
+	},
+/area/centcom/specops)
 "qMl" = (
 /obj/effect/floor_decal/stoneborder/corner{
 	dir = 8
@@ -19299,8 +19317,8 @@ izl
 asR
 asP
 avY
-awo
-axl
+qJc
+eDk
 avY
 axH
 axH
