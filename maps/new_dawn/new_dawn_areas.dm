@@ -68,6 +68,10 @@
 	name = "\improper Entry Hallway"
 	icon_state = "entry"
 
+/area/hallway/west/guest
+	name = "\improper Guest Hallway"
+	icon_state = "entry"
+
 //Maintenance
 /area/maintenance/central
 	name = "Central Maintenance"

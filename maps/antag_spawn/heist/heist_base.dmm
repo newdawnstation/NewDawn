@@ -1928,9 +1928,6 @@
 /obj/item/weapon/melee/baton/cattleprod,
 /turf/simulated/floor/shuttle/white,
 /area/map_template/skipjack_station/start)
-"eE" = (
-/turf/space,
-/area/map_template/skipjack_station/start)
 "eF" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/rd,
@@ -4165,7 +4162,7 @@ cR
 cR
 cR
 cR
-eE
+aa
 aa
 aa
 aa
@@ -5029,7 +5026,7 @@ cR
 cR
 cR
 cR
-cR
+aa
 aa
 aa
 aa
